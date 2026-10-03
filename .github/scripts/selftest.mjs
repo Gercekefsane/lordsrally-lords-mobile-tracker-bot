@@ -182,7 +182,9 @@ for (const [ad, fixture] of [["English schema", banwaveEn], ["legacy schema", ba
        docSatir.length > 1 && /\| recovered \|$/.test(docSatir[1]) && !/\(3 h\)/.test(sonSatir(doc, "BANWAVE:WAVES")));
     /* A measured zero is DURATION 0, so it must stay bare — printing "(0 h)"
      *  next to "under 1 h" on the page would be a second, contradicting unit. */
-    ok(`${ad}: a measured zero duration prints bare, not "(0 h)"`,
+    ok(`${ad}: at-a-glance box states recovery too`,
+     /\|\s*Recovery\s*\|\s*[a-z]+\s*(\||\()/.test(blokIci(readme, "BANWAVE:README:LATEST") ?? ""));
+  ok(`${ad}: a measured zero duration prints bare, not "(0 h)"`,
        !/\(0 h\)/.test(doc) && !/\(0 h\)/.test(readme));
     ok(`${ad}: an unknown recovery state is not reported as recovered`,
        json.waves[json.waves.length - 1].recovery.state === "ongoing");

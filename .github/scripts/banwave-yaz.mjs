@@ -214,6 +214,9 @@ function enSonOzet(c) {
     `| Impact | ${yuzdeMetni(son.impactPct)}${son.estimated ? " (estimated)" : ""} |`,
     `| Severity | ${SIDDET[son.severity] ?? son.severity ?? "—"} |`,
     `| Duration | ${saat(son.hours)} |`,
+    /* The user's report was that recovery looked missing — the at-a-glance box
+       must state it too, not only the history table below. */
+    `| Recovery | ${kurtarmaMetni(son.recovery)} |`,
     ``,
     `Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.`,
   ].join("\n");
