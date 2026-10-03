@@ -309,8 +309,8 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
+        "state": "complete",
+        "hours": 1,
         "estimated": false
       }
     },
@@ -322,8 +322,8 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
+        "state": "complete",
+        "hours": 1,
         "estimated": false
       }
     },
@@ -335,8 +335,8 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
+        "state": "complete",
+        "hours": 1,
         "estimated": false
       }
     },
@@ -348,8 +348,8 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
+        "state": "complete",
+        "hours": 0,
         "estimated": false
       }
     },
@@ -361,9 +361,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
       }
     },
     {
@@ -374,7 +374,7 @@
       "estimated": true,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -387,7 +387,7 @@
       "estimated": true,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -400,9 +400,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
       }
     },
     {
@@ -413,9 +413,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 27,
+        "estimated": true
       }
     },
     {
@@ -426,7 +426,7 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -439,7 +439,7 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -452,7 +452,7 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -465,9 +465,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
       }
     },
     {
@@ -478,9 +478,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
       }
     },
     {
@@ -491,7 +491,7 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -504,9 +504,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 77,
+        "estimated": true
       }
     },
     {
@@ -517,9 +517,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 77,
+        "estimated": true
       }
     },
     {
@@ -530,9 +530,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 77,
+        "estimated": true
       }
     },
     {
@@ -543,7 +543,7 @@
       "estimated": true,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -556,7 +556,7 @@
       "estimated": true,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -569,7 +569,7 @@
       "estimated": true,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -582,7 +582,7 @@
       "estimated": true,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -595,9 +595,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
       }
     },
     {
@@ -608,9 +608,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
       }
     },
     {
@@ -621,9 +621,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
       }
     },
     {
@@ -634,9 +634,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
       }
     },
     {
@@ -647,9 +647,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
       }
     },
     {
@@ -660,9 +660,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
       }
     },
     {
@@ -673,7 +673,7 @@
       "estimated": true,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -686,7 +686,7 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -699,7 +699,7 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -712,9 +712,9 @@
       "estimated": false,
       "capped": false,
       "recovery": {
-        "state": "recovered",
-        "hours": null,
-        "estimated": false
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
       }
     },
     {
@@ -725,7 +725,7 @@
       "estimated": false,
       "capped": true,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -738,7 +738,7 @@
       "estimated": false,
       "capped": true,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -751,7 +751,7 @@
       "estimated": true,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -764,7 +764,7 @@
       "estimated": true,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -777,7 +777,7 @@
       "estimated": true,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }
@@ -790,7 +790,7 @@
       "estimated": true,
       "capped": false,
       "recovery": {
-        "state": "ongoing",
+        "state": "recovered",
         "hours": null,
         "estimated": false
       }

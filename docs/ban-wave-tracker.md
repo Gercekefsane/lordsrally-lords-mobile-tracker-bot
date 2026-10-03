@@ -64,44 +64,44 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 <!-- BANWAVE:SERVERS:START -->
 | Server | Date (UTC) | Impact | Recovery |
 |---|---|---|---|
-| Multi Node Server 1 | 2026-09-30 | 32% | recovered |
-| Multi Node Server 4 | 2026-09-30 | 41% | recovered |
-| Multi Node Server 2 | 2026-09-30 | 26% | recovered |
-| Multi Node Server 3 | 2026-09-30 | 25% | recovered |
-| Multi Node Server 1 | 2026-09-24 | 3.9% | recovered |
-| Multi Node Server 3 | 2026-09-21 | 2.3% (est.) | ongoing |
-| Multi Node Server 1 | 2026-09-21 | 0.8% (est.) | ongoing |
-| Multi Node Server 2 | 2026-09-21 | 7% | recovered |
-| Multi Node Server 4 | 2026-09-21 | 28% | recovered |
-| Multi Node Server 1 | 2026-09-21 | 8.6% | ongoing |
-| Multi Node Server 3 | 2026-09-21 | 9.3% | ongoing |
-| Multi Node Server 3 | 2026-09-21 | 16% | ongoing |
-| Multi Node Server 4 | 2026-09-21 | 0.8% | recovered |
-| Multi Node Server 2 | 2026-09-21 | 27% | recovered |
-| Multi Node Server 3 | 2026-09-16 | 51% | ongoing |
-| Multi Node Server 2 | 2026-09-16 | 42% | recovered |
-| Multi Node Server 1 | 2026-09-16 | 50% | recovered |
-| Multi Node Server 4 | 2026-09-16 | 50% | recovered |
-| Multi Node Server 4 | 2026-09-10 | 20% (est.) | ongoing |
-| Multi Node Server 3 | 2026-09-10 | 19% (est.) | ongoing |
-| Multi Node Server 2 | 2026-09-10 | 17% (est.) | ongoing |
-| Multi Node Server 1 | 2026-09-10 | 23% (est.) | ongoing |
-| Multi Node Server 4 | 2026-09-09 | 4.7% | recovered |
-| Multi Node Server 1 | 2026-09-09 | 2.4% | recovered |
-| Multi Node Server 1 | 2026-09-08 | 0.8% | recovered |
-| Multi Node Server 2 | 2026-09-08 | 1.6% | recovered |
-| Multi Node Server 2 | 2026-09-03 | 3.1% | recovered |
-| Multi Node Server 3 | 2026-09-03 | 0.8% | recovered |
-| Multi Node Server 4 | 2026-09-01 | 2.3% (est.) | ongoing |
-| Multi Node Server 1 | 2026-09-01 | 53% | ongoing |
-| Multi Node Server 4 | 2026-09-01 | 53% | ongoing |
-| Multi Node Server 3 | 2026-08-17 | 0.8% | recovered |
-| Multi Node Server 1 | 2026-08-13 | 100% | ongoing |
-| Multi Node Server 4 | 2026-08-13 | 100% | ongoing |
-| Multi Node Server 4 | 2026-08-12 | 1.6% (est.) | ongoing |
-| Multi Node Server 1 | 2026-08-12 | 1.6% (est.) | ongoing |
-| Multi Node Server 1 | 2026-08-12 | 100% (est.) | ongoing |
-| Multi Node Server 4 | 2026-08-12 | 100% (est.) | ongoing |
+| Multi Node Server 1 | 2026-09-30 | 32% | complete (1 h) |
+| Multi Node Server 4 | 2026-09-30 | 41% | complete (1 h) |
+| Multi Node Server 2 | 2026-09-30 | 26% | complete (1 h) |
+| Multi Node Server 3 | 2026-09-30 | 25% | complete |
+| Multi Node Server 1 | 2026-09-24 | 3.9% | complete |
+| Multi Node Server 3 | 2026-09-21 | 2.3% (est.) | recovered |
+| Multi Node Server 1 | 2026-09-21 | 0.8% (est.) | recovered |
+| Multi Node Server 2 | 2026-09-21 | 7% | complete |
+| Multi Node Server 4 | 2026-09-21 | 28% | complete (27 h) |
+| Multi Node Server 1 | 2026-09-21 | 8.6% | recovered |
+| Multi Node Server 3 | 2026-09-21 | 9.3% | recovered |
+| Multi Node Server 3 | 2026-09-21 | 16% | recovered |
+| Multi Node Server 4 | 2026-09-21 | 0.8% | complete |
+| Multi Node Server 2 | 2026-09-21 | 27% | complete |
+| Multi Node Server 3 | 2026-09-16 | 51% | recovered |
+| Multi Node Server 2 | 2026-09-16 | 42% | complete (77 h) |
+| Multi Node Server 1 | 2026-09-16 | 50% | complete (77 h) |
+| Multi Node Server 4 | 2026-09-16 | 50% | complete (77 h) |
+| Multi Node Server 4 | 2026-09-10 | 20% (est.) | recovered |
+| Multi Node Server 3 | 2026-09-10 | 19% (est.) | recovered |
+| Multi Node Server 2 | 2026-09-10 | 17% (est.) | recovered |
+| Multi Node Server 1 | 2026-09-10 | 23% (est.) | recovered |
+| Multi Node Server 4 | 2026-09-09 | 4.7% | complete |
+| Multi Node Server 1 | 2026-09-09 | 2.4% | complete |
+| Multi Node Server 1 | 2026-09-08 | 0.8% | complete |
+| Multi Node Server 2 | 2026-09-08 | 1.6% | complete |
+| Multi Node Server 2 | 2026-09-03 | 3.1% | complete |
+| Multi Node Server 3 | 2026-09-03 | 0.8% | complete |
+| Multi Node Server 4 | 2026-09-01 | 2.3% (est.) | recovered |
+| Multi Node Server 1 | 2026-09-01 | 53% | recovered |
+| Multi Node Server 4 | 2026-09-01 | 53% | recovered |
+| Multi Node Server 3 | 2026-08-17 | 0.8% | complete |
+| Multi Node Server 1 | 2026-08-13 | 100% | recovered |
+| Multi Node Server 4 | 2026-08-13 | 100% | recovered |
+| Multi Node Server 4 | 2026-08-12 | 1.6% (est.) | recovered |
+| Multi Node Server 1 | 2026-08-12 | 1.6% (est.) | recovered |
+| Multi Node Server 1 | 2026-08-12 | 100% (est.) | recovered |
+| Multi Node Server 4 | 2026-08-12 | 100% (est.) | recovered |
 <!-- BANWAVE:SERVERS:END -->
 
 ---
