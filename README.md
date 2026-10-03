@@ -209,7 +209,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 
 **Honest by design:** where a value could not be measured it is marked as an **estimate**; recovery is shown as a duration only when the evidence supports it; and only **shares** are published, never absolute account counts. Servers are anonymised.
 
-> 🔄 These blocks are updated automatically by the `Ban wave tracker sync` workflow. Human-readable tables live in [`docs/ban-wave-tracker.md`](docs/ban-wave-tracker.md); machine-readable data in [`data/banwave.json`](data/banwave.json).
+> 🔄 These blocks are updated automatically by the `Public data sync` workflow. Human-readable tables live in [`docs/ban-wave-tracker.md`](docs/ban-wave-tracker.md); machine-readable data in [`data/banwave.json`](data/banwave.json).
 
 ---
 

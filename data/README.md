@@ -6,7 +6,7 @@
 
 ## `banwave.json`
 
-Produced by `.github/scripts/banwave-yaz.mjs` from the platform's public tracker endpoint and committed by the `Ban wave tracker sync` workflow. Field names are **English** and mirror the public endpoint.
+Produced by `.github/scripts/banwave-yaz.mjs` from the platform's public tracker endpoint and committed by the `Public data sync` workflow. Field names are **English** and mirror the public endpoint.
 
 ```json
 {
