@@ -171,7 +171,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 | Impact | 41% |
 | Severity | heavy |
 | Duration | 1 h |
-| Recovery | complete (1 h) |
+| Recovery | complete (55 min) |
 
 Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.
 <!-- BANWAVE:README:LATEST:END -->
@@ -181,23 +181,23 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-09-30 11:38 (+03:00) | 4 | 41% | heavy | 1 h | complete (1 h) |
-| 2026-09-24 12:10 (+03:00) | 1 | 3.9% | light | under 1 h | complete (1 min, est.) |
-| 2026-09-21 22:00 (+03:00) | 1 | 2.3% (est.) | light | under 1 h | recovered |
-| 2026-09-21 20:55 (+03:00) | 1 | 0.8% (est.) | light | under 1 h | recovered |
-| 2026-09-21 11:45 (+03:00) | 4 | 28% | heavy | under 1 h | recovered |
-| 2026-09-21 11:02 (+03:00) | 3 | 27% | heavy | under 1 h | recovered |
-| 2026-09-16 12:33 (+03:00) | 4 | 51% | heavy | under 1 h | recovered |
-| 2026-09-10 12:38 (+03:00) | 4 | 23% (est.) | heavy | under 1 h | recovered |
-| 2026-09-09 10:38 (+03:00) | 2 | 4.7% | light | under 1 h | complete (1 min, est.) |
-| 2026-09-08 04:43 (+03:00) | 2 | 1.6% | light | under 1 h | complete (1 min, est.) |
-| 2026-09-03 11:17 (+03:00) | 2 | 3.1% | light | under 1 h | complete (1 min, est.) |
-| 2026-09-01 13:14 (+03:00) | 1 | 2.3% (est.) | light | under 1 h | recovered |
-| 2026-09-01 08:44 (+03:00) | 2 | 53% | heavy | under 1 h | recovered |
-| 2026-08-17 08:38 (+03:00) | 1 | 0.8% | light | under 1 h | complete (1 min, est.) |
-| 2026-08-13 05:59 (+03:00) | 2 | 100% | heavy | under 1 h | recovered |
-| 2026-08-12 20:15 (+03:00) | 2 | 1.6% (est.) | light | under 1 h | recovered |
-| 2026-08-12 11:43 (+03:00) | 2 | 100% (est.) | heavy | under 1 h | recovered |
+| 2026-09-30 11:38 (+03:00) | 4 | 41% | heavy | 47 min | complete (55 min) |
+| 2026-09-24 12:10 (+03:00) | 1 | 3.9% | light | 1 min | complete (6 min, est.) |
+| 2026-09-21 22:00 (+03:00) | 1 | 2.3% (est.) | light | 1 min | recovered |
+| 2026-09-21 20:55 (+03:00) | 1 | 0.8% (est.) | light | 1 min | recovered |
+| 2026-09-21 11:45 (+03:00) | 4 | 28% | heavy | 11 min | recovered |
+| 2026-09-21 11:02 (+03:00) | 3 | 27% | heavy | 7 min | recovered |
+| 2026-09-16 12:33 (+03:00) | 4 | 51% | heavy | 30 min | recovered |
+| 2026-09-10 12:38 (+03:00) | 4 | 23% (est.) | heavy | 2 min | recovered |
+| 2026-09-09 10:38 (+03:00) | 2 | 4.7% | light | 1 min | complete (6 min, est.) |
+| 2026-09-08 04:43 (+03:00) | 2 | 1.6% | light | 3 min | complete (8 min, est.) |
+| 2026-09-03 11:17 (+03:00) | 2 | 3.1% | light | 1 min | complete (6 min, est.) |
+| 2026-09-01 13:14 (+03:00) | 1 | 2.3% (est.) | light | 1 min | recovered |
+| 2026-09-01 08:44 (+03:00) | 2 | 53% | heavy | 13 min | recovered |
+| 2026-08-17 08:38 (+03:00) | 1 | 0.8% | light | 1 min | complete (5 min, est.) |
+| 2026-08-13 05:59 (+03:00) | 2 | 100% | heavy | 6 min | recovered |
+| 2026-08-12 20:15 (+03:00) | 2 | 1.6% (est.) | light | 1 min | recovered |
+| 2026-08-12 11:43 (+03:00) | 2 | 100% (est.) | heavy | 8 min | recovered |
 <!-- BANWAVE:README:WAVES:END -->
 
 **Monthly history:**

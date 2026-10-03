@@ -25,23 +25,23 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-09-30 11:38 (+03:00) | 4 | 41% | heavy | 1 h | complete (1 h) |
-| 2026-09-24 12:10 (+03:00) | 1 | 3.9% | light | under 1 h | complete (1 min, est.) |
-| 2026-09-21 22:00 (+03:00) | 1 | 2.3% (est.) | light | under 1 h | recovered |
-| 2026-09-21 20:55 (+03:00) | 1 | 0.8% (est.) | light | under 1 h | recovered |
-| 2026-09-21 11:45 (+03:00) | 4 | 28% | heavy | under 1 h | recovered |
-| 2026-09-21 11:02 (+03:00) | 3 | 27% | heavy | under 1 h | recovered |
-| 2026-09-16 12:33 (+03:00) | 4 | 51% | heavy | under 1 h | recovered |
-| 2026-09-10 12:38 (+03:00) | 4 | 23% (est.) | heavy | under 1 h | recovered |
-| 2026-09-09 10:38 (+03:00) | 2 | 4.7% | light | under 1 h | complete (1 min, est.) |
-| 2026-09-08 04:43 (+03:00) | 2 | 1.6% | light | under 1 h | complete (1 min, est.) |
-| 2026-09-03 11:17 (+03:00) | 2 | 3.1% | light | under 1 h | complete (1 min, est.) |
-| 2026-09-01 13:14 (+03:00) | 1 | 2.3% (est.) | light | under 1 h | recovered |
-| 2026-09-01 08:44 (+03:00) | 2 | 53% | heavy | under 1 h | recovered |
-| 2026-08-17 08:38 (+03:00) | 1 | 0.8% | light | under 1 h | complete (1 min, est.) |
-| 2026-08-13 05:59 (+03:00) | 2 | 100% | heavy | under 1 h | recovered |
-| 2026-08-12 20:15 (+03:00) | 2 | 1.6% (est.) | light | under 1 h | recovered |
-| 2026-08-12 11:43 (+03:00) | 2 | 100% (est.) | heavy | under 1 h | recovered |
+| 2026-09-30 11:38 (+03:00) | 4 | 41% | heavy | 47 min | complete (55 min) |
+| 2026-09-24 12:10 (+03:00) | 1 | 3.9% | light | 1 min | complete (6 min, est.) |
+| 2026-09-21 22:00 (+03:00) | 1 | 2.3% (est.) | light | 1 min | recovered |
+| 2026-09-21 20:55 (+03:00) | 1 | 0.8% (est.) | light | 1 min | recovered |
+| 2026-09-21 11:45 (+03:00) | 4 | 28% | heavy | 11 min | recovered |
+| 2026-09-21 11:02 (+03:00) | 3 | 27% | heavy | 7 min | recovered |
+| 2026-09-16 12:33 (+03:00) | 4 | 51% | heavy | 30 min | recovered |
+| 2026-09-10 12:38 (+03:00) | 4 | 23% (est.) | heavy | 2 min | recovered |
+| 2026-09-09 10:38 (+03:00) | 2 | 4.7% | light | 1 min | complete (6 min, est.) |
+| 2026-09-08 04:43 (+03:00) | 2 | 1.6% | light | 3 min | complete (8 min, est.) |
+| 2026-09-03 11:17 (+03:00) | 2 | 3.1% | light | 1 min | complete (6 min, est.) |
+| 2026-09-01 13:14 (+03:00) | 1 | 2.3% (est.) | light | 1 min | recovered |
+| 2026-09-01 08:44 (+03:00) | 2 | 53% | heavy | 13 min | recovered |
+| 2026-08-17 08:38 (+03:00) | 1 | 0.8% | light | 1 min | complete (5 min, est.) |
+| 2026-08-13 05:59 (+03:00) | 2 | 100% | heavy | 6 min | recovered |
+| 2026-08-12 20:15 (+03:00) | 2 | 1.6% (est.) | light | 1 min | recovered |
+| 2026-08-12 11:43 (+03:00) | 2 | 100% (est.) | heavy | 8 min | recovered |
 <!-- BANWAVE:WAVES:END -->
 
 ---
@@ -64,20 +64,20 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 <!-- BANWAVE:SERVERS:START -->
 | Server | Wave start (UTC+3) | Impact | Recovery |
 |---|---|---|---|
-| Multi Node Server 1 | 2026-09-30 11:40 (+03:00) | 32% | complete (1 h) |
-| Multi Node Server 4 | 2026-09-30 11:39 (+03:00) | 41% | complete (1 h) |
-| Multi Node Server 2 | 2026-09-30 11:38 (+03:00) | 26% | complete (1 h) |
-| Multi Node Server 3 | 2026-09-30 11:38 (+03:00) | 25% | complete (1 min) |
-| Multi Node Server 1 | 2026-09-24 12:10 (+03:00) | 3.9% | complete (1 min, est.) |
+| Multi Node Server 1 | 2026-09-30 11:40 (+03:00) | 32% | complete (55 min) |
+| Multi Node Server 4 | 2026-09-30 11:39 (+03:00) | 41% | complete (51 min) |
+| Multi Node Server 2 | 2026-09-30 11:38 (+03:00) | 26% | complete (42 min) |
+| Multi Node Server 3 | 2026-09-30 11:38 (+03:00) | 25% | complete (21 min) |
+| Multi Node Server 1 | 2026-09-24 12:10 (+03:00) | 3.9% | complete (6 min, est.) |
 | Multi Node Server 3 | 2026-09-21 22:00 (+03:00) | 2.3% (est.) | recovered |
 | Multi Node Server 1 | 2026-09-21 20:55 (+03:00) | 0.8% (est.) | recovered |
-| Multi Node Server 2 | 2026-09-21 11:46 (+03:00) | 7% | complete (1 min, est.) |
-| Multi Node Server 4 | 2026-09-21 11:45 (+03:00) | 28% | complete (1 d 3 h, est.) |
+| Multi Node Server 2 | 2026-09-21 11:46 (+03:00) | 7% | complete (17 min, est.) |
+| Multi Node Server 4 | 2026-09-21 11:45 (+03:00) | 28% | complete (1 d 2 h, est.) |
 | Multi Node Server 1 | 2026-09-21 11:45 (+03:00) | 8.6% | recovered |
 | Multi Node Server 3 | 2026-09-21 11:45 (+03:00) | 9.3% | recovered |
 | Multi Node Server 3 | 2026-09-21 11:08 (+03:00) | 16% | recovered |
-| Multi Node Server 4 | 2026-09-21 11:08 (+03:00) | 0.8% | complete (1 min, est.) |
-| Multi Node Server 2 | 2026-09-21 11:02 (+03:00) | 27% | complete (1 min, est.) |
+| Multi Node Server 4 | 2026-09-21 11:08 (+03:00) | 0.8% | complete (6 min, est.) |
+| Multi Node Server 2 | 2026-09-21 11:02 (+03:00) | 27% | complete (12 min, est.) |
 | Multi Node Server 3 | 2026-09-16 12:34 (+03:00) | 51% | recovered |
 | Multi Node Server 2 | 2026-09-16 12:34 (+03:00) | 42% | complete (3 d 5 h, est.) |
 | Multi Node Server 1 | 2026-09-16 12:34 (+03:00) | 50% | complete (3 d 5 h, est.) |
@@ -86,16 +86,16 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 | Multi Node Server 3 | 2026-09-10 12:40 (+03:00) | 19% (est.) | recovered |
 | Multi Node Server 2 | 2026-09-10 12:39 (+03:00) | 17% (est.) | recovered |
 | Multi Node Server 1 | 2026-09-10 12:38 (+03:00) | 23% (est.) | recovered |
-| Multi Node Server 4 | 2026-09-09 10:38 (+03:00) | 4.7% | complete (1 min, est.) |
-| Multi Node Server 1 | 2026-09-09 10:38 (+03:00) | 2.4% | complete (1 min, est.) |
-| Multi Node Server 1 | 2026-09-08 04:46 (+03:00) | 0.8% | complete (1 min, est.) |
-| Multi Node Server 2 | 2026-09-08 04:43 (+03:00) | 1.6% | complete (1 min, est.) |
-| Multi Node Server 2 | 2026-09-03 11:17 (+03:00) | 3.1% | complete (1 min, est.) |
-| Multi Node Server 3 | 2026-09-03 11:17 (+03:00) | 0.8% | complete (1 min, est.) |
+| Multi Node Server 4 | 2026-09-09 10:38 (+03:00) | 4.7% | complete (6 min, est.) |
+| Multi Node Server 1 | 2026-09-09 10:38 (+03:00) | 2.4% | complete (6 min, est.) |
+| Multi Node Server 1 | 2026-09-08 04:46 (+03:00) | 0.8% | complete (6 min, est.) |
+| Multi Node Server 2 | 2026-09-08 04:43 (+03:00) | 1.6% | complete (8 min, est.) |
+| Multi Node Server 2 | 2026-09-03 11:17 (+03:00) | 3.1% | complete (6 min, est.) |
+| Multi Node Server 3 | 2026-09-03 11:17 (+03:00) | 0.8% | complete (6 min, est.) |
 | Multi Node Server 4 | 2026-09-01 13:14 (+03:00) | 2.3% (est.) | recovered |
 | Multi Node Server 1 | 2026-09-01 08:44 (+03:00) | 53% | recovered |
 | Multi Node Server 4 | 2026-09-01 08:44 (+03:00) | 53% | recovered |
-| Multi Node Server 3 | 2026-08-17 08:38 (+03:00) | 0.8% | complete (1 min, est.) |
+| Multi Node Server 3 | 2026-08-17 08:38 (+03:00) | 0.8% | complete (5 min, est.) |
 | Multi Node Server 1 | 2026-08-13 05:59 (+03:00) | 100% | recovered |
 | Multi Node Server 4 | 2026-08-13 05:59 (+03:00) | 100% | recovered |
 | Multi Node Server 4 | 2026-08-12 20:15 (+03:00) | 1.6% (est.) | recovered |
