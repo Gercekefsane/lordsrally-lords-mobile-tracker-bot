@@ -24,7 +24,11 @@
       "capped": false,
       "hours": 1,
       "daysAgo": 3,
-      "hasRecovery": null
+      "recovery": {
+        "state": "complete",
+        "hours": 1,
+        "estimated": false
+      }
     },
     {
       "startedAt": "2026-09-24T09:10:02Z",
@@ -36,7 +40,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 9,
-      "hasRecovery": null
+      "recovery": {
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
+      }
     },
     {
       "startedAt": "2026-09-21T19:00:39Z",
@@ -48,7 +56,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 11,
-      "hasRecovery": null
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "startedAt": "2026-09-21T17:55:20Z",
@@ -60,7 +72,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 11,
-      "hasRecovery": null
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "startedAt": "2026-09-21T08:45:47Z",
@@ -72,7 +88,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 12,
-      "hasRecovery": null
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "startedAt": "2026-09-21T08:02:21Z",
@@ -84,7 +104,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 12,
-      "hasRecovery": null
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "startedAt": "2026-09-16T09:33:36Z",
@@ -96,7 +120,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 17,
-      "hasRecovery": null
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "startedAt": "2026-09-10T09:38:52Z",
@@ -108,7 +136,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 23,
-      "hasRecovery": null
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "startedAt": "2026-09-09T07:38:00Z",
@@ -120,7 +152,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 24,
-      "hasRecovery": null
+      "recovery": {
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
+      }
     },
     {
       "startedAt": "2026-09-08T01:43:22Z",
@@ -132,7 +168,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 25,
-      "hasRecovery": null
+      "recovery": {
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
+      }
     },
     {
       "startedAt": "2026-09-03T08:17:03Z",
@@ -144,7 +184,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 30,
-      "hasRecovery": null
+      "recovery": {
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
+      }
     },
     {
       "startedAt": "2026-09-01T10:14:15Z",
@@ -156,7 +200,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 32,
-      "hasRecovery": null
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "startedAt": "2026-09-01T05:44:53Z",
@@ -168,7 +216,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 32,
-      "hasRecovery": null
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "startedAt": "2026-08-17T05:38:03Z",
@@ -180,7 +232,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 47,
-      "hasRecovery": null
+      "recovery": {
+        "state": "complete",
+        "hours": 0,
+        "estimated": true
+      }
     },
     {
       "startedAt": "2026-08-13T02:59:43Z",
@@ -192,7 +248,11 @@
       "capped": true,
       "hours": 0,
       "daysAgo": 51,
-      "hasRecovery": null
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "startedAt": "2026-08-12T17:15:07Z",
@@ -204,7 +264,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 51,
-      "hasRecovery": null
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "startedAt": "2026-08-12T08:43:41Z",
@@ -216,7 +280,11 @@
       "capped": false,
       "hours": 0,
       "daysAgo": 52,
-      "hasRecovery": null
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     }
   ],
   "monthly": [
@@ -240,7 +308,11 @@
       "impactPct": 32,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 4",
@@ -249,7 +321,11 @@
       "impactPct": 41,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 2",
@@ -258,7 +334,11 @@
       "impactPct": 26,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 3",
@@ -267,7 +347,11 @@
       "impactPct": 25,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 1",
@@ -276,7 +360,11 @@
       "impactPct": 3.9,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 3",
@@ -285,7 +373,11 @@
       "impactPct": 2.3,
       "estimated": true,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 1",
@@ -294,7 +386,11 @@
       "impactPct": 0.8,
       "estimated": true,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 2",
@@ -303,7 +399,11 @@
       "impactPct": 7,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 4",
@@ -312,7 +412,11 @@
       "impactPct": 28,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 1",
@@ -321,7 +425,11 @@
       "impactPct": 8.6,
       "estimated": false,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 3",
@@ -330,7 +438,11 @@
       "impactPct": 9.3,
       "estimated": false,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 3",
@@ -339,7 +451,11 @@
       "impactPct": 16,
       "estimated": false,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 4",
@@ -348,7 +464,11 @@
       "impactPct": 0.8,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 2",
@@ -357,7 +477,11 @@
       "impactPct": 27,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 3",
@@ -366,7 +490,11 @@
       "impactPct": 51,
       "estimated": false,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 2",
@@ -375,7 +503,11 @@
       "impactPct": 42,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 1",
@@ -384,7 +516,11 @@
       "impactPct": 50,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 4",
@@ -393,7 +529,11 @@
       "impactPct": 50,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 4",
@@ -402,7 +542,11 @@
       "impactPct": 20,
       "estimated": true,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 3",
@@ -411,7 +555,11 @@
       "impactPct": 19,
       "estimated": true,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 2",
@@ -420,7 +568,11 @@
       "impactPct": 17,
       "estimated": true,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 1",
@@ -429,7 +581,11 @@
       "impactPct": 23,
       "estimated": true,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 4",
@@ -438,7 +594,11 @@
       "impactPct": 4.7,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 1",
@@ -447,7 +607,11 @@
       "impactPct": 2.4,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 1",
@@ -456,7 +620,11 @@
       "impactPct": 0.8,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 2",
@@ -465,7 +633,11 @@
       "impactPct": 1.6,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 2",
@@ -474,7 +646,11 @@
       "impactPct": 3.1,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 3",
@@ -483,7 +659,11 @@
       "impactPct": 0.8,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 4",
@@ -492,7 +672,11 @@
       "impactPct": 2.3,
       "estimated": true,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 1",
@@ -501,7 +685,11 @@
       "impactPct": 53,
       "estimated": false,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 4",
@@ -510,7 +698,11 @@
       "impactPct": 53,
       "estimated": false,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 3",
@@ -519,7 +711,11 @@
       "impactPct": 0.8,
       "estimated": false,
       "capped": false,
-      "hasRecovery": true
+      "recovery": {
+        "state": "recovered",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 1",
@@ -528,7 +724,11 @@
       "impactPct": 100,
       "estimated": false,
       "capped": true,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 4",
@@ -537,7 +737,11 @@
       "impactPct": 100,
       "estimated": false,
       "capped": true,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 4",
@@ -546,7 +750,11 @@
       "impactPct": 1.6,
       "estimated": true,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 1",
@@ -555,7 +763,11 @@
       "impactPct": 1.6,
       "estimated": true,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 1",
@@ -564,7 +776,11 @@
       "impactPct": 100,
       "estimated": true,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     },
     {
       "server": "Multi Node Server 4",
@@ -573,7 +789,11 @@
       "impactPct": 100,
       "estimated": true,
       "capped": false,
-      "hasRecovery": false
+      "recovery": {
+        "state": "ongoing",
+        "hours": null,
+        "estimated": false
+      }
     }
   ],
   "thresholds": {
