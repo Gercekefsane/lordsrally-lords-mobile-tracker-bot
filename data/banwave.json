@@ -5,6 +5,7 @@
   "summary": {
     "state": "quiet",
     "lastStartedAt": "2026-09-30T08:38:07Z",
+    "lastStartedAtTr": null,
     "daysAgo": 3,
     "last30d": 10
   },
@@ -23,9 +24,13 @@
       "estimated": false,
       "capped": false,
       "hours": 1,
+      "minutes": null,
       "daysAgo": 3,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 60,
         "hours": 1,
         "estimated": false
       }
@@ -39,9 +44,13 @@
       "estimated": false,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 9,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -55,9 +64,13 @@
       "estimated": true,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 11,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -71,9 +84,13 @@
       "estimated": true,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 11,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -87,9 +104,13 @@
       "estimated": false,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 12,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -103,9 +124,13 @@
       "estimated": false,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 12,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -119,9 +144,13 @@
       "estimated": false,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 17,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -135,9 +164,13 @@
       "estimated": true,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 23,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -151,9 +184,13 @@
       "estimated": false,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 24,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -167,9 +204,13 @@
       "estimated": false,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 25,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -183,9 +224,13 @@
       "estimated": false,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 30,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -199,9 +244,13 @@
       "estimated": true,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 32,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -215,9 +264,13 @@
       "estimated": false,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 32,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -231,9 +284,13 @@
       "estimated": false,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 47,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -247,9 +304,13 @@
       "estimated": false,
       "capped": true,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 51,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -263,9 +324,13 @@
       "estimated": true,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 51,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -279,9 +344,13 @@
       "estimated": true,
       "capped": false,
       "hours": 0,
+      "minutes": null,
       "daysAgo": 52,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -308,8 +377,12 @@
       "impactPct": 32,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 60,
         "hours": 1,
         "estimated": false
       }
@@ -321,8 +394,12 @@
       "impactPct": 41,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 60,
         "hours": 1,
         "estimated": false
       }
@@ -334,8 +411,12 @@
       "impactPct": 26,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 60,
         "hours": 1,
         "estimated": false
       }
@@ -347,8 +428,12 @@
       "impactPct": 25,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": false
       }
@@ -360,8 +445,12 @@
       "impactPct": 3.9,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -373,8 +462,12 @@
       "impactPct": 2.3,
       "estimated": true,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -386,8 +479,12 @@
       "impactPct": 0.8,
       "estimated": true,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -399,8 +496,12 @@
       "impactPct": 7,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -412,8 +513,12 @@
       "impactPct": 28,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 1620,
         "hours": 27,
         "estimated": true
       }
@@ -425,8 +530,12 @@
       "impactPct": 8.6,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -438,8 +547,12 @@
       "impactPct": 9.3,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -451,8 +564,12 @@
       "impactPct": 16,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -464,8 +581,12 @@
       "impactPct": 0.8,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -477,8 +598,12 @@
       "impactPct": 27,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -490,8 +615,12 @@
       "impactPct": 51,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -503,8 +632,12 @@
       "impactPct": 42,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 4620,
         "hours": 77,
         "estimated": true
       }
@@ -516,8 +649,12 @@
       "impactPct": 50,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 4620,
         "hours": 77,
         "estimated": true
       }
@@ -529,8 +666,12 @@
       "impactPct": 50,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 4620,
         "hours": 77,
         "estimated": true
       }
@@ -542,8 +683,12 @@
       "impactPct": 20,
       "estimated": true,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -555,8 +700,12 @@
       "impactPct": 19,
       "estimated": true,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -568,8 +717,12 @@
       "impactPct": 17,
       "estimated": true,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -581,8 +734,12 @@
       "impactPct": 23,
       "estimated": true,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -594,8 +751,12 @@
       "impactPct": 4.7,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -607,8 +768,12 @@
       "impactPct": 2.4,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -620,8 +785,12 @@
       "impactPct": 0.8,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -633,8 +802,12 @@
       "impactPct": 1.6,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -646,8 +819,12 @@
       "impactPct": 3.1,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -659,8 +836,12 @@
       "impactPct": 0.8,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -672,8 +853,12 @@
       "impactPct": 2.3,
       "estimated": true,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -685,8 +870,12 @@
       "impactPct": 53,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -698,8 +887,12 @@
       "impactPct": 53,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -711,8 +904,12 @@
       "impactPct": 0.8,
       "estimated": false,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "complete",
+        "minutes": 0,
         "hours": 0,
         "estimated": true
       }
@@ -724,8 +921,12 @@
       "impactPct": 100,
       "estimated": false,
       "capped": true,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -737,8 +938,12 @@
       "impactPct": 100,
       "estimated": false,
       "capped": true,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -750,8 +955,12 @@
       "impactPct": 1.6,
       "estimated": true,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -763,8 +972,12 @@
       "impactPct": 1.6,
       "estimated": true,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -776,8 +989,12 @@
       "impactPct": 100,
       "estimated": true,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }
@@ -789,8 +1006,12 @@
       "impactPct": 100,
       "estimated": true,
       "capped": false,
+      "minutes": null,
+      "startedAtTr": null,
+      "endedAtTr": null,
       "recovery": {
         "state": "recovered",
+        "minutes": null,
         "hours": null,
         "estimated": false
       }

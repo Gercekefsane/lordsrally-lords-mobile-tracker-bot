@@ -308,6 +308,17 @@ for (const [ad, fixture] of [["English schema", banwaveEn], ["legacy schema", ba
     sizan.length === 0);
   ok("documented schema describes the recovery object",
     belgeler.every((p) => /"recovery"\s*:\s*\{\s*"state"/.test(readFileSync(p, "utf8"))));
+  /* 🔴 The same failure one level down: a schema example that omits the fields the
+   *    tables now print would re-teach the wrong contract. Time and duration are
+   *    exactly what the user reported missing, so both documents must name them. */
+  ok("documented schema carries minute duration and local time",
+    belgeler.every((p) => /"minutes"/.test(readFileSync(p, "utf8"))
+      && /startedAtTr/.test(readFileSync(p, "utf8"))));
+  /* Stale column headings in prose would contradict the generated tables. */
+  const bayatBaslik = ["README.md", "data/README.md", "docs/ban-wave-tracker.md"]
+    .map((p) => join(repo, p)).filter(existsSync)
+    .filter((p) => /Date \(UTC\)/.test(readFileSync(p, "utf8")));
+  ok("no document still promises a date-only (UTC) column", bayatBaslik.length === 0);
 }
 
 /* ── 4: idempotent re-run ────────────────────────────────────────────────── */
