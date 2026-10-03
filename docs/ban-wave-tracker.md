@@ -113,7 +113,7 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 | **Impact** | Share of the affected server's account pool that the wave hit, as a percentage. |
 | **Severity** | Derived from impact: light (< 5%), moderate (5–20%), heavy (≥ 20%). |
 | **Duration** | How long the wave lasted (first to last ban notification). |
-| **Recovery** | How long it took the account pool to return to working strength. Shown as a duration only when the evidence supports it; otherwise marked as recovered without a duration. |
+| **Recovery** | The state of the account pool after the wave (`recovered`, or `complete` when the recovery was measured within the tracking window), with the recovery duration in parentheses when the evidence supports one. `ongoing` means the pool had not returned to working strength by the last check. |
 | **Estimated** | The value could not be measured directly and is derived from the server's usual pool — marked as an estimate. |
 
 ### Honest by design
@@ -140,7 +140,7 @@ Automation consumers should use [`data/banwave.json`](../data/banwave.json) inst
   "page": "/ban-waves",
   "summary": { "state": "quiet", "lastStartedAt": "...", "daysAgo": 0, "last30d": 0 },
   "medianRecovery": { "hours": 0, "count": 0, "estimatedCount": 0 },
-  "waves": [ { "startedAt": "...", "endedAt": "...", "serverCount": 0, "impactPct": 0, "severity": "moderate", "estimated": false, "capped": false, "hours": 0, "daysAgo": 0, "hasRecovery": true } ],
+  "waves": [ { "startedAt": "...", "endedAt": "...", "serverCount": 0, "impactPct": 0, "severity": "moderate", "estimated": false, "capped": false, "hours": 0, "daysAgo": 0, "recovery": { "state": "complete", "hours": 0, "estimated": false } } ],
   "monthly": [ { "month": "2026-09", "count": 0, "highestImpactPct": 0 } ],
   "years": [ { "year": 2026, "count": 0 } ],
   "servers": [ { "server": "Multi Node Server 1", "startedAt": "...", "endedAt": "...", "impactPct": 0, "estimated": false, "capped": false, "hasRecovery": true } ],

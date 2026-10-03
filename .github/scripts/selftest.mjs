@@ -58,7 +58,28 @@ const banwaveEn = {
   status: "ok", updatedAt: "2026-10-03T12:21:59.255Z", page: "/ban-waves",
   summary: { state: "sakin", lastStartedAt: "2026-09-30T08:38:07Z", daysAgo: 3, last30d: 10 },
   medianRecovery: { hours: 0, count: 19, estimatedCount: 15 },
-  waves: [{ startedAt: "2026-09-30T08:38:07Z", endedAt: "2026-09-30T09:25:14Z", serverCount: 4, impactPct: 41, severity: "agir", estimated: false, capped: false, hours: 1, daysAgo: 3, hasRecovery: true }],
+  /* 🔴 SHAPE MUST MIRROR PRODUCTION (measured 2026-10-03): on the live endpoint
+   *    `waves[]` carries recovery as an OBJECT and has NO `hasRecovery` key,
+   *    while `servers[]` carries the BOOLEAN. A fixture that gave `waves` a
+   *    `hasRecovery` field — which the endpoint never sends — is exactly what
+   *    hid the empty Recovery column: the generator read a key that only
+   *    existed in the test. */
+  waves: [
+    { startedAt: "2026-09-30T08:38:07Z", endedAt: "2026-09-30T09:25:14Z", serverCount: 4, impactPct: 41, severity: "agir", estimated: false, capped: false, hours: 1, daysAgo: 3, recovery: { state: "complete", hours: 1, estimated: false } },
+    /* Lasted 3 h, but recovery was never measured — the two durations are
+     *  different quantities. A generator that reused the wave's own duration
+     *  for the Recovery cell writes a number the evidence does not support. */
+    { startedAt: "2026-09-21T08:45:47Z", endedAt: "2026-09-21T11:45:47Z", serverCount: 1, impactPct: 28, severity: "agir", estimated: false, capped: false, hours: 3, daysAgo: 12, recovery: { state: "recovered", hours: null, estimated: false } },
+    /* ⚠️ A MEASURED zero is live today (`complete, hours: 0` on the 2026-09-24
+     *  wave). It is the only case that forces the two clauses apart: "print a
+     *  duration" and "the duration is positive" are different rules, and a
+     *  fixture without this row cannot tell them apart. */
+    { startedAt: "2026-09-24T09:10:02Z", endedAt: "2026-09-24T09:10:02Z", serverCount: 1, impactPct: 3.9, severity: "hafif", estimated: false, capped: false, hours: 0, daysAgo: 9, recovery: { state: "complete", hours: 0, estimated: true } },
+    /* An unrecognised state must fall back to the CONSERVATIVE reading
+     *  (`ongoing`), never to `recovered` — the column may not claim a recovery
+     *  the source did not assert. */
+    { startedAt: "2026-08-12T10:00:00Z", endedAt: "2026-08-12T10:00:00Z", serverCount: 1, impactPct: 100, severity: "agir", estimated: true, capped: false, hours: 0, daysAgo: 52, recovery: { state: "not_a_known_state", hours: null, estimated: false } },
+  ],
   monthly: [{ month: "2026-09", count: 13, highestImpactPct: 53 }],
   years: [],
   servers: [{ server: "Multi Node Server 1", startedAt: "2026-09-30T08:40:10Z", endedAt: "2026-09-30T09:15:37Z", impactPct: 32, estimated: false, capped: false, hasRecovery: true }],
@@ -68,7 +89,10 @@ const banwaveLegacy = {
   durum: "ok", guncelleme: "2026-10-03T12:23:57.395Z", sayfa: "/ban-waves",
   kart: { durum: "sakin", sonBasla: "2026-09-30T08:38:07Z", gunOnce: 3, son30: 10 },
   medyanKurtarma: { saat: 0, adet: 19, tahminiAdet: 15 },
-  dalgalar: [{ basla: "2026-09-30T08:38:07Z", bitis: "2026-09-30T09:25:14Z", sunucuSayisi: 4, etkiYuzde: 41, siddet: "agir", tahmini: false, kirpildi: false, saat: 1, gunOnce: 3 }],
+  /* Legacy deployment: recovery arrived as a bare boolean (`kurtarmaVar`).
+   *  The generator must still fill the column from it — the shim is removed
+   *  only once every deployment speaks the English object schema. */
+  dalgalar: [{ basla: "2026-09-30T08:38:07Z", bitis: "2026-09-30T09:25:14Z", sunucuSayisi: 4, etkiYuzde: 41, siddet: "agir", tahmini: false, kirpildi: false, saat: 1, gunOnce: 3, kurtarmaVar: true }],
   aylik: [{ ay: "2026-09", adet: 13, enYuksekOran: 53 }],
   yillar: [],
   sonSatirlar: [{ sunucu: "Multi Node Server 1", basla: "2026-09-30T08:40:10Z", bitis: "2026-09-30T09:15:37Z", etkiYuzde: 32, tahmini: false, kirpildi: false, kurtarmaVar: true }],
@@ -104,6 +128,41 @@ for (const [ad, fixture] of [["English schema", banwaveEn], ["legacy schema", ba
   ok(`${ad}: doc waves table filled`, /2026-09-30/.test(doc) && /Multi Node Server 1/.test(doc));
   ok(`${ad}: JSON keys are English`, json.status === "ok" && Array.isArray(json.waves) && json.waves[0].impactPct === 41 && json.waves[0].startedAt);
   ok(`${ad}: no Turkish keys leaked`, !("durum" in json) && !("dalgalar" in json) && !JSON.stringify(json).includes("sunucu"));
+
+  /* 🔴 The regression the user reported: the Recovery column printed `—` on
+   *  EVERY wave row because the generator read a key the endpoint never sent.
+   *  Assert the cell, not the presence of the column heading. */
+  const satirBul = (metin, blokAd) =>
+    ((blokIci(metin, blokAd) ?? "").split("\n").filter((l) => l.startsWith("| 2026-")));
+  const docSatir = satirBul(doc, "BANWAVE:WAVES");
+  const mdSatir = satirBul(readme, "BANWAVE:README:WAVES");
+  ok(`${ad}: doc waves table states recovery on every row`,
+     docSatir.length > 0 && docSatir.every((l) => !/\|\s*—\s*\|\s*$/.test(l)));
+  ok(`${ad}: README waves table states recovery on every row`,
+     mdSatir.length > 0 && mdSatir.every((l) => !/\|\s*—\s*\|\s*$/.test(l)));
+  ok(`${ad}: recovery carried into JSON (object, not a lost boolean)`,
+     json.waves.every((w) => w && w.recovery && typeof w.recovery.state === "string"));
+  ok(`${ad}: servers rows state recovery`,
+     json.servers.every((s) => s && s.recovery && typeof s.recovery.state === "string")
+     && ((blokIci(doc, "BANWAVE:SERVERS") ?? "").split("\n").filter((l) => l.startsWith("| Multi")).every((l) => !/\|\s*—\s*\|\s*$/.test(l))));
+
+  /* Recovery hours are the RECOVERY duration, never the wave's own duration.
+   *  The English fixture's second wave lasted 0 h but has no measured recovery
+   *  — a generator that reused `f.hours` would print a number here. */
+  if (Array.isArray(fixture.waves) && fixture.waves.length > 1) {
+    const sonSatir = (metin, blokAd) =>
+      ((blokIci(metin, blokAd) ?? "").split("\n").filter((l) => l.includes("2026-09-21")).pop() ?? "");
+    ok(`${ad}: recovery hours are not the wave's own duration`,
+       json.waves[1].hours === 3 && json.waves[1].recovery.hours === null);
+    ok(`${ad}: no unmeasured duration printed for recovery`,
+       docSatir.length > 1 && /\| recovered \|$/.test(docSatir[1]) && !/\(3 h\)/.test(sonSatir(doc, "BANWAVE:WAVES")));
+    /* A measured zero is DURATION 0, so it must stay bare — printing "(0 h)"
+     *  next to "under 1 h" on the page would be a second, contradicting unit. */
+    ok(`${ad}: a measured zero duration prints bare, not "(0 h)"`,
+       !/\(0 h\)/.test(doc) && !/\(0 h\)/.test(readme));
+    ok(`${ad}: an unknown recovery state is not reported as recovered`,
+       json.waves[json.waves.length - 1].recovery.state === "ongoing");
+  }
 }
 
 /* ── 3: hostile payload — one data package + control characters ───────────── */

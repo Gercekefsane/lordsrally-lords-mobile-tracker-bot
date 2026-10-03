@@ -32,6 +32,32 @@ const ham = JSON.parse(readFileSync(kaynak, "utf8"));
 /** Summary state → English ("sakin" / "suruyor" are legacy Turkish values). */
 const DURUM = { sakin: "quiet", suruyor: "in_progress", quiet: "quiet", in_progress: "in_progress" };
 
+/** Recovery state → English. The endpoint already speaks English
+ *  (`complete` / `recovered` / `ongoing`); the Turkish words are the legacy
+ *  vocabulary, kept so a deployment still on the older contract keeps filling
+ *  the column. Unknown values fall back to `ongoing` — the conservative
+ *  reading: never claim a recovery the evidence does not support. */
+const KURTARMA = { complete: "complete", recovered: "recovered", ongoing: "ongoing", tamam: "complete", kurtarildi: "recovered", suruyor: "ongoing" };
+
+/** Recovery object → whitelisted `{state, hours, estimated}`, or `null`.
+ *
+ *  🔴 WHY THIS EXISTS (measured 2026-10-03): the `waves` array carries recovery
+ *     as an OBJECT (`{state, hours, estimated}`), while the `servers` array
+ *     carries a BOOLEAN (`hasRecovery`). The generator only ever read the
+ *     boolean, so on `waves` it was always `undefined` and the README/doc
+ *     `Recovery` column printed `—` for every row. `hasRecovery` is kept as a
+ *     fallback for `servers` and for any older deployment that only sends it.
+ *  ⚠️ `hours` here is the RECOVERY duration — not the wave's own duration. */
+function publicKurtarma(k) {
+  if (k === null || k === undefined) return null;
+  if (typeof k === "boolean") return { state: k ? "recovered" : "ongoing", hours: null, estimated: false };
+  if (typeof k !== "object") return null;
+  const state = KURTARMA[String(k.state ?? k.durum ?? "")] ?? "ongoing";
+  const ham = k.hours ?? k.saat;
+  const hours = typeof ham === "number" && Number.isFinite(ham) ? ham : null;
+  return { state, hours, estimated: !!(k.estimated ?? k.tahmini) };
+}
+
 /* ── compatibility shim: Turkish / hybrid schema → English shape ───────────
  * The endpoint's public contract is English, but a deployment in transition can
  * mix naming (for example English `waves` alongside Turkish `kart`). Every
@@ -57,14 +83,15 @@ function normalize(d) {
       startedAt: f.startedAt ?? f.basla, endedAt: f.endedAt ?? f.bitis, serverCount: f.serverCount ?? f.sunucuSayisi,
       impactPct: f.impactPct ?? f.etkiYuzde, severity: sev[f.severity ?? f.siddet] ?? f.severity ?? f.siddet ?? null,
       estimated: !!(f.estimated ?? f.tahmini), capped: !!(f.capped ?? f.kirpildi),
-      hours: f.hours ?? f.saat, daysAgo: f.daysAgo ?? f.gunOnce, hasRecovery: f.hasRecovery ?? null,
+      hours: f.hours ?? f.saat, daysAgo: f.daysAgo ?? f.gunOnce,
+      recovery: publicKurtarma(f.recovery ?? f.kurtarma ?? f.hasRecovery ?? f.kurtarmaVar),
     })),
     monthly: (d.monthly ?? d.aylik ?? []).map((a) => ({ month: a.month ?? a.ay, count: a.count ?? a.adet, highestImpactPct: a.highestImpactPct ?? a.enYuksekOran })),
     years: (d.years ?? d.yillar ?? []).map((y) => ({ year: y.year ?? y.yil, count: y.count ?? y.adet })),
     servers: (d.servers ?? d.sonSatirlar ?? []).map((s) => ({
       server: s.server ?? s.sunucu, startedAt: s.startedAt ?? s.basla, endedAt: s.endedAt ?? s.bitis,
       impactPct: s.impactPct ?? s.etkiYuzde, estimated: !!(s.estimated ?? s.tahmini), capped: !!(s.capped ?? s.kirpildi),
-      hasRecovery: s.hasRecovery ?? s.kurtarmaVar ?? null,
+      recovery: publicKurtarma(s.hasRecovery ?? s.kurtarmaVar ?? s.recovery ?? s.kurtarma),
     })),
     thresholds: th
       ? { severityModerate: th.severityModerate ?? th.siddetOrta, severityHeavy: th.severityHeavy ?? th.siddetAgir, recoveryWindowDays: th.recoveryWindowDays ?? th.kurtarmaIzlemeGun }
@@ -87,13 +114,19 @@ const cikti = {
   waves: Array.isArray(d.waves) ? d.waves.slice(0, 120).map((f) => ({
     startedAt: f?.startedAt ?? null, endedAt: f?.endedAt ?? null, serverCount: f?.serverCount ?? null,
     impactPct: f?.impactPct ?? null, severity: f?.severity ?? null, estimated: !!f?.estimated,
-    capped: !!f?.capped, hours: f?.hours ?? null, daysAgo: f?.daysAgo ?? null, hasRecovery: f?.hasRecovery ?? null,
+    capped: !!f?.capped, hours: f?.hours ?? null, daysAgo: f?.daysAgo ?? null,
+    recovery: f?.recovery && typeof f.recovery === "object"
+      ? { state: f.recovery.state ?? null, hours: f.recovery.hours ?? null, estimated: !!f.recovery.estimated }
+      : null,
   })) : [],
   monthly: Array.isArray(d.monthly) ? d.monthly.slice(0, 24).map((a) => ({ month: a?.month ?? null, count: a?.count ?? null, highestImpactPct: a?.highestImpactPct ?? null })) : [],
   years: Array.isArray(d.years) ? d.years.slice(0, 10).map((y) => ({ year: y?.year ?? null, count: y?.count ?? null })) : [],
   servers: Array.isArray(d.servers) ? d.servers.slice(0, 200).map((s) => ({
     server: typeof s?.server === "string" ? s.server : null, startedAt: s?.startedAt ?? null, endedAt: s?.endedAt ?? null,
-    impactPct: s?.impactPct ?? null, estimated: !!s?.estimated, capped: !!s?.capped, hasRecovery: s?.hasRecovery ?? null,
+    impactPct: s?.impactPct ?? null, estimated: !!s?.estimated, capped: !!s?.capped,
+    recovery: s?.recovery && typeof s.recovery === "object"
+      ? { state: s.recovery.state ?? null, hours: s.recovery.hours ?? null, estimated: !!s.recovery.estimated }
+      : null,
   })) : [],
   thresholds: d.thresholds && typeof d.thresholds === "object"
     ? { severityModerate: d.thresholds.severityModerate ?? null, severityHeavy: d.thresholds.severityHeavy ?? null, recoveryWindowDays: d.thresholds.recoveryWindowDays ?? null }
@@ -117,7 +150,7 @@ const medyan = mr && typeof mr.hours === "number"
 
 const wavesSatir = cikti.waves.length
   ? cikti.waves.map((f) =>
-      `| ${gun(f.startedAt)} | ${f.serverCount ?? "—"} | ${yuzdeMetni(f.impactPct)}${f.estimated ? " (est.)" : ""} | ${SIDDET[f.severity] ?? f.severity ?? "—"} | ${saat(f.hours)} | ${f.hasRecovery === true ? "recovered" : f.hasRecovery === false ? "ongoing" : "—"} |`).join("\n")
+      `| ${gun(f.startedAt)} | ${f.serverCount ?? "—"} | ${yuzdeMetni(f.impactPct)}${f.estimated ? " (est.)" : ""} | ${SIDDET[f.severity] ?? f.severity ?? "—"} | ${saat(f.hours)} | ${kurtarmaMetni(f.recovery)} |`).join("\n")
   : "| _no waves recorded_ | | | | | |";
 
 const aySatir = cikti.monthly.length
@@ -145,12 +178,24 @@ if (readme) {
 console.log(`written: ${json} (${cikti.waves.length} waves) + ${md}${readme ? " + " + readme : ""}`);
 
 /* ── helpers ─────────────────────────────────────────────────────────────── */
+/** Recovery cell. A MEASURED duration is spelled out — the user's report was
+ *  that the column looked empty ("recovered kısımları boş gibi"), and a bare
+ *  state word next to a `—` Duration column reads as missing data. When the
+ *  evidence gives no duration (`recovered` past the tracking window) the state
+ *  word stands alone — that is the honest form, not a blank.
+ *  ⚠️ Never a made-up number: an absent/zero duration prints bare. */
+function kurtarmaMetni(r) {
+  if (!r || typeof r.state !== "string") return "—";
+  const h = typeof r.hours === "number" && Number.isFinite(r.hours) && r.hours > 0 ? ` (${r.hours} h)` : "";
+  return `${r.state}${h}`;
+}
+
 function yuzdeMetni(v) {
   return typeof v === "number" && Number.isFinite(v) ? `${v.toLocaleString("en-US", { maximumFractionDigits: 1 })}%` : "—";
 }
 function serverSatir(sunucular) {
   return sunucular.length
-    ? sunucular.map((x) => `| ${x.server ?? "—"} | ${gun(x.startedAt)} | ${yuzdeMetni(x.impactPct)}${x.estimated ? " (est.)" : ""} | ${x.hasRecovery === true ? "recovered" : x.hasRecovery === false ? "ongoing" : "—"} |`).join("\n")
+    ? sunucular.map((x) => `| ${x.server ?? "—"} | ${gun(x.startedAt)} | ${yuzdeMetni(x.impactPct)}${x.estimated ? " (est.)" : ""} | ${kurtarmaMetni(x.recovery)} |`).join("\n")
     : "| _no server data_ | | | |";
 }
 function enSonOzet(c) {
