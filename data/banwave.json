@@ -1,201 +1,584 @@
 {
-  "durum": "ok",
-  "guncelleme": "2026-10-03T11:49:32.211Z",
-  "sayfa": "/ban-waves",
-  "kart": {
-    "durum": "sakin",
-    "sonBasla": "2026-09-30T08:38:07Z",
-    "gunOnce": 3,
-    "son30": 10
+  "status": "ok",
+  "updatedAt": "2026-10-03",
+  "page": "/ban-waves",
+  "summary": {
+    "state": "quiet",
+    "lastStartedAt": "2026-09-30T08:38:07Z",
+    "daysAgo": 3,
+    "last30d": 10
   },
-  "medyanKurtarma": {
-    "saat": 0,
-    "adet": 19,
-    "tahminiAdet": 15
+  "medianRecovery": {
+    "hours": 0,
+    "count": 19,
+    "estimatedCount": 15
   },
-  "dalgalar": [
+  "waves": [
     {
-      "basla": "2026-09-30T08:38:07Z",
-      "bitis": "2026-09-30T09:25:14Z",
-      "sunucuSayisi": 4,
-      "etkiYuzde": 41,
-      "siddet": "agir",
-      "tahmini": false,
-      "saat": 1,
-      "gunOnce": 3
+      "startedAt": "2026-09-30T08:38:07Z",
+      "endedAt": "2026-09-30T09:25:14Z",
+      "serverCount": 4,
+      "impactPct": 41,
+      "severity": "heavy",
+      "estimated": false,
+      "capped": false,
+      "hours": 1,
+      "daysAgo": 3,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-24T09:10:02Z",
-      "bitis": "2026-09-24T09:10:02Z",
-      "sunucuSayisi": 1,
-      "etkiYuzde": 3.9,
-      "siddet": "hafif",
-      "tahmini": false,
-      "saat": 0,
-      "gunOnce": 9
+      "startedAt": "2026-09-24T09:10:02Z",
+      "endedAt": "2026-09-24T09:10:02Z",
+      "serverCount": 1,
+      "impactPct": 3.9,
+      "severity": "light",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 9,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-21T19:00:39Z",
-      "bitis": "2026-09-21T19:00:39Z",
-      "sunucuSayisi": 1,
-      "etkiYuzde": 2.3,
-      "siddet": "hafif",
-      "tahmini": true,
-      "saat": 0,
-      "gunOnce": 11
+      "startedAt": "2026-09-21T19:00:39Z",
+      "endedAt": "2026-09-21T19:00:39Z",
+      "serverCount": 1,
+      "impactPct": 2.3,
+      "severity": "light",
+      "estimated": true,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 11,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-21T17:55:20Z",
-      "bitis": "2026-09-21T17:55:20Z",
-      "sunucuSayisi": 1,
-      "etkiYuzde": 0.8,
-      "siddet": "hafif",
-      "tahmini": true,
-      "saat": 0,
-      "gunOnce": 11
+      "startedAt": "2026-09-21T17:55:20Z",
+      "endedAt": "2026-09-21T17:55:20Z",
+      "serverCount": 1,
+      "impactPct": 0.8,
+      "severity": "light",
+      "estimated": true,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 11,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-21T08:45:47Z",
-      "bitis": "2026-09-21T08:57:05Z",
-      "sunucuSayisi": 4,
-      "etkiYuzde": 28,
-      "siddet": "agir",
-      "tahmini": false,
-      "saat": 0,
-      "gunOnce": 12
+      "startedAt": "2026-09-21T08:45:47Z",
+      "endedAt": "2026-09-21T08:57:05Z",
+      "serverCount": 4,
+      "impactPct": 28,
+      "severity": "heavy",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 12,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-21T08:02:21Z",
-      "bitis": "2026-09-21T08:09:06Z",
-      "sunucuSayisi": 3,
-      "etkiYuzde": 27,
-      "siddet": "agir",
-      "tahmini": false,
-      "saat": 0,
-      "gunOnce": 12
+      "startedAt": "2026-09-21T08:02:21Z",
+      "endedAt": "2026-09-21T08:09:06Z",
+      "serverCount": 3,
+      "impactPct": 27,
+      "severity": "heavy",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 12,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-16T09:33:36Z",
-      "bitis": "2026-09-16T10:03:13Z",
-      "sunucuSayisi": 4,
-      "etkiYuzde": 51,
-      "siddet": "agir",
-      "tahmini": false,
-      "saat": 0,
-      "gunOnce": 17
+      "startedAt": "2026-09-16T09:33:36Z",
+      "endedAt": "2026-09-16T10:03:13Z",
+      "serverCount": 4,
+      "impactPct": 51,
+      "severity": "heavy",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 17,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-10T09:38:52Z",
-      "bitis": "2026-09-10T09:40:42Z",
-      "sunucuSayisi": 4,
-      "etkiYuzde": 23,
-      "siddet": "agir",
-      "tahmini": true,
-      "saat": 0,
-      "gunOnce": 23
+      "startedAt": "2026-09-10T09:38:52Z",
+      "endedAt": "2026-09-10T09:40:42Z",
+      "serverCount": 4,
+      "impactPct": 23,
+      "severity": "heavy",
+      "estimated": true,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 23,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-09T07:38:00Z",
-      "bitis": "2026-09-09T07:38:09Z",
-      "sunucuSayisi": 2,
-      "etkiYuzde": 4.7,
-      "siddet": "hafif",
-      "tahmini": false,
-      "saat": 0,
-      "gunOnce": 24
+      "startedAt": "2026-09-09T07:38:00Z",
+      "endedAt": "2026-09-09T07:38:09Z",
+      "serverCount": 2,
+      "impactPct": 4.7,
+      "severity": "light",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 24,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-08T01:43:22Z",
-      "bitis": "2026-09-08T01:46:15Z",
-      "sunucuSayisi": 2,
-      "etkiYuzde": 1.6,
-      "siddet": "hafif",
-      "tahmini": false,
-      "saat": 0,
-      "gunOnce": 25
+      "startedAt": "2026-09-08T01:43:22Z",
+      "endedAt": "2026-09-08T01:46:15Z",
+      "serverCount": 2,
+      "impactPct": 1.6,
+      "severity": "light",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 25,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-03T08:17:03Z",
-      "bitis": "2026-09-03T08:17:11Z",
-      "sunucuSayisi": 2,
-      "etkiYuzde": 3.1,
-      "siddet": "hafif",
-      "tahmini": false,
-      "saat": 0,
-      "gunOnce": 30
+      "startedAt": "2026-09-03T08:17:03Z",
+      "endedAt": "2026-09-03T08:17:11Z",
+      "serverCount": 2,
+      "impactPct": 3.1,
+      "severity": "light",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 30,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-01T10:14:15Z",
-      "bitis": "2026-09-01T10:14:15Z",
-      "sunucuSayisi": 1,
-      "etkiYuzde": 2.3,
-      "siddet": "hafif",
-      "tahmini": true,
-      "saat": 0,
-      "gunOnce": 32
+      "startedAt": "2026-09-01T10:14:15Z",
+      "endedAt": "2026-09-01T10:14:15Z",
+      "serverCount": 1,
+      "impactPct": 2.3,
+      "severity": "light",
+      "estimated": true,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 32,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-09-01T05:44:53Z",
-      "bitis": "2026-09-01T05:57:34Z",
-      "sunucuSayisi": 2,
-      "etkiYuzde": 53,
-      "siddet": "agir",
-      "tahmini": false,
-      "saat": 0,
-      "gunOnce": 32
+      "startedAt": "2026-09-01T05:44:53Z",
+      "endedAt": "2026-09-01T05:57:34Z",
+      "serverCount": 2,
+      "impactPct": 53,
+      "severity": "heavy",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 32,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-08-17T05:38:03Z",
-      "bitis": "2026-08-17T05:38:03Z",
-      "sunucuSayisi": 1,
-      "etkiYuzde": 0.8,
-      "siddet": "hafif",
-      "tahmini": false,
-      "saat": 0,
-      "gunOnce": 47
+      "startedAt": "2026-08-17T05:38:03Z",
+      "endedAt": "2026-08-17T05:38:03Z",
+      "serverCount": 1,
+      "impactPct": 0.8,
+      "severity": "light",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 47,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-08-13T02:59:43Z",
-      "bitis": "2026-08-13T03:05:25Z",
-      "sunucuSayisi": 2,
-      "etkiYuzde": 100,
-      "siddet": "agir",
-      "tahmini": false,
-      "saat": 0,
-      "gunOnce": 51
+      "startedAt": "2026-08-13T02:59:43Z",
+      "endedAt": "2026-08-13T03:05:25Z",
+      "serverCount": 2,
+      "impactPct": 100,
+      "severity": "heavy",
+      "estimated": false,
+      "capped": true,
+      "hours": 0,
+      "daysAgo": 51,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-08-12T17:15:07Z",
-      "bitis": "2026-08-12T17:15:38Z",
-      "sunucuSayisi": 2,
-      "etkiYuzde": 1.6,
-      "siddet": "hafif",
-      "tahmini": true,
-      "saat": 0,
-      "gunOnce": 51
+      "startedAt": "2026-08-12T17:15:07Z",
+      "endedAt": "2026-08-12T17:15:38Z",
+      "serverCount": 2,
+      "impactPct": 1.6,
+      "severity": "light",
+      "estimated": true,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 51,
+      "hasRecovery": null
     },
     {
-      "basla": "2026-08-12T08:43:41Z",
-      "bitis": "2026-08-12T08:51:43Z",
-      "sunucuSayisi": 2,
-      "etkiYuzde": 100,
-      "siddet": "agir",
-      "tahmini": true,
-      "saat": 0,
-      "gunOnce": 52
+      "startedAt": "2026-08-12T08:43:41Z",
+      "endedAt": "2026-08-12T08:51:43Z",
+      "serverCount": 2,
+      "impactPct": 100,
+      "severity": "heavy",
+      "estimated": true,
+      "capped": false,
+      "hours": 0,
+      "daysAgo": 52,
+      "hasRecovery": null
     }
   ],
-  "aylik": [
+  "monthly": [
     {
-      "ay": "2026-09",
-      "adet": 13,
-      "enYuksekOran": 53
+      "month": "2026-09",
+      "count": 13,
+      "highestImpactPct": 53
     },
     {
-      "ay": "2026-08",
-      "adet": 4,
-      "enYuksekOran": 100
+      "month": "2026-08",
+      "count": 4,
+      "highestImpactPct": 100
     }
   ],
-  "yillar": []
+  "years": [],
+  "servers": [
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-09-30T08:40:10Z",
+      "endedAt": "2026-09-30T09:15:37Z",
+      "impactPct": 32,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-09-30T08:39:45Z",
+      "endedAt": "2026-09-30T09:25:14Z",
+      "impactPct": 41,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 2",
+      "startedAt": "2026-09-30T08:38:39Z",
+      "endedAt": "2026-09-30T09:14:59Z",
+      "impactPct": 26,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 3",
+      "startedAt": "2026-09-30T08:38:07Z",
+      "endedAt": "2026-09-30T08:53:34Z",
+      "impactPct": 25,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-09-24T09:10:02Z",
+      "endedAt": "2026-09-24T09:10:02Z",
+      "impactPct": 3.9,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 3",
+      "startedAt": "2026-09-21T19:00:39Z",
+      "endedAt": "2026-09-21T19:00:39Z",
+      "impactPct": 2.3,
+      "estimated": true,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-09-21T17:55:20Z",
+      "endedAt": "2026-09-21T17:55:20Z",
+      "impactPct": 0.8,
+      "estimated": true,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 2",
+      "startedAt": "2026-09-21T08:46:03Z",
+      "endedAt": "2026-09-21T08:57:05Z",
+      "impactPct": 7,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-09-21T08:45:59Z",
+      "endedAt": "2026-09-21T08:45:59Z",
+      "impactPct": 28,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-09-21T08:45:50Z",
+      "endedAt": "2026-09-21T08:46:20Z",
+      "impactPct": 8.6,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 3",
+      "startedAt": "2026-09-21T08:45:47Z",
+      "endedAt": "2026-09-21T08:46:17Z",
+      "impactPct": 9.3,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 3",
+      "startedAt": "2026-09-21T08:08:56Z",
+      "endedAt": "2026-09-21T08:08:56Z",
+      "impactPct": 16,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-09-21T08:08:43Z",
+      "endedAt": "2026-09-21T08:08:43Z",
+      "impactPct": 0.8,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 2",
+      "startedAt": "2026-09-21T08:02:21Z",
+      "endedAt": "2026-09-21T08:09:06Z",
+      "impactPct": 27,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 3",
+      "startedAt": "2026-09-16T09:34:05Z",
+      "endedAt": "2026-09-16T09:52:10Z",
+      "impactPct": 51,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 2",
+      "startedAt": "2026-09-16T09:34:05Z",
+      "endedAt": "2026-09-16T09:54:11Z",
+      "impactPct": 42,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-09-16T09:34:04Z",
+      "endedAt": "2026-09-16T10:03:13Z",
+      "impactPct": 50,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-09-16T09:33:36Z",
+      "endedAt": "2026-09-16T09:52:12Z",
+      "impactPct": 50,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-09-10T09:40:42Z",
+      "endedAt": "2026-09-10T09:40:42Z",
+      "impactPct": 20,
+      "estimated": true,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 3",
+      "startedAt": "2026-09-10T09:40:07Z",
+      "endedAt": "2026-09-10T09:40:07Z",
+      "impactPct": 19,
+      "estimated": true,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 2",
+      "startedAt": "2026-09-10T09:39:56Z",
+      "endedAt": "2026-09-10T09:40:27Z",
+      "impactPct": 17,
+      "estimated": true,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-09-10T09:38:52Z",
+      "endedAt": "2026-09-10T09:40:23Z",
+      "impactPct": 23,
+      "estimated": true,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-09-09T07:38:09Z",
+      "endedAt": "2026-09-09T07:38:09Z",
+      "impactPct": 4.7,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-09-09T07:38:00Z",
+      "endedAt": "2026-09-09T07:38:00Z",
+      "impactPct": 2.4,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-09-08T01:46:15Z",
+      "endedAt": "2026-09-08T01:46:15Z",
+      "impactPct": 0.8,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 2",
+      "startedAt": "2026-09-08T01:43:22Z",
+      "endedAt": "2026-09-08T01:45:53Z",
+      "impactPct": 1.6,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 2",
+      "startedAt": "2026-09-03T08:17:11Z",
+      "endedAt": "2026-09-03T08:17:11Z",
+      "impactPct": 3.1,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 3",
+      "startedAt": "2026-09-03T08:17:03Z",
+      "endedAt": "2026-09-03T08:17:03Z",
+      "impactPct": 0.8,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-09-01T10:14:15Z",
+      "endedAt": "2026-09-01T10:14:15Z",
+      "impactPct": 2.3,
+      "estimated": true,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-09-01T05:44:58Z",
+      "endedAt": "2026-09-01T05:57:34Z",
+      "impactPct": 53,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-09-01T05:44:53Z",
+      "endedAt": "2026-09-01T05:53:57Z",
+      "impactPct": 53,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 3",
+      "startedAt": "2026-08-17T05:38:03Z",
+      "endedAt": "2026-08-17T05:38:03Z",
+      "impactPct": 0.8,
+      "estimated": false,
+      "capped": false,
+      "hasRecovery": true
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-08-13T02:59:53Z",
+      "endedAt": "2026-08-13T03:05:25Z",
+      "impactPct": 100,
+      "estimated": false,
+      "capped": true,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-08-13T02:59:43Z",
+      "endedAt": "2026-08-13T03:05:15Z",
+      "impactPct": 100,
+      "estimated": false,
+      "capped": true,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-08-12T17:15:38Z",
+      "endedAt": "2026-08-12T17:15:38Z",
+      "impactPct": 1.6,
+      "estimated": true,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-08-12T17:15:07Z",
+      "endedAt": "2026-08-12T17:15:07Z",
+      "impactPct": 1.6,
+      "estimated": true,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-08-12T08:43:45Z",
+      "endedAt": "2026-08-12T08:51:17Z",
+      "impactPct": 100,
+      "estimated": true,
+      "capped": false,
+      "hasRecovery": false
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-08-12T08:43:41Z",
+      "endedAt": "2026-08-12T08:51:43Z",
+      "impactPct": 100,
+      "estimated": true,
+      "capped": false,
+      "hasRecovery": false
+    }
+  ],
+  "thresholds": {
+    "severityModerate": 5,
+    "severityHeavy": 20,
+    "recoveryWindowDays": 14
+  }
 }

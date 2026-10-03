@@ -1,22 +1,34 @@
-name: Ban wave tracker sync
+name: Public data sync (ban waves + prices)
 
-# 🔴 BAN DALGASI OTOMATİK GÜNCELLEME
-# LordsRally'nin HERKESE AÇIK veri ucunu çeker, docs/ban-wave-tracker.md ve
-# data/banwave.json dosyalarını günceller ve DEĞİŞİKLİK VARSA commit'ler.
+# 🔴 AUTOMATIC PUBLIC-DATA SYNC
+# Pulls LordsRally's public data endpoints and regenerates the mirrored
+# documents in this repository, committing only when something changed:
 #
-# Token SUNUCUDA DEĞİL: bu iş akışı repository'nin kendi GITHUB_TOKEN'ını kullanır
-# (yalnız bu repoya yazma). Uygulama tarafında hiçbir yazma jetonu tutulmaz.
+#   ban wave tracker  → data/banwave.json · docs/ban-wave-tracker.md · README.md
+#   bot/credit prices → docs/pricing.md · README.md
+#   RSS prices        → docs/rss-pricing.md
+#   reseller margins  → docs/reseller.md · README.md
+#
+# ⚠️ Failure behaviour (never silent):
+#   · ban wave endpoint unreachable / reporting unreadable → job FAILS, files kept.
+#   · price endpoint not deployed yet (HTTP 404) → ::warning + skip, file kept.
+#   · deployed price endpoint that breaks (5xx / status:unavailable) → job FAILS.
+#   In every failure case the previous document is PRESERVED (never blanked).
+#
+# The write token stays on GitHub: this job uses the repository's own
+# GITHUB_TOKEN (write access to this repository only). No application server
+# holds a write credential for this repository.
 
 on:
   schedule:
-    - cron: "17 * * * *"      # saat başı (dakika 0/30'a denk gelmesin: kuyruk yoğunluğu)
-  workflow_dispatch:            # elle tetikleme
+    - cron: "17 * * * *"      # hourly, minute 17 (off the :00/:30 queue peaks)
+  workflow_dispatch:            # manual trigger
 
 permissions:
   contents: write
 
 concurrency:
-  group: banwave-sync
+  group: public-data-sync
   cancel-in-progress: false
 
 jobs:
@@ -29,38 +41,81 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Parametreler
-        id: cfg
-        env:
-          ENDPOINT: ${{ vars.BANWAVE_ENDPOINT }}
+      - name: Resolve endpoints
         run: |
-          if [ -z "$ENDPOINT" ]; then
-            echo "::error::Repo değişkeni BANWAVE_ENDPOINT tanımlı değil (Settings > Variables)."
+          BANWAVE="${{ vars.BANWAVE_ENDPOINT }}"
+          if [ -z "$BANWAVE" ]; then
+            echo "::error::Repository variable BANWAVE_ENDPOINT is not set (Settings > Variables)."
             exit 1
           fi
-          echo "endpoint=$ENDPOINT" >> "$GITHUB_OUTPUT"
+          BASE="${BANWAVE%/ban-waves/*}"
+          {
+            echo "BANWAVE=$BANWAVE"
+            echo "PRICES_DATA=${{ vars.PRICES_DATA_ENDPOINT }}"
+            echo "PRICES_RSS=${{ vars.PRICES_RSS_ENDPOINT }}"
+            echo "PRICES_RESELLER=${{ vars.PRICES_RESELLER_ENDPOINT }}"
+            echo "BASE=$BASE"
+          } >> "$GITHUB_ENV"
 
-      - name: Veriyi çek
-        run: node .github/scripts/banwave-cek.mjs "${{ steps.cfg.outputs.endpoint }}" > /tmp/banwave.json
+      - name: Fetch ban wave data
+        run: node .github/scripts/fetch.mjs "$BANWAVE" --out "$RUNNER_TEMP/banwave.json"
 
-      - name: Dosyaları üret
-        run: node .github/scripts/banwave-yaz.mjs /tmp/banwave.json docs/ban-wave-tracker.md data/banwave.json
+      - name: Generate ban wave documents
+        run: node .github/scripts/banwave-yaz.mjs "$RUNNER_TEMP/banwave.json" docs/ban-wave-tracker.md data/banwave.json README.md
 
-      - name: Değişiklik var mı
+      - name: Fetch bot & credit prices
+        run: |
+          URL="${PRICES_DATA:-$BASE/prices/data}"
+          code=0
+          node .github/scripts/fetch.mjs "$URL" --out "$RUNNER_TEMP/pricing.json" --allow-missing || code=$?
+          if [ "$code" = "3" ]; then echo "::warning::prices/data not deployed yet — docs/pricing.md preserved"; fi
+          if [ "$code" != "0" ] && [ "$code" != "3" ]; then echo "::error::prices/data fetch failed — docs/pricing.md preserved"; exit 1; fi
+
+      - name: Generate pricing document
+        run: node .github/scripts/pricing-yaz.mjs "$RUNNER_TEMP/pricing.json" docs/pricing.md README.md
+
+      - name: Fetch RSS prices
+        run: |
+          URL="${PRICES_RSS:-$BASE/prices/rss}"
+          code=0
+          node .github/scripts/fetch.mjs "$URL" --out "$RUNNER_TEMP/rss.json" --allow-missing || code=$?
+          if [ "$code" = "3" ]; then echo "::warning::prices/rss not deployed yet — docs/rss-pricing.md preserved"; fi
+          if [ "$code" != "0" ] && [ "$code" != "3" ]; then echo "::error::prices/rss fetch failed — docs/rss-pricing.md preserved"; exit 1; fi
+
+      - name: Generate RSS pricing document
+        run: node .github/scripts/rss-yaz.mjs "$RUNNER_TEMP/rss.json" docs/rss-pricing.md
+
+      - name: Fetch reseller margins
+        run: |
+          URL="${PRICES_RESELLER:-$BASE/prices/reseller}"
+          code=0
+          node .github/scripts/fetch.mjs "$URL" --out "$RUNNER_TEMP/reseller.json" --allow-missing || code=$?
+          if [ "$code" = "3" ]; then echo "::warning::prices/reseller not deployed yet — docs/reseller.md preserved"; fi
+          if [ "$code" != "0" ] && [ "$code" != "3" ]; then echo "::error::prices/reseller fetch failed — docs/reseller.md preserved"; exit 1; fi
+
+      - name: Generate reseller document
+        run: node .github/scripts/reseller-yaz.mjs "$RUNNER_TEMP/reseller.json" docs/reseller.md README.md
+
+      - name: Did anything change
         id: diff
         run: |
-          if git diff --quiet -- docs/ban-wave-tracker.md data/banwave.json; then
-            echo "degisti=false" >> "$GITHUB_OUTPUT"
-            echo "İçerik aynı — commit atılmadı."
+          if git diff --quiet -- README.md docs data; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No content change — nothing to commit."
           else
-            echo "degisti=true" >> "$GITHUB_OUTPUT"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git --no-pager diff --stat -- README.md docs data
           fi
 
-      - name: Commit ve push
-        if: steps.diff.outputs.degisti == 'true'
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          # Domain kept separate so no contact-style address appears literally
+          # in the repo (assembled only for git at runtime).
+          NOREPLY_DOMAIN: noreply.github.com
         run: |
           git config user.name  "lordsrally-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add docs/ban-wave-tracker.md data/banwave.json
-          git commit -m "ban wave tracker: veri güncellendi ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git config user.email "lordsrally-bot@users.${NOREPLY_DOMAIN}"
+          git add README.md docs data
+          git commit -m "public data: sync ban waves + prices ($(date -u +%Y-%m-%d))"
           git push
