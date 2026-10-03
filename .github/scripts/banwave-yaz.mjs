@@ -20,7 +20,7 @@
  * ⚠️ Commit idempotency: `updatedAt` is written date-only (see lib.mjs).
  */
 import { readFileSync, writeFileSync } from "node:fs";
-import { blok, damga, gun, saat, SIDDET } from "./lib.mjs";
+import { blok, damga, gun, gunSaatTr, saat, sure, SIDDET } from "./lib.mjs";
 
 const [, , kaynak, md, json, readme] = process.argv;
 if (!kaynak || !md || !json) {
@@ -50,12 +50,17 @@ const KURTARMA = { complete: "complete", recovered: "recovered", ongoing: "ongoi
  *  ⚠️ `hours` here is the RECOVERY duration — not the wave's own duration. */
 function publicKurtarma(k) {
   if (k === null || k === undefined) return null;
-  if (typeof k === "boolean") return { state: k ? "recovered" : "ongoing", hours: null, estimated: false };
+  if (typeof k === "boolean") return { state: k ? "recovered" : "ongoing", minutes: null, hours: null, estimated: false };
   if (typeof k !== "object") return null;
   const state = KURTARMA[String(k.state ?? k.durum ?? "")] ?? "ongoing";
-  const ham = k.hours ?? k.saat;
-  const hours = typeof ham === "number" && Number.isFinite(ham) ? ham : null;
-  return { state, hours, estimated: !!(k.estimated ?? k.tahmini) };
+  const hamSaat = k.hours ?? k.saat;
+  const hours = typeof hamSaat === "number" && Number.isFinite(hamSaat) ? hamSaat : null;
+  /* Minute resolution — the site shows "5 min"; hour-only rounding said "0" and
+     the cell printed blank. Fall back to hours for an older endpoint. */
+  const hamDk = k.minutes ?? k.dakika;
+  const minutes = typeof hamDk === "number" && Number.isFinite(hamDk) ? hamDk
+    : (hours === null ? null : hours * 60);
+  return { state, minutes, hours, estimated: !!(k.estimated ?? k.tahmini) };
 }
 
 /* ── compatibility shim: Turkish / hybrid schema → English shape ───────────
@@ -74,7 +79,7 @@ function normalize(d) {
     updatedAt: d.updatedAt ?? d.guncelleme ?? null,
     page: d.page ?? d.sayfa ?? null,
     summary: kart
-      ? { state: kart.state ?? kart.durum, lastStartedAt: kart.lastStartedAt ?? kart.sonBasla, daysAgo: kart.daysAgo ?? kart.gunOnce, last30d: kart.last30d ?? kart.son30 }
+      ? { state: kart.state ?? kart.durum, lastStartedAt: kart.lastStartedAt ?? kart.sonBasla, lastStartedAtTr: kart.lastStartedAtTr ?? null, daysAgo: kart.daysAgo ?? kart.gunOnce, last30d: kart.last30d ?? kart.son30 }
       : null,
     medianRecovery: med
       ? { hours: med.hours ?? med.saat, count: med.count ?? med.adet, estimatedCount: med.estimatedCount ?? med.tahminiAdet }
@@ -83,7 +88,8 @@ function normalize(d) {
       startedAt: f.startedAt ?? f.basla, endedAt: f.endedAt ?? f.bitis, serverCount: f.serverCount ?? f.sunucuSayisi,
       impactPct: f.impactPct ?? f.etkiYuzde, severity: sev[f.severity ?? f.siddet] ?? f.severity ?? f.siddet ?? null,
       estimated: !!(f.estimated ?? f.tahmini), capped: !!(f.capped ?? f.kirpildi),
-      hours: f.hours ?? f.saat, daysAgo: f.daysAgo ?? f.gunOnce,
+      hours: f.hours ?? f.saat, minutes: f.minutes ?? f.dakika, daysAgo: f.daysAgo ?? f.gunOnce,
+      startedAtTr: f.startedAtTr ?? f.baslaTr ?? null, endedAtTr: f.endedAtTr ?? f.bitisTr ?? null,
       recovery: publicKurtarma(f.recovery ?? f.kurtarma ?? f.hasRecovery ?? f.kurtarmaVar),
     })),
     monthly: (d.monthly ?? d.aylik ?? []).map((a) => ({ month: a.month ?? a.ay, count: a.count ?? a.adet, highestImpactPct: a.highestImpactPct ?? a.enYuksekOran })),
@@ -91,6 +97,7 @@ function normalize(d) {
     servers: (d.servers ?? d.sonSatirlar ?? []).map((s) => ({
       server: s.server ?? s.sunucu, startedAt: s.startedAt ?? s.basla, endedAt: s.endedAt ?? s.bitis,
       impactPct: s.impactPct ?? s.etkiYuzde, estimated: !!(s.estimated ?? s.tahmini), capped: !!(s.capped ?? s.kirpildi),
+      minutes: s.minutes ?? s.dakika, startedAtTr: s.startedAtTr ?? s.baslaTr ?? null, endedAtTr: s.endedAtTr ?? s.bitisTr ?? null,
       /* ⚠️ OBJECT FIRST. A deployment in transition can carry both shapes at
        *  once; the boolean is the weaker statement ("a recovery moment is on
        *  record") and reading it first would report `ongoing` for a row whose
@@ -110,7 +117,7 @@ const cikti = {
   updatedAt: gun(d.updatedAt),
   page: typeof d.page === "string" ? d.page : null,
   summary: d.summary && typeof d.summary === "object"
-    ? { state: DURUM[String(d.summary.state ?? "")] ?? String(d.summary.state ?? ""), lastStartedAt: d.summary.lastStartedAt ?? null, daysAgo: d.summary.daysAgo ?? null, last30d: d.summary.last30d ?? null }
+    ? { state: DURUM[String(d.summary.state ?? "")] ?? String(d.summary.state ?? ""), lastStartedAt: d.summary.lastStartedAt ?? null, lastStartedAtTr: d.summary.lastStartedAtTr ?? null, daysAgo: d.summary.daysAgo ?? null, last30d: d.summary.last30d ?? null }
     : null,
   medianRecovery: d.medianRecovery && typeof d.medianRecovery === "object"
     ? { hours: d.medianRecovery.hours ?? null, count: d.medianRecovery.count ?? null, estimatedCount: d.medianRecovery.estimatedCount ?? null }
@@ -118,9 +125,10 @@ const cikti = {
   waves: Array.isArray(d.waves) ? d.waves.slice(0, 120).map((f) => ({
     startedAt: f?.startedAt ?? null, endedAt: f?.endedAt ?? null, serverCount: f?.serverCount ?? null,
     impactPct: f?.impactPct ?? null, severity: f?.severity ?? null, estimated: !!f?.estimated,
-    capped: !!f?.capped, hours: f?.hours ?? null, daysAgo: f?.daysAgo ?? null,
+    capped: !!f?.capped, hours: f?.hours ?? null, minutes: f?.minutes ?? null, daysAgo: f?.daysAgo ?? null,
+    startedAtTr: f?.startedAtTr ?? null, endedAtTr: f?.endedAtTr ?? null,
     recovery: f?.recovery && typeof f.recovery === "object"
-      ? { state: f.recovery.state ?? null, hours: f.recovery.hours ?? null, estimated: !!f.recovery.estimated }
+      ? { state: f.recovery.state ?? null, minutes: f.recovery.minutes ?? null, hours: f.recovery.hours ?? null, estimated: !!f.recovery.estimated }
       : null,
   })) : [],
   monthly: Array.isArray(d.monthly) ? d.monthly.slice(0, 24).map((a) => ({ month: a?.month ?? null, count: a?.count ?? null, highestImpactPct: a?.highestImpactPct ?? null })) : [],
@@ -128,8 +136,9 @@ const cikti = {
   servers: Array.isArray(d.servers) ? d.servers.slice(0, 200).map((s) => ({
     server: typeof s?.server === "string" ? s.server : null, startedAt: s?.startedAt ?? null, endedAt: s?.endedAt ?? null,
     impactPct: s?.impactPct ?? null, estimated: !!s?.estimated, capped: !!s?.capped,
+    minutes: s?.minutes ?? null, startedAtTr: s?.startedAtTr ?? null, endedAtTr: s?.endedAtTr ?? null,
     recovery: s?.recovery && typeof s.recovery === "object"
-      ? { state: s.recovery.state ?? null, hours: s.recovery.hours ?? null, estimated: !!s.recovery.estimated }
+      ? { state: s.recovery.state ?? null, minutes: s.recovery.minutes ?? null, hours: s.recovery.hours ?? null, estimated: !!s.recovery.estimated }
       : null,
   })) : [],
   thresholds: d.thresholds && typeof d.thresholds === "object"
@@ -142,8 +151,8 @@ writeFileSync(json, JSON.stringify(cikti, null, 2) + "\n");
 const s = cikti.summary;
 const durumMetni = s
   ? (s.state === "in_progress"
-    ? `**A wave is in progress.** Last wave started ${gun(s.lastStartedAt)} (${s.daysAgo ?? "?"} day(s) ago). Waves in the last 30 days: **${s.last30d ?? "—"}**.`
-    : `**No wave in progress.** Last wave: ${gun(s.lastStartedAt)} (${s.daysAgo ?? "?"} day(s) ago). Waves in the last 30 days: **${s.last30d ?? "—"}**.`)
+    ? `**A wave is in progress.** Last wave started ${gunSaatTr(s.lastStartedAt, s.lastStartedAtTr)} (${s.daysAgo ?? "?"} day(s) ago). Waves in the last 30 days: **${s.last30d ?? "—"}**.`
+    : `**No wave in progress.** Last wave: ${gunSaatTr(s.lastStartedAt, s.lastStartedAtTr)} (${s.daysAgo ?? "?"} day(s) ago). Waves in the last 30 days: **${s.last30d ?? "—"}**.`)
   : "_No measurement available yet._";
 
 const mr = cikti.medianRecovery;
@@ -154,7 +163,7 @@ const medyan = mr && typeof mr.hours === "number"
 
 const wavesSatir = cikti.waves.length
   ? cikti.waves.map((f) =>
-      `| ${gun(f.startedAt)} | ${f.serverCount ?? "—"} | ${yuzdeMetni(f.impactPct)}${f.estimated ? " (est.)" : ""} | ${SIDDET[f.severity] ?? f.severity ?? "—"} | ${saat(f.hours)} | ${kurtarmaMetni(f.recovery)} |`).join("\n")
+      `| ${gunSaatTr(f.startedAt, f.startedAtTr)} | ${f.serverCount ?? "—"} | ${yuzdeMetni(f.impactPct)}${f.estimated ? " (est.)" : ""} | ${SIDDET[f.severity] ?? f.severity ?? "—"} | ${sureMetni(f)} | ${kurtarmaMetni(f.recovery)} |`).join("\n")
   : "| _no waves recorded_ | | | | | |";
 
 const aySatir = cikti.monthly.length
@@ -163,9 +172,9 @@ const aySatir = cikti.monthly.length
 
 /* ── docs/ban-wave-tracker.md ─────────────────────────────────────────────── */
 blok(md, "BANWAVE:STATUS", durumMetni + medyan);
-blok(md, "BANWAVE:WAVES", wavesSatir, "| Date (UTC) | Servers | Impact | Severity | Duration | Recovery |\n|---|---|---|---|---|---|");
+blok(md, "BANWAVE:WAVES", wavesSatir, "| Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |\n|---|---|---|---|---|---|");
 blok(md, "BANWAVE:MONTHS", aySatir, "| Month | Waves | Highest impact |\n|---|---|---|");
-blok(md, "BANWAVE:SERVERS", serverSatir(cikti.servers), "| Server | Date (UTC) | Impact | Recovery |\n|---|---|---|---|");
+blok(md, "BANWAVE:SERVERS", serverSatir(cikti.servers), "| Server | Wave start (UTC+3) | Impact | Recovery |\n|---|---|---|---|");
 
 const damgaSatiri = `_Last updated: ${cikti.updatedAt ?? "unknown"} — source: ${cikti.page ?? "lordsrally.com/ban-waves"}_`;
 damga(md, "<!-- BANWAVE:UPDATED -->", damgaSatiri);
@@ -174,7 +183,7 @@ damga(md, "<!-- BANWAVE:UPDATED -->", damgaSatiri);
 if (readme) {
   blok(readme, "BANWAVE:README:STATUS", durumMetni + medyan);
   blok(readme, "BANWAVE:README:LATEST", enSonOzet(cikti), null);
-  blok(readme, "BANWAVE:README:WAVES", wavesSatir, "| Date (UTC) | Servers | Impact | Severity | Duration | Recovery |\n|---|---|---|---|---|---|");
+  blok(readme, "BANWAVE:README:WAVES", wavesSatir, "| Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |\n|---|---|---|---|---|---|");
   blok(readme, "BANWAVE:README:MONTHS", aySatir, "| Month | Waves | Highest impact |\n|---|---|---|");
   damga(readme, "<!-- BANWAVE:README:UPDATED -->", damgaSatiri);
 }
@@ -190,8 +199,26 @@ console.log(`written: ${json} (${cikti.waves.length} waves) + ${md}${readme ? " 
  *  ⚠️ Never a made-up number: an absent/zero duration prints bare. */
 function kurtarmaMetni(r) {
   if (!r || typeof r.state !== "string") return "—";
-  const h = typeof r.hours === "number" && Number.isFinite(r.hours) && r.hours > 0 ? ` (${r.hours} h)` : "";
-  return `${r.state}${h}`;
+  /* Prefer MINUTES — that is the resolution the site shows. Fall back to hours
+     only for an endpoint that has not yet been deployed with `minutes`. */
+  const dk = typeof r.minutes === "number" && Number.isFinite(r.minutes) ? r.minutes : null;
+  if (dk !== null) return `${r.state} (${sure(dk)}${r.estimated ? ", est." : ""})`;
+  /* ⚠️ FALLBACK only — an endpoint that has not yet been deployed with `minutes`.
+     `hours` is ROUNDED, so `hours === 0` means "somewhere under an hour", NOT
+     "an instant". Printing "1 min" here would be invented precision (it could
+     have been 25 minutes); the honest rendering is "under 1 h" — the same
+     wording the site uses for its median. */
+  const h = typeof r.hours === "number" && Number.isFinite(r.hours) ? r.hours : null;
+  if (h === null) return r.state;
+  return `${r.state} (${h > 0 ? `${h} h` : "under 1 h"})`;
+}
+
+/** Wave duration cell for a row that may only carry the rounded `hours`. */
+function sureMetni(f) {
+  if (typeof f?.minutes === "number" && Number.isFinite(f.minutes)) return sure(f.minutes);
+  const h = typeof f?.hours === "number" && Number.isFinite(f.hours) ? f.hours : null;
+  if (h === null) return "—";
+  return h > 0 ? `${h} h` : "under 1 h";
 }
 
 function yuzdeMetni(v) {
@@ -199,7 +226,7 @@ function yuzdeMetni(v) {
 }
 function serverSatir(sunucular) {
   return sunucular.length
-    ? sunucular.map((x) => `| ${x.server ?? "—"} | ${gun(x.startedAt)} | ${yuzdeMetni(x.impactPct)}${x.estimated ? " (est.)" : ""} | ${kurtarmaMetni(x.recovery)} |`).join("\n")
+    ? sunucular.map((x) => `| ${x.server ?? "—"} | ${gunSaatTr(x.startedAt, x.startedAtTr)} | ${yuzdeMetni(x.impactPct)}${x.estimated ? " (est.)" : ""} | ${kurtarmaMetni(x.recovery)} |`).join("\n")
     : "| _no server data_ | | | |";
 }
 function enSonOzet(c) {
@@ -208,7 +235,8 @@ function enSonOzet(c) {
   return [
     `| Field | Value |`,
     `|---|---|`,
-    `| Last wave (UTC) | ${gun(son.startedAt)} |`,
+    `| Last wave | ${gunSaatTr(son.startedAt, son.startedAtTr)} |`,
+    `| Wave ended | ${son.endedAt ? gunSaatTr(son.endedAt, son.endedAtTr) : "—"} |`,
     `| Days ago | ${son.daysAgo ?? "—"} |`,
     `| Servers hit | ${son.serverCount ?? "—"} |`,
     `| Impact | ${yuzdeMetni(son.impactPct)}${son.estimated ? " (estimated)" : ""} |`,

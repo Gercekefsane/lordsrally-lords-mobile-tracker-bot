@@ -52,11 +52,13 @@ function workdir() {
   return d;
 }
 const write = (d, name, obj) => writeFileSync(join(d, name), JSON.stringify(obj));
+/** Minute field of a wave/server row, or null when absent. */
+const ciktiWaveDk = (r) => (r && typeof r.minutes === "number" ? r.minutes : null);
 
 /* ── fixtures ─────────────────────────────────────────────────────────────── */
 const banwaveEn = {
   status: "ok", updatedAt: "2026-10-03T12:21:59.255Z", page: "/ban-waves",
-  summary: { state: "sakin", lastStartedAt: "2026-09-30T08:38:07Z", daysAgo: 3, last30d: 10 },
+  summary: { state: "sakin", lastStartedAt: "2026-09-30T08:38:07Z", lastStartedAtTr: "2026-09-30 11:38 (+03:00)", daysAgo: 3, last30d: 10 },
   medianRecovery: { hours: 0, count: 19, estimatedCount: 15 },
   /* 🔴 SHAPE MUST MIRROR PRODUCTION (measured 2026-10-03): on the live endpoint
    *    `waves[]` carries recovery as an OBJECT and has NO `hasRecovery` key,
@@ -65,33 +67,33 @@ const banwaveEn = {
    *    hid the empty Recovery column: the generator read a key that only
    *    existed in the test. */
   waves: [
-    { startedAt: "2026-09-30T08:38:07Z", endedAt: "2026-09-30T09:25:14Z", serverCount: 4, impactPct: 41, severity: "agir", estimated: false, capped: false, hours: 1, daysAgo: 3, recovery: { state: "complete", hours: 1, estimated: false } },
+    { startedAt: "2026-09-30T08:38:07Z", endedAt: "2026-09-30T09:25:14Z", startedAtTr: "2026-09-30 11:38 (+03:00)", endedAtTr: "2026-09-30 12:25 (+03:00)", serverCount: 4, impactPct: 41, severity: "agir", estimated: false, capped: false, hours: 1, minutes: 47, daysAgo: 3, recovery: { state: "complete", minutes: 47, hours: 1, estimated: false } },
     /* Lasted 3 h, but recovery was never measured — the two durations are
      *  different quantities. A generator that reused the wave's own duration
      *  for the Recovery cell writes a number the evidence does not support. */
-    { startedAt: "2026-09-21T08:45:47Z", endedAt: "2026-09-21T11:45:47Z", serverCount: 1, impactPct: 28, severity: "agir", estimated: false, capped: false, hours: 3, daysAgo: 12, recovery: { state: "recovered", hours: null, estimated: false } },
+    { startedAt: "2026-09-21T08:45:47Z", endedAt: "2026-09-21T11:45:47Z", startedAtTr: "2026-09-21 11:45 (+03:00)", serverCount: 1, impactPct: 28, severity: "agir", estimated: false, capped: false, hours: 3, minutes: 180, daysAgo: 12, recovery: { state: "recovered", minutes: null, hours: null, estimated: false } },
     /* ⚠️ A MEASURED zero is live today (`complete, hours: 0` on the 2026-09-24
      *  wave). It is the only case that forces the two clauses apart: "print a
      *  duration" and "the duration is positive" are different rules, and a
      *  fixture without this row cannot tell them apart. */
-    { startedAt: "2026-09-24T09:10:02Z", endedAt: "2026-09-24T09:10:02Z", serverCount: 1, impactPct: 3.9, severity: "hafif", estimated: false, capped: false, hours: 0, daysAgo: 9, recovery: { state: "complete", hours: 0, estimated: true } },
+    { startedAt: "2026-09-24T09:10:02Z", endedAt: "2026-09-24T09:10:02Z", startedAtTr: "2026-09-24 12:10 (+03:00)", serverCount: 1, impactPct: 3.9, severity: "hafif", estimated: false, capped: false, hours: 0, minutes: 0, daysAgo: 9, recovery: { state: "complete", minutes: 5, hours: 0, estimated: true } },
     /* An unrecognised state must fall back to the CONSERVATIVE reading
      *  (`ongoing`), never to `recovered` — the column may not claim a recovery
      *  the source did not assert. */
-    { startedAt: "2026-08-12T10:00:00Z", endedAt: "2026-08-12T10:00:00Z", serverCount: 1, impactPct: 100, severity: "agir", estimated: true, capped: false, hours: 0, daysAgo: 52, recovery: { state: "not_a_known_state", hours: null, estimated: false } },
+    { startedAt: "2026-08-12T10:00:00Z", endedAt: "2026-08-12T10:00:00Z", startedAtTr: "2026-08-12 13:00 (+03:00)", serverCount: 1, impactPct: 100, severity: "agir", estimated: true, capped: false, hours: 0, minutes: 0, daysAgo: 52, recovery: { state: "not_a_known_state", minutes: null, hours: null, estimated: false } },
   ],
   monthly: [{ month: "2026-09", count: 13, highestImpactPct: 53 }],
   years: [],
   /* Mirrors today's live payload: `servers[]` rows carry the boolean only. */
   servers: [
-    { server: "Multi Node Server 1", startedAt: "2026-09-30T08:40:10Z", endedAt: "2026-09-30T09:15:37Z", impactPct: 32, estimated: false, capped: false, hasRecovery: true },
+    { server: "Multi Node Server 1", startedAt: "2026-09-30T08:40:10Z", endedAt: "2026-09-30T09:15:37Z", startedAtTr: "2026-09-30 11:40 (+03:00)", impactPct: 32, estimated: false, capped: false, minutes: 35, hasRecovery: true },
     /* A row whose recovery moment was never recorded — the user's report was
      *  that these print as `ongoing` forever, even 52 days later. */
-    { server: "Multi Node Server 3", startedAt: "2026-08-12T08:00:00Z", endedAt: "2026-08-12T08:05:00Z", impactPct: 100, estimated: true, capped: false, hasRecovery: false },
+    { server: "Multi Node Server 3", startedAt: "2026-08-12T08:00:00Z", endedAt: "2026-08-12T08:05:00Z", startedAtTr: "2026-08-12 11:00 (+03:00)", impactPct: 100, estimated: true, capped: false, minutes: 5, hasRecovery: false },
     /* A deployment mid-cut-over can send BOTH shapes on one row. The object is
      *  the stronger statement; reading the boolean first would answer
      *  `ongoing` for a row that says `recovered`. */
-    { server: "Multi Node Server 2", startedAt: "2026-09-21T08:02:21Z", endedAt: "2026-09-21T08:12:21Z", impactPct: 27, estimated: false, capped: false, hasRecovery: false, recovery: { state: "recovered", hours: null, estimated: false } },
+    { server: "Multi Node Server 2", startedAt: "2026-09-21T08:02:21Z", endedAt: "2026-09-21T08:12:21Z", startedAtTr: "2026-09-21 11:02 (+03:00)", impactPct: 27, estimated: false, capped: false, minutes: 10, hasRecovery: false, recovery: { state: "recovered", minutes: null, hours: null, estimated: false } },
   ],
   thresholds: { severityModerate: 5, severityHeavy: 20, recoveryWindowDays: 14 },
 };
@@ -182,7 +184,75 @@ for (const [ad, fixture] of [["English schema", banwaveEn], ["legacy schema", ba
        docSatir.length > 1 && /\| recovered \|$/.test(docSatir[1]) && !/\(3 h\)/.test(sonSatir(doc, "BANWAVE:WAVES")));
     /* A measured zero is DURATION 0, so it must stay bare — printing "(0 h)"
      *  next to "under 1 h" on the page would be a second, contradicting unit. */
-    ok(`${ad}: at-a-glance box states recovery too`,
+    /* 🔴 DAKİKA ÇÖZÜNÜRLÜĞÜ (sahibin bildirimi, 2026-10-03): "sitede 5 dk yazıyor,
+   *  GitHub'da yok". Saat yuvarlaması 47 dk'yı "1 h" yapıyor, 40 dk'yı 0'a indirip
+   *  hücreyi BOŞ bırakıyordu. Artık süre DAKİKA basılır ve ASLA boş kalmaz. */
+  ok(`${ad}: sub-hour durations are printed, not rounded away`,
+     /\| 47 min \|/.test(doc) && !/\| 1 h \|/.test(doc));
+  ok(`${ad}: a sub-minute wave prints "1 min", never blank or "0 min"`,
+     /\| 1 min \|/.test(doc) && !/\|\s*—\s*\|\s*complete/.test(doc) && !/0 min/.test(doc));
+  ok(`${ad}: recovery shows its minutes too`,
+     /complete \(5 min, est\.\)/.test(doc) || /complete \(5 min\)/.test(doc));
+  ok(`${ad}: JSON carries minute resolution on both lists`,
+     ciktiWaveDk(json.waves[0]) === 47 && ciktiWaveDk(json.servers[0]) === 35);
+  ok(`${ad}: hour-plus durations read naturally`,
+     /\| 3 h \|/.test(doc));
+
+  /* 🔴 FALLBACK YOLU (ölçüm aracı düzeltmesi): bir önceki iddia sürümünde fikstürün
+   *  HER satırı `minutes` taşıyordu, yani üreticinin "dakika yoksa saatten türet" dalı
+   *  HİÇ ÇALIŞMIYORDU ve mutant KAÇIYORDU (ölçüldü). Eski bir uca karşı kırılmamalı. */
+  {
+    const d2 = workdir();
+    const eski = JSON.parse(JSON.stringify(fixture));
+    for (const f of eski.waves ?? []) { delete f.minutes; if (f.recovery) delete f.recovery.minutes; }
+    for (const s of eski.servers ?? []) { delete s.minutes; if (s.recovery) delete s.recovery.minutes; }
+    for (const f of eski.waves ?? []) { delete f.startedAtTr; }
+    write(d2, "bw.json", eski);
+    run("banwave-yaz.mjs", join(d2, "bw.json"), join(d2, "docs", "ban-wave-tracker.md"), join(d2, "data", "banwave.json"), join(d2, "README.md"));
+    const d2doc = readFileSync(join(d2, "docs", "ban-wave-tracker.md"), "utf8");
+    const d2json = JSON.parse(readFileSync(join(d2, "data", "banwave.json"), "utf8"));
+    /* JSON mirrors the endpoint (absent stays `null`); the DOCUMENT is what
+       derives a renderable duration, so that is what must still be stated. */
+    /* ⚠️ `hours === 0` means "somewhere under an hour" — the rounded field cannot
+       witness an instant, so the fallback says "under 1 h" rather than inventing
+       "1 min". (Measured: the first version printed "1 min" for every sub-hour
+       row on the live payload.) */
+    ok(`${ad}: an endpoint without minutes still prints a duration`,
+       ciktiWaveDk(d2json.waves[0]) === null && /\| 1 h \|/.test(d2doc));
+    ok(`${ad}: rounded hours never invent sub-hour precision`,
+       /\| under 1 h \|/.test(d2doc) && !/\| 1 min \|/.test(d2doc));
+    ok(`${ad}: an endpoint without a local stamp still prints one, derived at +3 h`,
+       d2json.waves[0].startedAtTr === null
+       && /\| 2026-09-30 11:38 \(\+03:00\) \|/.test(d2doc));
+  }
+
+  /* 🔴 TAM AN (sahibin isteği): "2026-09-30 11:38 (UTC+3)". Tarih-only hangi saatte
+   *  vurulduğunu söylemiyordu. ⚠️ Damga UTC+3'e KAYDIRILMIŞ olmalı — etiketi doğru
+   *  yazıp aritmetiği kaydıran hata (ör. +0) yalnız desen kontrolünden KAÇARDI. */
+  const DAMGA = /^\d{4}-\d{2}-\d{2} \d{2}:\d{2} \(\+03:00\)$/;
+  ok(`${ad}: table shows the exact local time, not just the date`,
+     (blokIci(doc, "BANWAVE:WAVES") ?? "").split("\n").some((l) => /\| 2026-09-30 11:38 \(\+03:00\) \|/.test(l)));
+  ok(`${ad}: every stamped row is UTC+3, not merely labelled so`,
+     (blokIci(doc, "BANWAVE:WAVES") ?? "").split("\n")
+       .filter((l) => l.startsWith("| 20"))
+       .every((l) => DAMGA.test((l.split("|")[1] ?? "").trim()))
+     && (blokIci(doc, "BANWAVE:SERVERS") ?? "").split("\n")
+       .filter((l) => l.startsWith("| Multi"))
+       .every((l) => DAMGA.test((l.split("|")[2] ?? "").trim())));
+  /* Kayma denetimi: yerel damga UTC'den +3 saat ileri olmalı. ⚠️ Tam eşitlik YANLIŞ
+     olurdu: damga DAKİKA çözünürlüğünde ve saniyeler AŞAĞI düşer (08:38:07Z → 11:38:00),
+     yani fark 3 saatten biraz AZDIR: (3 sa − 1 dk, 3 sa]. Kaydırma hatası (ör. +0) yine
+     yakalanır; yukarı yuvarlayan bir hata da bu aralığın dışına çıkar. */
+  const kaymaDenetle = (satir) => {
+    const utc = Date.parse(satir.startedAt);
+    const tr = Date.parse(String(satir.startedAtTr).replace(" (+03:00)", "Z"));
+    const fark = tr - utc;
+    return Number.isFinite(fark) && fark > 3 * 3600000 - 60000 && fark <= 3 * 3600000;
+  };
+  ok(`${ad}: local stamp is shifted +3 h from UTC (minute-truncated)`,
+     json.waves.every(kaymaDenetle) && json.servers.every(kaymaDenetle));
+
+  ok(`${ad}: at-a-glance box states recovery too`,
      /\|\s*Recovery\s*\|\s*[a-z]+\s*(\||\()/.test(blokIci(readme, "BANWAVE:README:LATEST") ?? ""));
   ok(`${ad}: a measured zero duration prints bare, not "(0 h)"`,
        !/\(0 h\)/.test(doc) && !/\(0 h\)/.test(readme));
