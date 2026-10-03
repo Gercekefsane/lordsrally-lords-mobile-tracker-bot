@@ -1,0 +1,66 @@
+name: Ban wave tracker sync
+
+# 🔴 BAN DALGASI OTOMATİK GÜNCELLEME
+# LordsRally'nin HERKESE AÇIK veri ucunu çeker, docs/ban-wave-tracker.md ve
+# data/banwave.json dosyalarını günceller ve DEĞİŞİKLİK VARSA commit'ler.
+#
+# Token SUNUCUDA DEĞİL: bu iş akışı repository'nin kendi GITHUB_TOKEN'ını kullanır
+# (yalnız bu repoya yazma). Uygulama tarafında hiçbir yazma jetonu tutulmaz.
+
+on:
+  schedule:
+    - cron: "17 * * * *"      # saat başı (dakika 0/30'a denk gelmesin: kuyruk yoğunluğu)
+  workflow_dispatch:            # elle tetikleme
+
+permissions:
+  contents: write
+
+concurrency:
+  group: banwave-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Parametreler
+        id: cfg
+        env:
+          ENDPOINT: ${{ vars.BANWAVE_ENDPOINT }}
+        run: |
+          if [ -z "$ENDPOINT" ]; then
+            echo "::error::Repo değişkeni BANWAVE_ENDPOINT tanımlı değil (Settings > Variables)."
+            exit 1
+          fi
+          echo "endpoint=$ENDPOINT" >> "$GITHUB_OUTPUT"
+
+      - name: Veriyi çek
+        run: node .github/scripts/banwave-cek.mjs "${{ steps.cfg.outputs.endpoint }}" > /tmp/banwave.json
+
+      - name: Dosyaları üret
+        run: node .github/scripts/banwave-yaz.mjs /tmp/banwave.json docs/ban-wave-tracker.md data/banwave.json
+
+      - name: Değişiklik var mı
+        id: diff
+        run: |
+          if git diff --quiet -- docs/ban-wave-tracker.md data/banwave.json; then
+            echo "degisti=false" >> "$GITHUB_OUTPUT"
+            echo "İçerik aynı — commit atılmadı."
+          else
+            echo "degisti=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit ve push
+        if: steps.diff.outputs.degisti == 'true'
+        run: |
+          git config user.name  "lordsrally-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/ban-wave-tracker.md data/banwave.json
+          git commit -m "ban wave tracker: veri güncellendi ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git push

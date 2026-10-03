@@ -1,0 +1,46 @@
+{
+  "durum": "ok",
+  "guncelleme": "2026-10-03T00:00:00.000Z",
+  "sayfa": "/ban-waves",
+  "kart": {
+    "durum": "sakin",
+    "sonBasla": "2026-09-30T00:00:00.000Z",
+    "gunOnce": 3,
+    "son30": 2
+  },
+  "medyanKurtarma": {
+    "saat": 18,
+    "adet": 7,
+    "tahminiAdet": 2
+  },
+  "dalgalar": [
+    {
+      "basla": "2026-09-30T00:00:00.000Z",
+      "bitis": "2026-09-30T02:00:00.000Z",
+      "sunucuSayisi": 5,
+      "etkiYuzde": 12.4,
+      "siddet": "orta",
+      "tahmini": false,
+      "saat": 2,
+      "gunOnce": 3
+    },
+    {
+      "basla": "2026-09-12T00:00:00.000Z",
+      "bitis": "2026-09-12T06:00:00.000Z",
+      "sunucuSayisi": 3,
+      "etkiYuzde": 38.9,
+      "siddet": "agir",
+      "tahmini": true,
+      "saat": 6,
+      "gunOnce": 21
+    }
+  ],
+  "aylik": [
+    {
+      "ay": "2026-09",
+      "adet": 3,
+      "enYuksekOran": 38.9
+    }
+  ],
+  "yillar": []
+}

@@ -1,0 +1,22 @@
+Copyright (c) 2026 LordsRally
+
+All rights reserved.
+
+This repository contains DOCUMENTATION AND DATA ONLY — it does not contain the
+application source code of the LordsRally platform.
+
+Permission is granted to read, reference, quote and cite the documentation and the
+published data in this repository, provided that:
+
+1. LordsRally (https://lordsrally.com) is credited as the source, and
+2. any published ban wave figures are presented together with the caveats stated in
+   docs/ban-wave-tracker.md (measurement basis, estimated values, anonymised server
+   identifiers).
+
+Redistribution of the content as a product, or presentation of the data as your own
+measurement, is not permitted.
+
+The names "LordsRally" and "lordsrally.com" are used to identify this project and its
+data; no trademark rights are granted by this licence.
+
+THE DOCUMENTATION AND DATA ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
