@@ -20,7 +20,7 @@
  * ⚠️ Commit idempotency: `updatedAt` is written date-only (see lib.mjs).
  */
 import { readFileSync, writeFileSync } from "node:fs";
-import { blok, damga, gun, gunSaatTr, saat, sure, SIDDET } from "./lib.mjs";
+import { blok, damga, gun, gunSaatTr, sure, SIDDET } from "./lib.mjs";
 
 const [, , kaynak, md, json, readme] = process.argv;
 if (!kaynak || !md || !json) {
@@ -241,7 +241,9 @@ function enSonOzet(c) {
     `| Servers hit | ${son.serverCount ?? "—"} |`,
     `| Impact | ${yuzdeMetni(son.impactPct)}${son.estimated ? " (estimated)" : ""} |`,
     `| Severity | ${SIDDET[son.severity] ?? son.severity ?? "—"} |`,
-    `| Duration | ${saat(son.hours)} |`,
+    /* Same formatter as the history table — one surface saying "47 min" and the
+       other "1 h" for the SAME wave is the sort of mismatch the user reported. */
+    `| Duration | ${sureMetni(son)} |`,
     /* The user's report was that recovery looked missing — the at-a-glance box
        must state it too, not only the history table below. */
     `| Recovery | ${kurtarmaMetni(son.recovery)} |`,

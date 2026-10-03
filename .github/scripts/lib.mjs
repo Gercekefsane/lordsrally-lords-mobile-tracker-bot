@@ -50,9 +50,6 @@ const isoTr = (d) => {
   return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())} ${p(d.getUTCHours())}:${p(d.getUTCMinutes())} (+03:00)`;
 };
 
-export const saat = (h) =>
-  typeof h === "number" && Number.isFinite(h) && h > 0 ? `${h} h` : "—";
-
 /** Duration at MINUTE resolution, matching the platform's own formatter.
  *
  *  🔴 WHY (measured 2026-10-03): hour-only rounding made a 47-minute wave print

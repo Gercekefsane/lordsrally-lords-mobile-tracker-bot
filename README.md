@@ -170,7 +170,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 | Servers hit | 4 |
 | Impact | 41% |
 | Severity | heavy |
-| Duration | 1 h |
+| Duration | 47 min |
 | Recovery | complete (55 min) |
 
 Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.

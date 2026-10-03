@@ -77,6 +77,10 @@ const banwaveEn = {
      *  duration" and "the duration is positive" are different rules, and a
      *  fixture without this row cannot tell them apart. */
     { startedAt: "2026-09-24T09:10:02Z", endedAt: "2026-09-24T09:10:02Z", startedAtTr: "2026-09-24 12:10 (+03:00)", serverCount: 1, impactPct: 3.9, severity: "hafif", estimated: false, capped: false, hours: 0, minutes: 0, daysAgo: 9, recovery: { state: "complete", minutes: 5, hours: 0, estimated: true } },
+    /* ⚠️ TWO-UNIT duration: the formatter shows the largest two units ("1 h 5 min").
+     *  A fixture whose durations are all whole hours (dk = 0) cannot tell "1 h" from
+     *  "1 h 5 min" apart, so dropping the second unit would escape the guard. */
+    { startedAt: "2026-09-10T09:38:52Z", endedAt: "2026-09-10T10:43:52Z", startedAtTr: "2026-09-10 12:38 (+03:00)", serverCount: 1, impactPct: 2.1, severity: "hafif", estimated: false, capped: false, hours: 1, minutes: 65, daysAgo: 23, recovery: { state: "recovered", minutes: null, hours: null, estimated: false } },
     /* An unrecognised state must fall back to the CONSERVATIVE reading
      *  (`ongoing`), never to `recovered` — the column may not claim a recovery
      *  the source did not assert. */
@@ -187,6 +191,10 @@ for (const [ad, fixture] of [["English schema", banwaveEn], ["legacy schema", ba
     /* 🔴 DAKİKA ÇÖZÜNÜRLÜĞÜ (sahibin bildirimi, 2026-10-03): "sitede 5 dk yazıyor,
    *  GitHub'da yok". Saat yuvarlaması 47 dk'yı "1 h" yapıyor, 40 dk'yı 0'a indirip
    *  hücreyi BOŞ bırakıyordu. Artık süre DAKİKA basılır ve ASLA boş kalmaz. */
+  /* The at-a-glance box and the history table describe the SAME wave; they must
+     not disagree on its duration (box said "1 h" while the table said "47 min"). */
+  ok(`${ad}: at-a-glance duration matches the history table`,
+     /\| Duration \| 47 min \|/.test(blokIci(readme, "BANWAVE:README:LATEST") ?? ""));
   ok(`${ad}: sub-hour durations are printed, not rounded away`,
      /\| 47 min \|/.test(doc) && !/\| 1 h \|/.test(doc));
   ok(`${ad}: a sub-minute wave prints "1 min", never blank or "0 min"`,
@@ -197,6 +205,10 @@ for (const [ad, fixture] of [["English schema", banwaveEn], ["legacy schema", ba
      ciktiWaveDk(json.waves[0]) === 47 && ciktiWaveDk(json.servers[0]) === 35);
   ok(`${ad}: hour-plus durations read naturally`,
      /\| 3 h \|/.test(doc));
+  /* Two-unit rendering: a 65-minute wave is "1 h 5 min", not "1 h" — dropping the
+     minutes component would round a 65-minute wave down to an hour. */
+  ok(`${ad}: durations show the largest two units`,
+     /\| 1 h 5 min \|/.test(doc));
 
   /* 🔴 FALLBACK YOLU (ölçüm aracı düzeltmesi): bir önceki iddia sürümünde fikstürün
    *  HER satırı `minutes` taşıyordu, yani üreticinin "dakika yoksa saatten türet" dalı
