@@ -1,8 +1,0 @@
-name: tani
-on:
-  workflow_dispatch:
-jobs:
-  selam:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "merhaba"
