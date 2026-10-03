@@ -91,7 +91,11 @@ function normalize(d) {
     servers: (d.servers ?? d.sonSatirlar ?? []).map((s) => ({
       server: s.server ?? s.sunucu, startedAt: s.startedAt ?? s.basla, endedAt: s.endedAt ?? s.bitis,
       impactPct: s.impactPct ?? s.etkiYuzde, estimated: !!(s.estimated ?? s.tahmini), capped: !!(s.capped ?? s.kirpildi),
-      recovery: publicKurtarma(s.hasRecovery ?? s.kurtarmaVar ?? s.recovery ?? s.kurtarma),
+      /* ⚠️ OBJECT FIRST. A deployment in transition can carry both shapes at
+       *  once; the boolean is the weaker statement ("a recovery moment is on
+       *  record") and reading it first would report `ongoing` for a row whose
+       *  own `recovery` object says `recovered`. */
+      recovery: publicKurtarma(s.recovery ?? s.kurtarma ?? s.hasRecovery ?? s.kurtarmaVar),
     })),
     thresholds: th
       ? { severityModerate: th.severityModerate ?? th.siddetOrta, severityHeavy: th.severityHeavy ?? th.siddetAgir, recoveryWindowDays: th.recoveryWindowDays ?? th.kurtarmaIzlemeGun }

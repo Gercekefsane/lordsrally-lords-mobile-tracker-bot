@@ -82,7 +82,17 @@ const banwaveEn = {
   ],
   monthly: [{ month: "2026-09", count: 13, highestImpactPct: 53 }],
   years: [],
-  servers: [{ server: "Multi Node Server 1", startedAt: "2026-09-30T08:40:10Z", endedAt: "2026-09-30T09:15:37Z", impactPct: 32, estimated: false, capped: false, hasRecovery: true }],
+  /* Mirrors today's live payload: `servers[]` rows carry the boolean only. */
+  servers: [
+    { server: "Multi Node Server 1", startedAt: "2026-09-30T08:40:10Z", endedAt: "2026-09-30T09:15:37Z", impactPct: 32, estimated: false, capped: false, hasRecovery: true },
+    /* A row whose recovery moment was never recorded — the user's report was
+     *  that these print as `ongoing` forever, even 52 days later. */
+    { server: "Multi Node Server 3", startedAt: "2026-08-12T08:00:00Z", endedAt: "2026-08-12T08:05:00Z", impactPct: 100, estimated: true, capped: false, hasRecovery: false },
+    /* A deployment mid-cut-over can send BOTH shapes on one row. The object is
+     *  the stronger statement; reading the boolean first would answer
+     *  `ongoing` for a row that says `recovered`. */
+    { server: "Multi Node Server 2", startedAt: "2026-09-21T08:02:21Z", endedAt: "2026-09-21T08:12:21Z", impactPct: 27, estimated: false, capped: false, hasRecovery: false, recovery: { state: "recovered", hours: null, estimated: false } },
+  ],
   thresholds: { severityModerate: 5, severityHeavy: 20, recoveryWindowDays: 14 },
 };
 const banwaveLegacy = {
@@ -145,6 +155,20 @@ for (const [ad, fixture] of [["English schema", banwaveEn], ["legacy schema", ba
   ok(`${ad}: servers rows state recovery`,
      json.servers.every((s) => s && s.recovery && typeof s.recovery.state === "string")
      && ((blokIci(doc, "BANWAVE:SERVERS") ?? "").split("\n").filter((l) => l.startsWith("| Multi")).every((l) => !/\|\s*—\s*\|\s*$/.test(l))));
+  /* A row with no recovery moment must be REPORTED (recovered/ongoing), not
+   *  blanked — the user's report was an empty-looking column. A `false`
+   *  boolean means "no moment recorded", NOT "still ongoing". */
+  ok(`${ad}: server row without a recovery moment is still stated`,
+     json.servers.every((s) => ["complete", "recovered", "ongoing"].includes(s.recovery.state))
+     && !/\| Multi Node Server 3 \| 2026-08-12 \|[^|]*\|\s*—\s*\|/.test(blokIci(doc, "BANWAVE:SERVERS") ?? ""));
+  /* Object beats boolean when a row carries both — the boolean is the weaker
+   *  statement and must not mask a stated `recovered`. Only the English
+   *  fixture carries such a row; the legacy shape has no object to prefer. */
+  const karisik = (Array.isArray(fixture.servers) ? fixture.servers : []).find((s) => s?.recovery && s?.hasRecovery !== undefined);
+  if (karisik) {
+    ok(`${ad}: a row carrying both shapes reads the object, not the boolean`,
+       (json.servers.find((s) => s.server === karisik.server) ?? {}).recovery?.state === "recovered");
+  }
 
   /* Recovery hours are the RECOVERY duration, never the wave's own duration.
    *  The English fixture's second wave lasted 0 h but has no measured recovery
