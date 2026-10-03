@@ -143,7 +143,7 @@ Automation consumers should use [`data/banwave.json`](../data/banwave.json) inst
   "waves": [ { "startedAt": "...", "endedAt": "...", "serverCount": 0, "impactPct": 0, "severity": "moderate", "estimated": false, "capped": false, "hours": 0, "daysAgo": 0, "recovery": { "state": "complete", "hours": 0, "estimated": false } } ],
   "monthly": [ { "month": "2026-09", "count": 0, "highestImpactPct": 0 } ],
   "years": [ { "year": 2026, "count": 0 } ],
-  "servers": [ { "server": "Multi Node Server 1", "startedAt": "...", "endedAt": "...", "impactPct": 0, "estimated": false, "capped": false, "hasRecovery": true } ],
+  "servers": [ { "server": "Multi Node Server 1", "startedAt": "...", "endedAt": "...", "impactPct": 0, "estimated": false, "capped": false, "recovery": { "state": "recovered", "hours": null, "estimated": false } } ],
   "thresholds": { "severityModerate": 5, "severityHeavy": 20, "recoveryWindowDays": 14 }
 }
 ```

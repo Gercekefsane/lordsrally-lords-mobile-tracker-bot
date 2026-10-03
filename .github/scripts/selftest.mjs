@@ -220,6 +220,24 @@ for (const [ad, fixture] of [["English schema", banwaveEn], ["legacy schema", ba
   ok("no cost/margin fields in generated docs", !YASAK.test(pr + rr + rs + readme));
 }
 
+/* ── 3b: the DOCUMENTED schema matches what the generator emits ────────────
+ * 🔴 WHY (measured 2026-10-03): `data/README.md` and `docs/ban-wave-tracker.md`
+ *    documented `hasRecovery` on `waves[]` — a field the endpoint never sent and
+ *    the generator never wrote. Readers were told about a contract that did not
+ *    exist, and it was the same confusion that made the Recovery column blank.
+ *    A schema example is a promise; keep it in step with the code. */
+{
+  const belgeler = [
+    join(repo, "data", "README.md"),
+    join(repo, "docs", "ban-wave-tracker.md"),
+  ].filter(existsSync);
+  const sizan = belgeler.filter((p) => /hasRecovery/.test(readFileSync(p, "utf8")));
+  ok("documented schema does not name the removed `hasRecovery` field",
+    sizan.length === 0);
+  ok("documented schema describes the recovery object",
+    belgeler.every((p) => /"recovery"\s*:\s*\{\s*"state"/.test(readFileSync(p, "utf8"))));
+}
+
 /* ── 4: idempotent re-run ────────────────────────────────────────────────── */
 {
   const d = workdir();
