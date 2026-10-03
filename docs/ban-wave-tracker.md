@@ -12,8 +12,8 @@ This page is generated from LordsRally's own measurements and **updated automati
 ## Current status
 
 <!-- BANWAVE:STATUS:START -->
-**No wave in progress.** Last wave: 2026-09-30 (3 day(s) ago). Waves in the last 30 days: **2**.
-**Median recovery:** 18 h across 7 measured server waves (2 estimated from logs).
+**No wave in progress.** Last wave: 2026-09-30 (3 day(s) ago). Waves in the last 30 days: **10**.
+**Median recovery:** — across 19 measured server waves (15 estimated from logs).
 <!-- BANWAVE:STATUS:END -->
 
 ---
@@ -25,8 +25,23 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:WAVES:START -->
 | Date (UTC) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-09-30 | 5 | %12.4 | moderate | 2 h | — |
-| 2026-09-12 | 3 | %38.9 (est.) | heavy | 6 h | — |
+| 2026-09-30 | 4 | %41 | heavy | 1 h | — |
+| 2026-09-24 | 1 | %3.9 | light | — | — |
+| 2026-09-21 | 1 | %2.3 (est.) | light | — | — |
+| 2026-09-21 | 1 | %0.8 (est.) | light | — | — |
+| 2026-09-21 | 4 | %28 | heavy | — | — |
+| 2026-09-21 | 3 | %27 | heavy | — | — |
+| 2026-09-16 | 4 | %51 | heavy | — | — |
+| 2026-09-10 | 4 | %23 (est.) | heavy | — | — |
+| 2026-09-09 | 2 | %4.7 | light | — | — |
+| 2026-09-08 | 2 | %1.6 | light | — | — |
+| 2026-09-03 | 2 | %3.1 | light | — | — |
+| 2026-09-01 | 1 | %2.3 (est.) | light | — | — |
+| 2026-09-01 | 2 | %53 | heavy | — | — |
+| 2026-08-17 | 1 | %0.8 | light | — | — |
+| 2026-08-13 | 2 | %100 | heavy | — | — |
+| 2026-08-12 | 2 | %1.6 (est.) | light | — | — |
+| 2026-08-12 | 2 | %100 (est.) | heavy | — | — |
 <!-- BANWAVE:WAVES:END -->
 
 ---
@@ -36,7 +51,8 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:MONTHS:START -->
 | Month | Waves | Highest impact |
 |---|---|---|
-| 2026-09 | 3 | %38.9 |
+| 2026-09 | 13 | %53 |
+| 2026-08 | 4 | %100 |
 <!-- BANWAVE:MONTHS:END -->
 
 ---

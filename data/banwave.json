@@ -1,45 +1,200 @@
 {
   "durum": "ok",
-  "guncelleme": "2026-10-03T00:00:00.000Z",
+  "guncelleme": "2026-10-03T11:48:55.772Z",
   "sayfa": "/ban-waves",
   "kart": {
     "durum": "sakin",
-    "sonBasla": "2026-09-30T00:00:00.000Z",
+    "sonBasla": "2026-09-30T08:38:07Z",
     "gunOnce": 3,
-    "son30": 2
+    "son30": 10
   },
   "medyanKurtarma": {
-    "saat": 18,
-    "adet": 7,
-    "tahminiAdet": 2
+    "saat": 0,
+    "adet": 19,
+    "tahminiAdet": 15
   },
   "dalgalar": [
     {
-      "basla": "2026-09-30T00:00:00.000Z",
-      "bitis": "2026-09-30T02:00:00.000Z",
-      "sunucuSayisi": 5,
-      "etkiYuzde": 12.4,
-      "siddet": "orta",
+      "basla": "2026-09-30T08:38:07Z",
+      "bitis": "2026-09-30T09:25:14Z",
+      "sunucuSayisi": 4,
+      "etkiYuzde": 41,
+      "siddet": "agir",
       "tahmini": false,
-      "saat": 2,
+      "saat": 1,
       "gunOnce": 3
     },
     {
-      "basla": "2026-09-12T00:00:00.000Z",
-      "bitis": "2026-09-12T06:00:00.000Z",
+      "basla": "2026-09-24T09:10:02Z",
+      "bitis": "2026-09-24T09:10:02Z",
+      "sunucuSayisi": 1,
+      "etkiYuzde": 3.9,
+      "siddet": "hafif",
+      "tahmini": false,
+      "saat": 0,
+      "gunOnce": 9
+    },
+    {
+      "basla": "2026-09-21T19:00:39Z",
+      "bitis": "2026-09-21T19:00:39Z",
+      "sunucuSayisi": 1,
+      "etkiYuzde": 2.3,
+      "siddet": "hafif",
+      "tahmini": true,
+      "saat": 0,
+      "gunOnce": 11
+    },
+    {
+      "basla": "2026-09-21T17:55:20Z",
+      "bitis": "2026-09-21T17:55:20Z",
+      "sunucuSayisi": 1,
+      "etkiYuzde": 0.8,
+      "siddet": "hafif",
+      "tahmini": true,
+      "saat": 0,
+      "gunOnce": 11
+    },
+    {
+      "basla": "2026-09-21T08:45:47Z",
+      "bitis": "2026-09-21T08:57:05Z",
+      "sunucuSayisi": 4,
+      "etkiYuzde": 28,
+      "siddet": "agir",
+      "tahmini": false,
+      "saat": 0,
+      "gunOnce": 12
+    },
+    {
+      "basla": "2026-09-21T08:02:21Z",
+      "bitis": "2026-09-21T08:09:06Z",
       "sunucuSayisi": 3,
-      "etkiYuzde": 38.9,
+      "etkiYuzde": 27,
+      "siddet": "agir",
+      "tahmini": false,
+      "saat": 0,
+      "gunOnce": 12
+    },
+    {
+      "basla": "2026-09-16T09:33:36Z",
+      "bitis": "2026-09-16T10:03:13Z",
+      "sunucuSayisi": 4,
+      "etkiYuzde": 51,
+      "siddet": "agir",
+      "tahmini": false,
+      "saat": 0,
+      "gunOnce": 17
+    },
+    {
+      "basla": "2026-09-10T09:38:52Z",
+      "bitis": "2026-09-10T09:40:42Z",
+      "sunucuSayisi": 4,
+      "etkiYuzde": 23,
       "siddet": "agir",
       "tahmini": true,
-      "saat": 6,
-      "gunOnce": 21
+      "saat": 0,
+      "gunOnce": 23
+    },
+    {
+      "basla": "2026-09-09T07:38:00Z",
+      "bitis": "2026-09-09T07:38:09Z",
+      "sunucuSayisi": 2,
+      "etkiYuzde": 4.7,
+      "siddet": "hafif",
+      "tahmini": false,
+      "saat": 0,
+      "gunOnce": 24
+    },
+    {
+      "basla": "2026-09-08T01:43:22Z",
+      "bitis": "2026-09-08T01:46:15Z",
+      "sunucuSayisi": 2,
+      "etkiYuzde": 1.6,
+      "siddet": "hafif",
+      "tahmini": false,
+      "saat": 0,
+      "gunOnce": 25
+    },
+    {
+      "basla": "2026-09-03T08:17:03Z",
+      "bitis": "2026-09-03T08:17:11Z",
+      "sunucuSayisi": 2,
+      "etkiYuzde": 3.1,
+      "siddet": "hafif",
+      "tahmini": false,
+      "saat": 0,
+      "gunOnce": 30
+    },
+    {
+      "basla": "2026-09-01T10:14:15Z",
+      "bitis": "2026-09-01T10:14:15Z",
+      "sunucuSayisi": 1,
+      "etkiYuzde": 2.3,
+      "siddet": "hafif",
+      "tahmini": true,
+      "saat": 0,
+      "gunOnce": 32
+    },
+    {
+      "basla": "2026-09-01T05:44:53Z",
+      "bitis": "2026-09-01T05:57:34Z",
+      "sunucuSayisi": 2,
+      "etkiYuzde": 53,
+      "siddet": "agir",
+      "tahmini": false,
+      "saat": 0,
+      "gunOnce": 32
+    },
+    {
+      "basla": "2026-08-17T05:38:03Z",
+      "bitis": "2026-08-17T05:38:03Z",
+      "sunucuSayisi": 1,
+      "etkiYuzde": 0.8,
+      "siddet": "hafif",
+      "tahmini": false,
+      "saat": 0,
+      "gunOnce": 47
+    },
+    {
+      "basla": "2026-08-13T02:59:43Z",
+      "bitis": "2026-08-13T03:05:25Z",
+      "sunucuSayisi": 2,
+      "etkiYuzde": 100,
+      "siddet": "agir",
+      "tahmini": false,
+      "saat": 0,
+      "gunOnce": 51
+    },
+    {
+      "basla": "2026-08-12T17:15:07Z",
+      "bitis": "2026-08-12T17:15:38Z",
+      "sunucuSayisi": 2,
+      "etkiYuzde": 1.6,
+      "siddet": "hafif",
+      "tahmini": true,
+      "saat": 0,
+      "gunOnce": 51
+    },
+    {
+      "basla": "2026-08-12T08:43:41Z",
+      "bitis": "2026-08-12T08:51:43Z",
+      "sunucuSayisi": 2,
+      "etkiYuzde": 100,
+      "siddet": "agir",
+      "tahmini": true,
+      "saat": 0,
+      "gunOnce": 52
     }
   ],
   "aylik": [
     {
       "ay": "2026-09",
-      "adet": 3,
-      "enYuksekOran": 38.9
+      "adet": 13,
+      "enYuksekOran": 53
+    },
+    {
+      "ay": "2026-08",
+      "adet": 4,
+      "enYuksekOran": 100
     }
   ],
   "yillar": []
