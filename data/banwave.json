@@ -6,7 +6,7 @@
     "state": "quiet",
     "lastStartedAt": "2026-09-30T08:38:07Z",
     "lastStartedAtTr": "2026-09-30 11:38 (+03:00)",
-    "daysAgo": 4,
+    "daysAgo": 5,
     "last30d": 10
   },
   "medianRecovery": {
@@ -65,7 +65,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 12,
+      "daysAgo": 13,
       "startedAtTr": "2026-09-21 22:00 (+03:00)",
       "endedAtTr": "2026-09-21 22:00 (+03:00)",
       "recovery": {
@@ -85,7 +85,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 12,
+      "daysAgo": 13,
       "startedAtTr": "2026-09-21 20:55 (+03:00)",
       "endedAtTr": "2026-09-21 20:55 (+03:00)",
       "recovery": {
