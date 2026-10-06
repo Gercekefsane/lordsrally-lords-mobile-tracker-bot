@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-05",
+  "updatedAt": "2026-10-06",
   "page": "/ban-waves",
   "summary": {
     "state": "quiet",
@@ -205,7 +205,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 3,
-      "daysAgo": 27,
+      "daysAgo": 28,
       "startedAtTr": "2026-09-08 04:43 (+03:00)",
       "endedAtTr": "2026-09-08 04:46 (+03:00)",
       "recovery": {
