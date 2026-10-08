@@ -40,8 +40,8 @@ Each row is one product in one zone. Zone labels and kingdom ranges describe whe
 | 22222 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.20 |
 | 22221 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $0.84 |
 | 22220 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $0.72 |
-| 44444 | Snowbeast (Kingdom 1-1167) | K1–K1168 | $3.00 |
-| 44442 | Snowbeast (Kingdom 1-1167) | K1–K1168 | $2.40 |
+| 44444 | Snowbeast (Kingdom 1-1167) | K1–K1200 | $3.00 |
+| 44442 | Snowbeast (Kingdom 1-1167) | K1–K1200 | $2.40 |
 <!-- RSS:TABLE:END -->
 
 ---
