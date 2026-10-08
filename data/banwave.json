@@ -45,7 +45,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 13,
+      "daysAgo": 14,
       "startedAtTr": "2026-09-24 12:10 (+03:00)",
       "endedAtTr": "2026-09-24 12:10 (+03:00)",
       "recovery": {
@@ -145,7 +145,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 30,
-      "daysAgo": 21,
+      "daysAgo": 22,
       "startedAtTr": "2026-09-16 12:33 (+03:00)",
       "endedAtTr": "2026-09-16 13:03 (+03:00)",
       "recovery": {
@@ -165,7 +165,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 2,
-      "daysAgo": 27,
+      "daysAgo": 28,
       "startedAtTr": "2026-09-10 12:38 (+03:00)",
       "endedAtTr": "2026-09-10 12:40 (+03:00)",
       "recovery": {
@@ -245,7 +245,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 36,
+      "daysAgo": 37,
       "startedAtTr": "2026-09-01 13:14 (+03:00)",
       "endedAtTr": "2026-09-01 13:14 (+03:00)",
       "recovery": {
