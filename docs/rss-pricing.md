@@ -70,4 +70,4 @@ It refreshes automatically. If the shop is closed or a product is out of stock, 
 🔗 [RSS](https://lordsrally.com/rss) · [Bot package pricing](pricing.md) · [Reseller margins](reseller.md)
 
 <!-- RSS:UPDATED -->
-_Last updated: 2026-10-08 — sell prices in USD. Always live at **https://lordsrally.com/rss**._
+_Last updated: 2026-10-09 — sell prices in USD. Always live at **https://lordsrally.com/rss**._
