@@ -155,7 +155,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 **Latest measurement (auto-updated):**
 
 <!-- BANWAVE:README:STATUS:START -->
-**No wave in progress.** Last wave: 2026-09-30 11:38 (+03:00) (9 day(s) ago). Waves in the last 30 days: **8**.
+**A wave is in progress.** Last wave started 2026-10-09 10:25 (+03:00) (0 day(s) ago). Waves in the last 30 days: **9**.
 **Median recovery:** under 1 h across 19 measured server waves (15 estimated from logs).
 <!-- BANWAVE:README:STATUS:END -->
 
@@ -164,14 +164,14 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 <!-- BANWAVE:README:LATEST:START -->
 | Field | Value |
 |---|---|
-| Last wave | 2026-09-30 11:38 (+03:00) |
-| Wave ended | 2026-09-30 12:25 (+03:00) |
-| Days ago | 8 |
+| Last wave | 2026-10-09 10:25 (+03:00) |
+| Wave ended | 2026-10-09 10:34 (+03:00) |
+| Days ago | 0 |
 | Servers hit | 4 |
-| Impact | 41% |
+| Impact | 59% |
 | Severity | heavy |
-| Duration | 47 min |
-| Recovery | complete (55 min) |
+| Duration | 10 min |
+| Recovery | ongoing (1 h 34 min) |
 
 Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.
 <!-- BANWAVE:README:LATEST:END -->
@@ -181,6 +181,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
+| 2026-10-09 10:25 (+03:00) | 4 | 59% | heavy | 10 min | ongoing (1 h 34 min) |
 | 2026-09-30 11:38 (+03:00) | 4 | 41% | heavy | 47 min | complete (55 min) |
 | 2026-09-24 12:10 (+03:00) | 1 | 3.9% | light | 1 min | complete (6 min, est.) |
 | 2026-09-21 22:00 (+03:00) | 1 | 2.3% (est.) | light | 1 min | recovered |
@@ -205,6 +206,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:MONTHS:START -->
 | Month | Waves | Highest impact |
 |---|---|---|
+| 2026-10 | 1 | 59% |
 | 2026-09 | 13 | 53% |
 | 2026-08 | 4 | 100% |
 <!-- BANWAVE:README:MONTHS:END -->
