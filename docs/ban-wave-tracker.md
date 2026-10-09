@@ -25,7 +25,7 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-10-09 10:25 (+03:00) | 4 | 59% | heavy | 10 min | ongoing (8 h 44 min) |
+| 2026-10-09 10:25 (+03:00) | 4 | 59% | heavy | 10 min | ongoing (13 h 26 min) |
 | 2026-09-30 11:38 (+03:00) | 4 | 41% | heavy | 47 min | complete (55 min) |
 | 2026-09-24 12:10 (+03:00) | 1 | 3.9% | light | 1 min | complete (6 min, est.) |
 | 2026-09-21 22:00 (+03:00) | 1 | 2.3% (est.) | light | 1 min | recovered |
@@ -66,7 +66,7 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 <!-- BANWAVE:SERVERS:START -->
 | Server | Wave start (UTC+3) | Impact | Recovery |
 |---|---|---|---|
-| Multi Node Server 2 | 2026-10-09 10:25 (+03:00) | 59% | ongoing (8 h 44 min) |
+| Multi Node Server 2 | 2026-10-09 10:25 (+03:00) | 59% | ongoing (13 h 26 min) |
 | Multi Node Server 4 | 2026-10-09 10:25 (+03:00) | 43% | complete (6 h 9 min) |
 | Multi Node Server 3 | 2026-10-09 10:25 (+03:00) | 58% | complete (6 h 9 min) |
 | Multi Node Server 1 | 2026-10-09 10:25 (+03:00) | 51% | complete (6 h 9 min) |
