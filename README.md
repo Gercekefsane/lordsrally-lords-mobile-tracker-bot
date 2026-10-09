@@ -156,7 +156,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 
 <!-- BANWAVE:README:STATUS:START -->
 **A wave is in progress.** Last wave started 2026-10-09 10:25 (+03:00) (0 day(s) ago). Waves in the last 30 days: **9**.
-**Median recovery:** under 1 h across 19 measured server waves (15 estimated from logs).
+**Median recovery:** under 1 h across 22 measured server waves (15 estimated from logs).
 <!-- BANWAVE:README:STATUS:END -->
 
 **Last wave at a glance:**
@@ -171,7 +171,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 | Impact | 59% |
 | Severity | heavy |
 | Duration | 10 min |
-| Recovery | ongoing (1 h 34 min) |
+| Recovery | ongoing (8 h 44 min) |
 
 Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.
 <!-- BANWAVE:README:LATEST:END -->
@@ -181,7 +181,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-10-09 10:25 (+03:00) | 4 | 59% | heavy | 10 min | ongoing (1 h 34 min) |
+| 2026-10-09 10:25 (+03:00) | 4 | 59% | heavy | 10 min | ongoing (8 h 44 min) |
 | 2026-09-30 11:38 (+03:00) | 4 | 41% | heavy | 47 min | complete (55 min) |
 | 2026-09-24 12:10 (+03:00) | 1 | 3.9% | light | 1 min | complete (6 min, est.) |
 | 2026-09-21 22:00 (+03:00) | 1 | 2.3% (est.) | light | 1 min | recovered |
