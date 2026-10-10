@@ -12,7 +12,7 @@ This page is generated from LordsRally's own measurements and **updated automati
 ## Current status
 
 <!-- BANWAVE:STATUS:START -->
-**A wave is in progress.** Last wave started 2026-10-09 10:25 (+03:00) (0 day(s) ago). Waves in the last 30 days: **9**.
+**A wave is in progress.** Last wave started 2026-10-09 10:25 (+03:00) (1 day(s) ago). Waves in the last 30 days: **8**.
 **Median recovery:** under 1 h across 22 measured server waves (15 estimated from logs).
 <!-- BANWAVE:STATUS:END -->
 
@@ -25,7 +25,7 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-10-09 10:25 (+03:00) | 4 | 59% | heavy | 10 min | ongoing (13 h 26 min) |
+| 2026-10-09 10:25 (+03:00) | 4 | 59% | heavy | 10 min | ongoing (17 h 22 min) |
 | 2026-09-30 11:38 (+03:00) | 4 | 41% | heavy | 47 min | complete (55 min) |
 | 2026-09-24 12:10 (+03:00) | 1 | 3.9% | light | 1 min | complete (6 min, est.) |
 | 2026-09-21 22:00 (+03:00) | 1 | 2.3% (est.) | light | 1 min | recovered |
@@ -66,7 +66,7 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 <!-- BANWAVE:SERVERS:START -->
 | Server | Wave start (UTC+3) | Impact | Recovery |
 |---|---|---|---|
-| Multi Node Server 2 | 2026-10-09 10:25 (+03:00) | 59% | ongoing (13 h 26 min) |
+| Multi Node Server 2 | 2026-10-09 10:25 (+03:00) | 59% | ongoing (17 h 22 min) |
 | Multi Node Server 4 | 2026-10-09 10:25 (+03:00) | 43% | complete (6 h 9 min) |
 | Multi Node Server 3 | 2026-10-09 10:25 (+03:00) | 58% | complete (6 h 9 min) |
 | Multi Node Server 1 | 2026-10-09 10:25 (+03:00) | 51% | complete (6 h 9 min) |
@@ -157,4 +157,4 @@ Automation consumers should use [`data/banwave.json`](../data/banwave.json) inst
 Times are shown in **Türkiye time (UTC+3)** — the same clock the site uses; the raw UTC values are the `startedAt`/`endedAt` fields. Durations are given at minute resolution (`minutes`); the rounded `hours` field is kept for compatibility and is not what the tables print. Field names mirror the platform's public tracker endpoint. `impactPct` is always a **percentage**, never an absolute account count; `null` means it could not be measured. `estimated: true` marks a derived estimate. `status: "unreadable"` means the source could not be read — **keep the previous data in that case** (the sync job does exactly this).
 
 <!-- BANWAVE:UPDATED -->
-_Last updated: 2026-10-09 — source: /ban-waves_
+_Last updated: 2026-10-10 — source: /ban-waves_
