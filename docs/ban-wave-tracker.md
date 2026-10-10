@@ -12,7 +12,7 @@ This page is generated from LordsRally's own measurements and **updated automati
 ## Current status
 
 <!-- BANWAVE:STATUS:START -->
-**No wave in progress.** Last wave: 2026-10-09 10:25 (+03:00) (1 day(s) ago). Waves in the last 30 days: **8**.
+**No wave in progress.** Last wave: 2026-10-09 10:25 (+03:00) (2 day(s) ago). Waves in the last 30 days: **8**.
 **Median recovery:** under 1 h across 23 measured server waves (15 estimated from logs).
 <!-- BANWAVE:STATUS:END -->
 
