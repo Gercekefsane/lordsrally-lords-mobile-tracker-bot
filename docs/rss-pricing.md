@@ -26,20 +26,20 @@ Each row is one product in one zone. Zone labels and kingdom ranges describe whe
 | 44442 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.48 |
 | 44440 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.42 |
 | 22222 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.36 |
-| 22221 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.30 |
+| 22221 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.42 |
 | 22220 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.24 |
 | 44444 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.96 |
 | 44442 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.84 |
 | 44440 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.72 |
 | 22222 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.60 |
 | 22221 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.48 |
-| 22220 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.36 |
-| 44444 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.80 |
-| 44442 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.44 |
-| 44440 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.20 |
-| 22222 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.20 |
-| 22221 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $0.84 |
-| 22220 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $0.72 |
+| 22220 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.24 |
+| 44444 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $2.04 |
+| 44442 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.80 |
+| 44440 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.44 |
+| 22222 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.44 |
+| 22221 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.08 |
+| 22220 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $0.96 |
 | 44444 | Snowbeast (Kingdom 1-1167) | K1–K1230 | $3.00 |
 | 44442 | Snowbeast (Kingdom 1-1167) | K1–K1230 | $2.40 |
 <!-- RSS:TABLE:END -->

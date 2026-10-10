@@ -30,8 +30,8 @@
       "endedAtTr": "2026-10-09 10:34 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1042,
-        "hours": 17,
+        "minutes": 1417,
+        "hours": 24,
         "estimated": false
       }
     },
@@ -225,7 +225,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 3,
-      "daysAgo": 31,
+      "daysAgo": 32,
       "startedAtTr": "2026-09-08 04:43 (+03:00)",
       "endedAtTr": "2026-09-08 04:46 (+03:00)",
       "recovery": {
@@ -285,7 +285,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 13,
-      "daysAgo": 38,
+      "daysAgo": 39,
       "startedAtTr": "2026-09-01 08:44 (+03:00)",
       "endedAtTr": "2026-09-01 08:57 (+03:00)",
       "recovery": {
@@ -305,7 +305,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 53,
+      "daysAgo": 54,
       "startedAtTr": "2026-08-17 08:38 (+03:00)",
       "endedAtTr": "2026-08-17 08:38 (+03:00)",
       "recovery": {
@@ -325,7 +325,7 @@
       "capped": true,
       "hours": 0,
       "minutes": 6,
-      "daysAgo": 57,
+      "daysAgo": 58,
       "startedAtTr": "2026-08-13 05:59 (+03:00)",
       "endedAtTr": "2026-08-13 06:05 (+03:00)",
       "recovery": {
@@ -407,8 +407,8 @@
       "endedAtTr": "2026-10-09 10:34 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1042,
-        "hours": 17,
+        "minutes": 1417,
+        "hours": 24,
         "estimated": false
       }
     },
