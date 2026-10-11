@@ -240,18 +240,14 @@ Prices are **sell prices in USD**, mirrored automatically from the platform's pu
 <!-- PRICING:README:CREDITS:START -->
 | Credit package | Credits | Sell price | Validity | Price per 1,000 credits |
 |---|---|---|---|---|
-| Starter | 5000 | $45.00 | 30 days | $9.00 |
-| Standard | 20000 | $175.00 | 30 days | $8.75 |
-| Pro | 50000 | $430.00 | 30 days | $8.60 |
-| Business | 100000 | $850.00 | 30 days | $8.50 |
-| Enterprise | 200000 | $1,690.00 | 30 days | $8.45 |
+| _no credit packages_ | | | | |
 
 <!-- PRICING:README:CREDITS:END -->
 
 👉 Full price list, terms and add-ons: [`docs/pricing.md`](docs/pricing.md) · RSS products: [`docs/rss-pricing.md`](docs/rss-pricing.md) · Live: [lordsrally.com/buynow](https://lordsrally.com/buynow)
 
 <!-- PRICING:README:UPDATED -->
-_Last updated: 2026-10-10 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
+_Last updated: 2026-10-11 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
 
 ---
 
@@ -275,7 +271,7 @@ New resellers start at the **Normal** level. The tier system is currently **on**
 👉 Detail: [`docs/reseller.md`](docs/reseller.md) · Live: [lordsrally.com/salesman](https://lordsrally.com/salesman)
 
 <!-- RESELLER:README:UPDATED -->
-_Last updated: 2026-10-10 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
+_Last updated: 2026-10-11 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
 
 ---
 
@@ -387,4 +383,4 @@ Documentation and data in this repository are published for reference and citati
 See [LICENSE](LICENSE).
 
 <!-- BANWAVE:README:UPDATED -->
-_Last updated: 2026-10-10 — source: /ban-waves_
+_Last updated: 2026-10-11 — source: /ban-waves_

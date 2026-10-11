@@ -73,11 +73,7 @@ Bulk Message campaigns are paid from your LordsRally USD balance in **credits**.
 <!-- PRICING:CREDITS:START -->
 | Credit package | Credits | Sell price | Validity | Price per 1,000 credits |
 |---|---|---|---|---|
-| Starter | 5000 | $45.00 | 30 days | $9.00 |
-| Standard | 20000 | $175.00 | 30 days | $8.75 |
-| Pro | 50000 | $430.00 | 30 days | $8.60 |
-| Business | 100000 | $850.00 | 30 days | $8.50 |
-| Enterprise | 200000 | $1,690.00 | 30 days | $8.45 |
+| _no credit packages_ | | | | |
 
 <!-- PRICING:CREDITS:END -->
 
@@ -86,12 +82,7 @@ Bulk Message campaigns are paid from your LordsRally USD balance in **credits**.
 <!-- PRICING:CATEGORIES:START -->
 | Message category | Credits per message |
 |---|---|
-| General (announcements, recruiting, events) | 1 |
-| Other special content | 1.2 |
-| Gem sales | 1.5 |
-| Other special content | 1.7 |
-| Other special content | 1.8 |
-| Account sales | 2 |
+| _no categories_ | |
 
 <!-- PRICING:CATEGORIES:END -->
 
@@ -110,4 +101,4 @@ New here? Try the **1-day free trial** first — see [`free-trial.md`](free-tria
 🔗 [Features](https://lordsrally.com/features) · [Buy now](https://lordsrally.com/buynow) · [Reseller margins](reseller.md)
 
 <!-- PRICING:UPDATED -->
-_Last updated: 2026-10-10 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
+_Last updated: 2026-10-11 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
