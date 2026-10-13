@@ -12,7 +12,7 @@ This page is generated from LordsRally's own measurements and **updated automati
 ## Current status
 
 <!-- BANWAVE:STATUS:START -->
-**No wave in progress.** Last wave: 2026-10-09 10:25 (+03:00) (2 day(s) ago). Waves in the last 30 days: **8**.
+**No wave in progress.** Last wave: 2026-10-09 10:25 (+03:00) (4 day(s) ago). Waves in the last 30 days: **8**.
 **Median recovery:** under 1 h across 23 measured server waves (15 estimated from logs).
 <!-- BANWAVE:STATUS:END -->
 
@@ -157,4 +157,4 @@ Automation consumers should use [`data/banwave.json`](../data/banwave.json) inst
 Times are shown in **Türkiye time (UTC+3)** — the same clock the site uses; the raw UTC values are the `startedAt`/`endedAt` fields. Durations are given at minute resolution (`minutes`); the rounded `hours` field is kept for compatibility and is not what the tables print. Field names mirror the platform's public tracker endpoint. `impactPct` is always a **percentage**, never an absolute account count; `null` means it could not be measured. `estimated: true` marks a derived estimate. `status: "unreadable"` means the source could not be read — **keep the previous data in that case** (the sync job does exactly this).
 
 <!-- BANWAVE:UPDATED -->
-_Last updated: 2026-10-11 — source: /ban-waves_
+_Last updated: 2026-10-13 — source: /ban-waves_
