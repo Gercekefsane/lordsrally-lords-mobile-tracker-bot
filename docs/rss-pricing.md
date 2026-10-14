@@ -25,18 +25,21 @@ Each row is one product in one zone. Zone labels and kingdom ranges describe whe
 | 44444 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.60 |
 | 44442 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.48 |
 | 44440 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.42 |
+| FOOD 4B | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.48 |
 | 22222 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.36 |
 | 22221 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.42 |
 | 22220 | Zone 1 (Kingdom 1-1900) | K1–K1900 | $0.24 |
 | 44444 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.96 |
 | 44442 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.84 |
 | 44440 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.72 |
+| FOOD 4B | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.84 |
 | 22222 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.60 |
 | 22221 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.48 |
 | 22220 | Zone 2 (Kingdom 1901-1984) | K1901–K1984 | $0.24 |
 | 44444 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $2.04 |
 | 44442 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.80 |
 | 44440 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.44 |
+| FOOD 4B | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.92 |
 | 22222 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.44 |
 | 22221 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $1.08 |
 | 22220 | Zone 3 (Kingdom 1985-2003) | K1985–K2003 | $0.96 |
