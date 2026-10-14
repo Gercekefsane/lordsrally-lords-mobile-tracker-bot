@@ -105,7 +105,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 22,
+      "daysAgo": 23,
       "startedAtTr": "2026-09-21 20:55 (+03:00)",
       "endedAtTr": "2026-09-21 20:55 (+03:00)",
       "recovery": {
@@ -345,7 +345,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 1,
-      "daysAgo": 62,
+      "daysAgo": 63,
       "startedAtTr": "2026-08-12 20:15 (+03:00)",
       "endedAtTr": "2026-08-12 20:15 (+03:00)",
       "recovery": {
