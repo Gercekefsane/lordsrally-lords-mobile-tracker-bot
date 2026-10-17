@@ -69,4 +69,4 @@ The customer price is what your buyer pays. The commission is the part of it you
 🔗 [Salesman page](https://lordsrally.com/salesman) · [Bot package pricing](pricing.md) · [Website](https://lordsrally.com)
 
 <!-- RESELLER:UPDATED -->
-_Last updated: 2026-10-16 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
+_Last updated: 2026-10-17 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
