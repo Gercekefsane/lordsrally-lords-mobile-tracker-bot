@@ -6,8 +6,8 @@
     "state": "quiet",
     "lastStartedAt": "2026-10-09T07:25:08Z",
     "lastStartedAtTr": "2026-10-09 10:25 (+03:00)",
-    "daysAgo": 14,
-    "last30d": 3
+    "daysAgo": 15,
+    "last30d": 2
   },
   "medianRecovery": {
     "hours": 0,
@@ -85,7 +85,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 31,
+      "daysAgo": 32,
       "startedAtTr": "2026-09-21 22:00 (+03:00)",
       "endedAtTr": "2026-09-21 22:00 (+03:00)",
       "recovery": {
