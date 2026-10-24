@@ -57,8 +57,7 @@ Add-ons attach to a package. Each is priced per month on top of the package.
 <!-- PRICING:ADDONS:START -->
 | Add-on | Sell price per month |
 |---|---|
-| Scout Bot | $20.00 |
-| Guild Chat Bot | $10.00 |
+| Scout Bot | $15.00 |
 
 <!-- PRICING:ADDONS:END -->
 
@@ -110,4 +109,4 @@ New here? Try the **1-day free trial** first — see [`free-trial.md`](free-tria
 🔗 [Features](https://lordsrally.com/features) · [Buy now](https://lordsrally.com/buynow) · [Reseller margins](reseller.md)
 
 <!-- PRICING:UPDATED -->
-_Last updated: 2026-10-23 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
+_Last updated: 2026-10-24 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
