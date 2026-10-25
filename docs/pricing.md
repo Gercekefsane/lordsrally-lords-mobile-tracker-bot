@@ -109,4 +109,4 @@ New here? Try the **1-day free trial** first — see [`free-trial.md`](free-tria
 🔗 [Features](https://lordsrally.com/features) · [Buy now](https://lordsrally.com/buynow) · [Reseller margins](reseller.md)
 
 <!-- PRICING:UPDATED -->
-_Last updated: 2026-10-24 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
+_Last updated: 2026-10-25 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
