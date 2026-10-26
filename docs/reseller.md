@@ -22,7 +22,6 @@ For each package tier you sell, you keep a percentage of the customer price. You
 | FAST ULTRA | 3 mo | $55.00 | 16.67% |
 | FAST ULTRA | 6 mo | $50.00 | 16.66% |
 | FAST ULTRA | 12 mo | $45.00 | 16.67% |
-| FAST ULTRA | KVK edition | $10.00 | 16.7% |
 
 <!-- RESELLER:TABLE:END -->
 

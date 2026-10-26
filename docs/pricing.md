@@ -35,7 +35,6 @@ Every package is sold in several terms (monthly, multi-month, yearly). Detection
 | FAST ULTRA | 3 mo | $165.00 | $55.00 |
 | FAST ULTRA | 6 mo | $300.00 | $50.00 |
 | FAST ULTRA | 12 mo | $540.00 | $45.00 |
-| FAST ULTRA | 3 days | $10.00 | $10.00 |
 
 <!-- PRICING:TIERS:END -->
 
