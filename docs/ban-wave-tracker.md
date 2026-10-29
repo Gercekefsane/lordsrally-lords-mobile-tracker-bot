@@ -12,8 +12,8 @@ This page is generated from LordsRally's own measurements and **updated automati
 ## Current status
 
 <!-- BANWAVE:STATUS:START -->
-**A wave is in progress.** Last wave started 2026-10-29 10:33 (+03:00) (0 day(s) ago). Waves in the last 30 days: **7**.
-**Median recovery:** under 1 h across 28 measured server waves (15 estimated from logs).
+**No wave in progress.** Last wave: 2026-10-29 15:09 (+03:00) (0 day(s) ago). Waves in the last 30 days: **8**.
+**Median recovery:** under 1 h across 31 measured server waves (15 estimated from logs).
 <!-- BANWAVE:STATUS:END -->
 
 ---
@@ -25,8 +25,9 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-10-29 10:33 (+03:00) | 4 | 9.7% | moderate | 5 min | ongoing (2 h 19 min) |
-| 2026-10-29 04:06 (+03:00) | 1 | 8.2% | moderate | 1 min | ongoing (8 h 46 min) |
+| 2026-10-29 15:09 (+03:00) | 1 | 0.8% (est.) | light | 1 min | recovered |
+| 2026-10-29 10:33 (+03:00) | 4 | 9.7% | moderate | 5 min | complete (5 h 22 min) |
+| 2026-10-29 04:06 (+03:00) | 1 | 8.2% | moderate | 1 min | complete (11 h 49 min) |
 | 2026-10-29 03:04 (+03:00) | 1 | 100% | heavy | 12 min | complete (18 min) |
 | 2026-10-28 06:37 (+03:00) | 1 | 0.8% | light | 1 min | complete (6 min) |
 | 2026-10-27 08:44 (+03:00) | 1 | 0.8% | light | 1 min | complete (5 min) |
@@ -57,7 +58,7 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:MONTHS:START -->
 | Month | Waves | Highest impact |
 |---|---|---|
-| 2026-10 | 6 | 100% |
+| 2026-10 | 7 | 100% |
 | 2026-09 | 13 | 53% |
 | 2026-08 | 4 | 100% |
 <!-- BANWAVE:MONTHS:END -->
@@ -71,11 +72,12 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 <!-- BANWAVE:SERVERS:START -->
 | Server | Wave start (UTC+3) | Impact | Recovery |
 |---|---|---|---|
+| Multi Node Server 3 | 2026-10-29 15:09 (+03:00) | 0.8% (est.) | recovered |
 | Multi Node Server 4 | 2026-10-29 10:38 (+03:00) | 1.6% | complete (5 min) |
 | Multi Node Server 2 | 2026-10-29 10:35 (+03:00) | 1.6% | complete (6 min) |
-| Multi Node Server 1 | 2026-10-29 10:34 (+03:00) | 1.6% | ongoing (2 h 18 min) |
-| Multi Node Server 3 | 2026-10-29 10:33 (+03:00) | 9.7% | ongoing (2 h 19 min) |
-| Multi Node Server 3 | 2026-10-29 04:06 (+03:00) | 8.2% | ongoing (8 h 46 min) |
+| Multi Node Server 1 | 2026-10-29 10:34 (+03:00) | 1.6% | complete (5 h 21 min) |
+| Multi Node Server 3 | 2026-10-29 10:33 (+03:00) | 9.7% | complete (5 h 22 min) |
+| Multi Node Server 3 | 2026-10-29 04:06 (+03:00) | 8.2% | complete (11 h 49 min) |
 | Multi Node Server 3 | 2026-10-29 03:04 (+03:00) | 100% | complete (18 min) |
 | Multi Node Server 4 | 2026-10-28 06:37 (+03:00) | 0.8% | complete (6 min) |
 | Multi Node Server 4 | 2026-10-27 08:44 (+03:00) | 0.8% | complete (5 min) |
