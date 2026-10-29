@@ -1,20 +1,40 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-28",
+  "updatedAt": "2026-10-29",
   "page": "/ban-waves",
   "summary": {
     "state": "quiet",
-    "lastStartedAt": "2026-10-28T03:37:02Z",
-    "lastStartedAtTr": "2026-10-28 06:37 (+03:00)",
-    "daysAgo": 1,
-    "last30d": 4
+    "lastStartedAt": "2026-10-29T00:04:56Z",
+    "lastStartedAtTr": "2026-10-29 03:04 (+03:00)",
+    "daysAgo": 0,
+    "last30d": 5
   },
   "medianRecovery": {
     "hours": 0,
-    "count": 25,
+    "count": 26,
     "estimatedCount": 15
   },
   "waves": [
+    {
+      "startedAt": "2026-10-29T00:04:56Z",
+      "endedAt": "2026-10-29T00:17:01Z",
+      "serverCount": 1,
+      "impactPct": 100,
+      "severity": "heavy",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "minutes": 12,
+      "daysAgo": 0,
+      "startedAtTr": "2026-10-29 03:04 (+03:00)",
+      "endedAtTr": "2026-10-29 03:17 (+03:00)",
+      "recovery": {
+        "state": "complete",
+        "minutes": 18,
+        "hours": 0,
+        "estimated": false
+      }
+    },
     {
       "startedAt": "2026-10-28T03:37:02Z",
       "endedAt": "2026-10-28T03:37:02Z",
@@ -265,7 +285,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 3,
-      "daysAgo": 50,
+      "daysAgo": 51,
       "startedAtTr": "2026-09-08 04:43 (+03:00)",
       "endedAtTr": "2026-09-08 04:46 (+03:00)",
       "recovery": {
@@ -419,8 +439,8 @@
   "monthly": [
     {
       "month": "2026-10",
-      "count": 3,
-      "highestImpactPct": 59
+      "count": 4,
+      "highestImpactPct": 100
     },
     {
       "month": "2026-09",
@@ -435,6 +455,23 @@
   ],
   "years": [],
   "servers": [
+    {
+      "server": "Multi Node Server 3",
+      "startedAt": "2026-10-29T00:04:56Z",
+      "endedAt": "2026-10-29T00:17:01Z",
+      "impactPct": 100,
+      "estimated": false,
+      "capped": false,
+      "minutes": 12,
+      "startedAtTr": "2026-10-29 03:04 (+03:00)",
+      "endedAtTr": "2026-10-29 03:17 (+03:00)",
+      "recovery": {
+        "state": "complete",
+        "minutes": 18,
+        "hours": 0,
+        "estimated": false
+      }
+    },
     {
       "server": "Multi Node Server 4",
       "startedAt": "2026-10-28T03:37:02Z",
