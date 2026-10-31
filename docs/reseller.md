@@ -17,7 +17,6 @@ For each package tier you sell, you keep a percentage of the customer price. You
 | FAST x1 | 3 mo | $35.00 | 16.66% |
 | FAST x1 | 6 mo | $33.00 | 16.67% |
 | FAST x1 | 12 mo | $30.00 | 16.67% |
-| FAST x1 | KVK edition | $8.00 | 16.63% |
 | FAST ULTRA | 1 mo | $60.00 | 16.67% |
 | FAST ULTRA | 3 mo | $55.00 | 16.67% |
 | FAST ULTRA | 6 mo | $50.00 | 16.66% |

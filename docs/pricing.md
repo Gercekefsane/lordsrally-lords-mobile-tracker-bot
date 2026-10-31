@@ -30,7 +30,6 @@ Every package is sold in several terms (monthly, multi-month, yearly). Detection
 | FAST x1 | 3 mo | $105.00 | $35.00 |
 | FAST x1 | 6 mo | $198.00 | $33.00 |
 | FAST x1 | 12 mo | $360.00 | $30.00 |
-| FAST x1 | 3 days | $8.00 | $8.00 |
 | FAST ULTRA | 1 mo | $60.00 | $60.00 |
 | FAST ULTRA | 3 mo | $165.00 | $55.00 |
 | FAST ULTRA | 6 mo | $300.00 | $50.00 |

@@ -11,7 +11,7 @@
   },
   "medianRecovery": {
     "hours": 1,
-    "count": 41,
+    "count": 42,
     "estimatedCount": 15
   },
   "waves": [
@@ -29,9 +29,9 @@
       "startedAtTr": "2026-10-31 02:33 (+03:00)",
       "endedAtTr": "2026-10-31 03:12 (+03:00)",
       "recovery": {
-        "state": "ongoing",
-        "minutes": 843,
-        "hours": 14,
+        "state": "complete",
+        "minutes": 1103,
+        "hours": 18,
         "estimated": false
       }
     },
@@ -45,13 +45,13 @@
       "capped": true,
       "hours": 2,
       "minutes": 149,
-      "daysAgo": 0,
+      "daysAgo": 1,
       "startedAtTr": "2026-10-30 20:01 (+03:00)",
       "endedAtTr": "2026-10-30 22:30 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1235,
-        "hours": 21,
+        "minutes": 1529,
+        "hours": 25,
         "estimated": false
       }
     },
@@ -65,7 +65,7 @@
       "capped": false,
       "hours": 2,
       "minutes": 97,
-      "daysAgo": 0,
+      "daysAgo": 1,
       "startedAtTr": "2026-10-30 16:36 (+03:00)",
       "endedAtTr": "2026-10-30 18:13 (+03:00)",
       "recovery": {
@@ -305,7 +305,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 39,
+      "daysAgo": 40,
       "startedAtTr": "2026-09-21 20:55 (+03:00)",
       "endedAtTr": "2026-09-21 20:55 (+03:00)",
       "recovery": {
@@ -545,7 +545,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 1,
-      "daysAgo": 79,
+      "daysAgo": 80,
       "startedAtTr": "2026-08-12 20:15 (+03:00)",
       "endedAtTr": "2026-08-12 20:15 (+03:00)",
       "recovery": {
@@ -606,9 +606,9 @@
       "startedAtTr": "2026-10-31 02:33 (+03:00)",
       "endedAtTr": "2026-10-31 03:12 (+03:00)",
       "recovery": {
-        "state": "ongoing",
-        "minutes": 843,
-        "hours": 14,
+        "state": "complete",
+        "minutes": 1103,
+        "hours": 18,
         "estimated": false
       }
     },
@@ -675,8 +675,8 @@
       "endedAtTr": "2026-10-30 20:25 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1235,
-        "hours": 21,
+        "minutes": 1528,
+        "hours": 25,
         "estimated": false
       }
     },
