@@ -155,7 +155,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 **Latest measurement (auto-updated):**
 
 <!-- BANWAVE:README:STATUS:START -->
-**No wave in progress.** Last wave: 2026-10-30 20:01 (+03:00) (1 day(s) ago). Waves in the last 30 days: **10**.
+**A wave is in progress.** Last wave started 2026-10-31 02:33 (+03:00) (0 day(s) ago). Waves in the last 30 days: **11**.
 **Median recovery:** 1 h across 41 measured server waves (15 estimated from logs).
 <!-- BANWAVE:README:STATUS:END -->
 
@@ -164,14 +164,14 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 <!-- BANWAVE:README:LATEST:START -->
 | Field | Value |
 |---|---|
-| Last wave | 2026-10-30 20:01 (+03:00) |
-| Wave ended | 2026-10-30 22:30 (+03:00) |
+| Last wave | 2026-10-31 02:33 (+03:00) |
+| Wave ended | 2026-10-31 03:12 (+03:00) |
 | Days ago | 0 |
-| Servers hit | 5 |
-| Impact | 100% |
+| Servers hit | 1 |
+| Impact | 42% |
 | Severity | heavy |
-| Duration | 2 h 29 min |
-| Recovery | recovered |
+| Duration | 40 min |
+| Recovery | ongoing (7 h 24 min) |
 
 Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.
 <!-- BANWAVE:README:LATEST:END -->
@@ -181,7 +181,8 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-10-30 20:01 (+03:00) | 5 | 100% | heavy | 2 h 29 min | recovered |
+| 2026-10-31 02:33 (+03:00) | 1 | 42% | heavy | 40 min | ongoing (7 h 24 min) |
+| 2026-10-30 20:01 (+03:00) | 5 | 100% | heavy | 2 h 29 min | ongoing (13 h 56 min) |
 | 2026-10-30 16:36 (+03:00) | 2 | 41% | heavy | 1 h 37 min | complete (1 h 42 min) |
 | 2026-10-30 08:27 (+03:00) | 4 | 16% | moderate | 34 min | complete (53 min) |
 | 2026-10-29 15:09 (+03:00) | 1 | 0.8% (est.) | light | 1 min | recovered |
@@ -215,7 +216,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:MONTHS:START -->
 | Month | Waves | Highest impact |
 |---|---|---|
-| 2026-10 | 10 | 100% |
+| 2026-10 | 11 | 100% |
 | 2026-09 | 13 | 53% |
 | 2026-08 | 4 | 100% |
 <!-- BANWAVE:README:MONTHS:END -->
