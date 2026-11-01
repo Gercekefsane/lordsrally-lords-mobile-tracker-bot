@@ -25,9 +25,9 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-10-31 20:57 (+03:00) | 7 | 100% | heavy | 2 h 36 min | ongoing (4 h 30 min) |
+| 2026-10-31 20:57 (+03:00) | 7 | 100% | heavy | 2 h 36 min | ongoing (8 h 13 min) |
 | 2026-10-31 02:33 (+03:00) | 1 | 42% | heavy | 40 min | complete (18 h 23 min) |
-| 2026-10-30 20:01 (+03:00) | 5 | 100% | heavy | 2 h 29 min | ongoing (1 d 5 h) |
+| 2026-10-30 20:01 (+03:00) | 5 | 100% | heavy | 2 h 29 min | ongoing (1 d 9 h) |
 | 2026-10-30 16:36 (+03:00) | 2 | 41% | heavy | 1 h 37 min | complete (1 h 42 min) |
 | 2026-10-30 08:27 (+03:00) | 4 | 16% | moderate | 34 min | complete (53 min) |
 | 2026-10-29 15:09 (+03:00) | 1 | 0.8% (est.) | light | 1 min | recovered |
@@ -78,17 +78,17 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 | Server | Wave start (UTC+3) | Impact | Recovery |
 |---|---|---|---|
 | Multi Node Server 3 | 2026-10-31 23:05 (+03:00) | 6.3% (est.) | recovered |
-| Multi Node Server 1 | 2026-10-31 23:03 (+03:00) | 23% (est.) | ongoing (2 h 23 min) |
+| Multi Node Server 1 | 2026-10-31 23:03 (+03:00) | 23% (est.) | ongoing (6 h 7 min) |
 | Multi Node Server 3 | 2026-10-31 21:59 (+03:00) | 3.1% (est.) | recovered |
-| Multi Node Server 1 | 2026-10-31 21:58 (+03:00) | 24% (est.) | ongoing (3 h 29 min) |
+| Multi Node Server 1 | 2026-10-31 21:58 (+03:00) | 24% (est.) | ongoing (7 h 12 min) |
 | Multi Node Server 3 | 2026-10-31 21:16 (+03:00) | 2.3% | complete (15 min) |
 | Multi Node Server 2 | 2026-10-31 20:58 (+03:00) | 100% | complete (2 h 40 min) |
-| Multi Node Server 1 | 2026-10-31 20:57 (+03:00) | 16% (est.) | ongoing (4 h 30 min) |
+| Multi Node Server 1 | 2026-10-31 20:57 (+03:00) | 16% (est.) | ongoing (8 h 13 min) |
 | Multi Node Server 2 | 2026-10-31 02:33 (+03:00) | 42% | complete (18 h 23 min) |
 | Multi Node Server 1 | 2026-10-30 20:59 (+03:00) | 22% | complete (1 h 20 min) |
 | Multi Node Server 4 | 2026-10-30 20:09 (+03:00) | 8.6% | complete (1 h 48 min) |
 | Multi Node Server 3 | 2026-10-30 20:06 (+03:00) | 17% | complete (2 h 29 min) |
-| Multi Node Server 1 | 2026-10-30 20:01 (+03:00) | 23% (est.) | ongoing (1 d 5 h) |
+| Multi Node Server 1 | 2026-10-30 20:01 (+03:00) | 23% (est.) | ongoing (1 d 9 h) |
 | Multi Node Server 2 | 2026-10-30 20:01 (+03:00) | 100% | complete (2 h 43 min) |
 | Multi Node Server 2 | 2026-10-30 16:36 (+03:00) | 5.5% | complete (47 min) |
 | Multi Node Server 1 | 2026-10-30 16:36 (+03:00) | 41% | complete (1 h 42 min) |
@@ -196,4 +196,4 @@ Automation consumers should use [`data/banwave.json`](../data/banwave.json) inst
 Times are shown in **Türkiye time (UTC+3)** — the same clock the site uses; the raw UTC values are the `startedAt`/`endedAt` fields. Durations are given at minute resolution (`minutes`); the rounded `hours` field is kept for compatibility and is not what the tables print. Field names mirror the platform's public tracker endpoint. `impactPct` is always a **percentage**, never an absolute account count; `null` means it could not be measured. `estimated: true` marks a derived estimate. `status: "unreadable"` means the source could not be read — **keep the previous data in that case** (the sync job does exactly this).
 
 <!-- BANWAVE:UPDATED -->
-_Last updated: 2026-10-31 — source: /ban-waves_
+_Last updated: 2026-11-01 — source: /ban-waves_
