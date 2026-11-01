@@ -90,8 +90,8 @@
       "endedAtTr": "2026-11-01 05:24 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 818,
-        "hours": 14,
+        "minutes": 1087,
+        "hours": 18,
         "estimated": false
       }
     },
@@ -105,13 +105,13 @@
       "capped": true,
       "hours": 3,
       "minutes": 156,
-      "daysAgo": 0,
+      "daysAgo": 1,
       "startedAtTr": "2026-10-31 20:57 (+03:00)",
       "endedAtTr": "2026-10-31 23:33 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1322,
-        "hours": 22,
+        "minutes": 1591,
+        "hours": 27,
         "estimated": false
       }
     },
@@ -145,13 +145,13 @@
       "capped": true,
       "hours": 2,
       "minutes": 149,
-      "daysAgo": 1,
+      "daysAgo": 2,
       "startedAtTr": "2026-10-30 20:01 (+03:00)",
       "endedAtTr": "2026-10-30 22:30 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 2817,
-        "hours": 47,
+        "minutes": 3087,
+        "hours": 51,
         "estimated": false
       }
     },
@@ -385,7 +385,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 40,
+      "daysAgo": 41,
       "startedAtTr": "2026-09-21 22:00 (+03:00)",
       "endedAtTr": "2026-09-21 22:00 (+03:00)",
       "recovery": {
@@ -405,7 +405,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 40,
+      "daysAgo": 41,
       "startedAtTr": "2026-09-21 20:55 (+03:00)",
       "endedAtTr": "2026-09-21 20:55 (+03:00)",
       "recovery": {
@@ -645,7 +645,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 1,
-      "daysAgo": 80,
+      "daysAgo": 81,
       "startedAtTr": "2026-08-12 20:15 (+03:00)",
       "endedAtTr": "2026-08-12 20:15 (+03:00)",
       "recovery": {
@@ -814,8 +814,8 @@
       "endedAtTr": "2026-11-01 05:24 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 816,
-        "hours": 14,
+        "minutes": 1086,
+        "hours": 18,
         "estimated": false
       }
     },
@@ -865,8 +865,8 @@
       "endedAtTr": "2026-10-31 23:23 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1193,
-        "hours": 20,
+        "minutes": 1462,
+        "hours": 24,
         "estimated": false
       }
     },
@@ -882,8 +882,8 @@
       "endedAtTr": "2026-10-31 23:29 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1195,
-        "hours": 20,
+        "minutes": 1465,
+        "hours": 24,
         "estimated": false
       }
     },
@@ -899,8 +899,8 @@
       "endedAtTr": "2026-10-31 22:31 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1259,
-        "hours": 21,
+        "minutes": 1529,
+        "hours": 25,
         "estimated": false
       }
     },
@@ -916,8 +916,8 @@
       "endedAtTr": "2026-10-31 22:08 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1261,
-        "hours": 21,
+        "minutes": 1530,
+        "hours": 25,
         "estimated": false
       }
     },
@@ -967,8 +967,8 @@
       "endedAtTr": "2026-10-31 21:24 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1322,
-        "hours": 22,
+        "minutes": 1591,
+        "hours": 27,
         "estimated": false
       }
     },
@@ -1052,8 +1052,8 @@
       "endedAtTr": "2026-10-30 20:25 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 2817,
-        "hours": 47,
+        "minutes": 3086,
+        "hours": 51,
         "estimated": false
       }
     },
