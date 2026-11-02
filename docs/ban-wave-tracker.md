@@ -12,7 +12,7 @@ This page is generated from LordsRally's own measurements and **updated automati
 ## Current status
 
 <!-- BANWAVE:STATUS:START -->
-**A wave is in progress.** Last wave started 2026-11-01 12:16 (+03:00) (0 day(s) ago). Waves in the last 30 days: **16**.
+**A wave is in progress.** Last wave started 2026-11-01 12:16 (+03:00) (1 day(s) ago). Waves in the last 30 days: **16**.
 **Median recovery:** under 1 h across 52 measured server waves (15 estimated from logs).
 <!-- BANWAVE:STATUS:END -->
 
@@ -28,10 +28,10 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 | 2026-11-01 12:16 (+03:00) | 2 | 94% | heavy | 1 min | complete (6 min) |
 | 2026-11-01 09:41 (+03:00) | 2 | 100% | heavy | 38 min | complete (43 min) |
 | 2026-11-01 08:30 (+03:00) | 2 | 10% | moderate | 4 min | complete (10 min) |
-| 2026-11-01 05:20 (+03:00) | 3 | 45% | heavy | 4 min | ongoing (18 h 7 min) |
-| 2026-10-31 20:57 (+03:00) | 7 | 100% | heavy | 2 h 36 min | ongoing (1 d 2 h) |
+| 2026-11-01 05:20 (+03:00) | 3 | 45% | heavy | 4 min | ongoing (22 h 18 min) |
+| 2026-10-31 20:57 (+03:00) | 7 | 100% | heavy | 2 h 36 min | ongoing (1 d 6 h) |
 | 2026-10-31 02:33 (+03:00) | 1 | 42% | heavy | 40 min | complete (18 h 23 min) |
-| 2026-10-30 20:01 (+03:00) | 5 | 100% | heavy | 2 h 29 min | ongoing (2 d 3 h) |
+| 2026-10-30 20:01 (+03:00) | 5 | 100% | heavy | 2 h 29 min | ongoing (2 d 7 h) |
 | 2026-10-30 16:36 (+03:00) | 2 | 41% | heavy | 1 h 37 min | complete (1 h 42 min) |
 | 2026-10-30 08:27 (+03:00) | 4 | 16% | moderate | 34 min | complete (53 min) |
 | 2026-10-29 15:09 (+03:00) | 1 | 0.8% (est.) | light | 1 min | recovered |
@@ -88,21 +88,21 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 | Multi Node Server 2 | 2026-11-01 09:41 (+03:00) | 20% | complete (38 min) |
 | Multi Node Server 1 | 2026-11-01 08:31 (+03:00) | 10% | complete (5 min) |
 | Multi Node Server 2 | 2026-11-01 08:30 (+03:00) | 6.3% | complete (10 min) |
-| Multi Node Server 2 | 2026-11-01 05:22 (+03:00) | 2.3% | ongoing (18 h 6 min) |
+| Multi Node Server 2 | 2026-11-01 05:22 (+03:00) | 2.3% | ongoing (22 h 17 min) |
 | Multi Node Server 1 | 2026-11-01 05:21 (+03:00) | 45% | complete (9 min) |
 | Multi Node Server 3 | 2026-11-01 05:20 (+03:00) | 2.3% | complete (5 min) |
-| Multi Node Server 3 | 2026-10-31 23:05 (+03:00) | 6.3% (est.) | ongoing (1 d) |
-| Multi Node Server 1 | 2026-10-31 23:03 (+03:00) | 23% (est.) | ongoing (1 d) |
-| Multi Node Server 3 | 2026-10-31 21:59 (+03:00) | 3.1% (est.) | ongoing (1 d 1 h) |
-| Multi Node Server 1 | 2026-10-31 21:58 (+03:00) | 24% (est.) | ongoing (1 d 1 h) |
+| Multi Node Server 3 | 2026-10-31 23:05 (+03:00) | 6.3% (est.) | ongoing (1 d 4 h) |
+| Multi Node Server 1 | 2026-10-31 23:03 (+03:00) | 23% (est.) | ongoing (1 d 4 h) |
+| Multi Node Server 3 | 2026-10-31 21:59 (+03:00) | 3.1% (est.) | ongoing (1 d 5 h) |
+| Multi Node Server 1 | 2026-10-31 21:58 (+03:00) | 24% (est.) | ongoing (1 d 5 h) |
 | Multi Node Server 3 | 2026-10-31 21:16 (+03:00) | 2.3% | complete (15 min) |
 | Multi Node Server 2 | 2026-10-31 20:58 (+03:00) | 100% | complete (2 h 40 min) |
-| Multi Node Server 1 | 2026-10-31 20:57 (+03:00) | 16% (est.) | ongoing (1 d 2 h) |
+| Multi Node Server 1 | 2026-10-31 20:57 (+03:00) | 16% (est.) | ongoing (1 d 6 h) |
 | Multi Node Server 2 | 2026-10-31 02:33 (+03:00) | 42% | complete (18 h 23 min) |
 | Multi Node Server 1 | 2026-10-30 20:59 (+03:00) | 22% | complete (1 h 20 min) |
 | Multi Node Server 4 | 2026-10-30 20:09 (+03:00) | 8.6% | complete (1 h 48 min) |
 | Multi Node Server 3 | 2026-10-30 20:06 (+03:00) | 17% | complete (2 h 29 min) |
-| Multi Node Server 1 | 2026-10-30 20:01 (+03:00) | 23% (est.) | ongoing (2 d 3 h) |
+| Multi Node Server 1 | 2026-10-30 20:01 (+03:00) | 23% (est.) | ongoing (2 d 7 h) |
 | Multi Node Server 2 | 2026-10-30 20:01 (+03:00) | 100% | complete (2 h 43 min) |
 | Multi Node Server 2 | 2026-10-30 16:36 (+03:00) | 5.5% | complete (47 min) |
 | Multi Node Server 1 | 2026-10-30 16:36 (+03:00) | 41% | complete (1 h 42 min) |
@@ -210,4 +210,4 @@ Automation consumers should use [`data/banwave.json`](../data/banwave.json) inst
 Times are shown in **Türkiye time (UTC+3)** — the same clock the site uses; the raw UTC values are the `startedAt`/`endedAt` fields. Durations are given at minute resolution (`minutes`); the rounded `hours` field is kept for compatibility and is not what the tables print. Field names mirror the platform's public tracker endpoint. `impactPct` is always a **percentage**, never an absolute account count; `null` means it could not be measured. `estimated: true` marks a derived estimate. `status: "unreadable"` means the source could not be read — **keep the previous data in that case** (the sync job does exactly this).
 
 <!-- BANWAVE:UPDATED -->
-_Last updated: 2026-11-01 — source: /ban-waves_
+_Last updated: 2026-11-02 — source: /ban-waves_

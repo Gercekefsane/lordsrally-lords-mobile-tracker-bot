@@ -155,7 +155,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 **Latest measurement (auto-updated):**
 
 <!-- BANWAVE:README:STATUS:START -->
-**A wave is in progress.** Last wave started 2026-11-01 12:16 (+03:00) (0 day(s) ago). Waves in the last 30 days: **16**.
+**A wave is in progress.** Last wave started 2026-11-01 12:16 (+03:00) (1 day(s) ago). Waves in the last 30 days: **16**.
 **Median recovery:** under 1 h across 52 measured server waves (15 estimated from logs).
 <!-- BANWAVE:README:STATUS:END -->
 
@@ -184,10 +184,10 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 | 2026-11-01 12:16 (+03:00) | 2 | 94% | heavy | 1 min | complete (6 min) |
 | 2026-11-01 09:41 (+03:00) | 2 | 100% | heavy | 38 min | complete (43 min) |
 | 2026-11-01 08:30 (+03:00) | 2 | 10% | moderate | 4 min | complete (10 min) |
-| 2026-11-01 05:20 (+03:00) | 3 | 45% | heavy | 4 min | ongoing (18 h 7 min) |
-| 2026-10-31 20:57 (+03:00) | 7 | 100% | heavy | 2 h 36 min | ongoing (1 d 2 h) |
+| 2026-11-01 05:20 (+03:00) | 3 | 45% | heavy | 4 min | ongoing (22 h 18 min) |
+| 2026-10-31 20:57 (+03:00) | 7 | 100% | heavy | 2 h 36 min | ongoing (1 d 6 h) |
 | 2026-10-31 02:33 (+03:00) | 1 | 42% | heavy | 40 min | complete (18 h 23 min) |
-| 2026-10-30 20:01 (+03:00) | 5 | 100% | heavy | 2 h 29 min | ongoing (2 d 3 h) |
+| 2026-10-30 20:01 (+03:00) | 5 | 100% | heavy | 2 h 29 min | ongoing (2 d 7 h) |
 | 2026-10-30 16:36 (+03:00) | 2 | 41% | heavy | 1 h 37 min | complete (1 h 42 min) |
 | 2026-10-30 08:27 (+03:00) | 4 | 16% | moderate | 34 min | complete (53 min) |
 | 2026-10-29 15:09 (+03:00) | 1 | 0.8% (est.) | light | 1 min | recovered |
@@ -266,7 +266,7 @@ Prices are **sell prices in USD**, mirrored automatically from the platform's pu
 👉 Full price list, terms and add-ons: [`docs/pricing.md`](docs/pricing.md) · RSS products: [`docs/rss-pricing.md`](docs/rss-pricing.md) · Live: [lordsrally.com/buynow](https://lordsrally.com/buynow)
 
 <!-- PRICING:README:UPDATED -->
-_Last updated: 2026-11-01 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
+_Last updated: 2026-11-02 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
 
 ---
 
@@ -290,7 +290,7 @@ New resellers start at the **Normal** level. The tier system is currently **on**
 👉 Detail: [`docs/reseller.md`](docs/reseller.md) · Live: [lordsrally.com/salesman](https://lordsrally.com/salesman)
 
 <!-- RESELLER:README:UPDATED -->
-_Last updated: 2026-11-01 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
+_Last updated: 2026-11-02 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
 
 ---
 
@@ -402,4 +402,4 @@ Documentation and data in this repository are published for reference and citati
 See [LICENSE](LICENSE).
 
 <!-- BANWAVE:README:UPDATED -->
-_Last updated: 2026-11-01 — source: /ban-waves_
+_Last updated: 2026-11-02 — source: /ban-waves_

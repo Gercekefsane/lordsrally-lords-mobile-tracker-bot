@@ -1,12 +1,12 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "page": "/ban-waves",
   "summary": {
     "state": "in_progress",
     "lastStartedAt": "2026-11-01T09:16:25Z",
     "lastStartedAtTr": "2026-11-01 12:16 (+03:00)",
-    "daysAgo": 0,
+    "daysAgo": 1,
     "last30d": 16
   },
   "medianRecovery": {
@@ -90,8 +90,8 @@
       "endedAtTr": "2026-11-01 05:24 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1087,
-        "hours": 18,
+        "minutes": 1338,
+        "hours": 22,
         "estimated": false
       }
     },
@@ -110,8 +110,8 @@
       "endedAtTr": "2026-10-31 23:33 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1591,
-        "hours": 27,
+        "minutes": 1842,
+        "hours": 31,
         "estimated": false
       }
     },
@@ -125,7 +125,7 @@
       "capped": false,
       "hours": 1,
       "minutes": 40,
-      "daysAgo": 1,
+      "daysAgo": 2,
       "startedAtTr": "2026-10-31 02:33 (+03:00)",
       "endedAtTr": "2026-10-31 03:12 (+03:00)",
       "recovery": {
@@ -150,8 +150,8 @@
       "endedAtTr": "2026-10-30 22:30 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 3087,
-        "hours": 51,
+        "minutes": 3338,
+        "hours": 56,
         "estimated": false
       }
     },
@@ -265,7 +265,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 12,
-      "daysAgo": 3,
+      "daysAgo": 4,
       "startedAtTr": "2026-10-29 03:04 (+03:00)",
       "endedAtTr": "2026-10-29 03:17 (+03:00)",
       "recovery": {
@@ -814,8 +814,8 @@
       "endedAtTr": "2026-11-01 05:24 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1086,
-        "hours": 18,
+        "minutes": 1337,
+        "hours": 22,
         "estimated": false
       }
     },
@@ -865,8 +865,8 @@
       "endedAtTr": "2026-10-31 23:23 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1462,
-        "hours": 24,
+        "minutes": 1713,
+        "hours": 29,
         "estimated": false
       }
     },
@@ -882,8 +882,8 @@
       "endedAtTr": "2026-10-31 23:29 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1465,
-        "hours": 24,
+        "minutes": 1716,
+        "hours": 29,
         "estimated": false
       }
     },
@@ -899,8 +899,8 @@
       "endedAtTr": "2026-10-31 22:31 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1529,
-        "hours": 25,
+        "minutes": 1780,
+        "hours": 30,
         "estimated": false
       }
     },
@@ -916,8 +916,8 @@
       "endedAtTr": "2026-10-31 22:08 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1530,
-        "hours": 25,
+        "minutes": 1781,
+        "hours": 30,
         "estimated": false
       }
     },
@@ -967,8 +967,8 @@
       "endedAtTr": "2026-10-31 21:24 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 1591,
-        "hours": 27,
+        "minutes": 1842,
+        "hours": 31,
         "estimated": false
       }
     },
@@ -1052,8 +1052,8 @@
       "endedAtTr": "2026-10-30 20:25 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 3086,
-        "hours": 51,
+        "minutes": 3337,
+        "hours": 56,
         "estimated": false
       }
     },
