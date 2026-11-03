@@ -155,8 +155,8 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 **Latest measurement (auto-updated):**
 
 <!-- BANWAVE:README:STATUS:START -->
-**A wave is in progress.** Last wave started 2026-11-03 08:18 (+03:00) (0 day(s) ago). Waves in the last 30 days: **19**.
-**Median recovery:** under 1 h across 57 measured server waves (15 estimated from logs).
+**A wave is in progress.** Last wave started 2026-11-03 13:08 (+03:00) (0 day(s) ago). Waves in the last 30 days: **20**.
+**Median recovery:** under 1 h across 58 measured server waves (15 estimated from logs).
 <!-- BANWAVE:README:STATUS:END -->
 
 **Last wave at a glance:**
@@ -164,11 +164,11 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 <!-- BANWAVE:README:LATEST:START -->
 | Field | Value |
 |---|---|
-| Last wave | 2026-11-03 08:18 (+03:00) |
-| Wave ended | 2026-11-03 08:18 (+03:00) |
+| Last wave | 2026-11-03 13:08 (+03:00) |
+| Wave ended | 2026-11-03 13:08 (+03:00) |
 | Days ago | 0 |
 | Servers hit | 1 |
-| Impact | 1% |
+| Impact | 1.6% |
 | Severity | light |
 | Duration | 1 min |
 | Recovery | complete (6 min) |
@@ -181,16 +181,17 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
+| 2026-11-03 13:08 (+03:00) | 1 | 1.6% | light | 1 min | complete (6 min) |
 | 2026-11-03 08:18 (+03:00) | 1 | 1% | light | 1 min | complete (6 min) |
 | 2026-11-02 09:59 (+03:00) | 2 | 2.3% | light | 37 min | complete (27 min) |
 | 2026-11-02 07:05 (+03:00) | 2 | 91% | heavy | 1 min | complete (7 min) |
 | 2026-11-01 12:16 (+03:00) | 2 | 94% | heavy | 1 min | complete (6 min) |
 | 2026-11-01 09:41 (+03:00) | 2 | 100% | heavy | 38 min | complete (43 min) |
 | 2026-11-01 08:30 (+03:00) | 2 | 10% | moderate | 4 min | complete (10 min) |
-| 2026-11-01 05:20 (+03:00) | 3 | 45% | heavy | 4 min | ongoing (2 d 5 h) |
-| 2026-10-31 20:57 (+03:00) | 7 | 100% | heavy | 2 h 36 min | ongoing (2 d 13 h) |
+| 2026-11-01 05:20 (+03:00) | 3 | 45% | heavy | 4 min | ongoing (2 d 13 h) |
+| 2026-10-31 20:57 (+03:00) | 7 | 100% | heavy | 2 h 36 min | ongoing (2 d 22 h) |
 | 2026-10-31 02:33 (+03:00) | 1 | 42% | heavy | 40 min | complete (18 h 23 min) |
-| 2026-10-30 20:01 (+03:00) | 5 | 100% | heavy | 2 h 29 min | ongoing (3 d 14 h) |
+| 2026-10-30 20:01 (+03:00) | 5 | 100% | heavy | 2 h 29 min | ongoing (3 d 23 h) |
 | 2026-10-30 16:36 (+03:00) | 2 | 41% | heavy | 1 h 37 min | complete (1 h 42 min) |
 | 2026-10-30 08:27 (+03:00) | 4 | 16% | moderate | 34 min | complete (53 min) |
 | 2026-10-29 15:09 (+03:00) | 1 | 0.8% (est.) | light | 1 min | recovered |
@@ -224,7 +225,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:MONTHS:START -->
 | Month | Waves | Highest impact |
 |---|---|---|
-| 2026-11 | 7 | 100% |
+| 2026-11 | 8 | 100% |
 | 2026-10 | 12 | 100% |
 | 2026-09 | 13 | 53% |
 | 2026-08 | 4 | 100% |
