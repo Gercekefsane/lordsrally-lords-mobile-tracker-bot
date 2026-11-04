@@ -4,17 +4,77 @@
   "page": "/ban-waves",
   "summary": {
     "state": "in_progress",
-    "lastStartedAt": "2026-11-03T10:08:03Z",
-    "lastStartedAtTr": "2026-11-03 13:08 (+03:00)",
-    "daysAgo": 1,
-    "last30d": 20
+    "lastStartedAt": "2026-11-04T14:54:50Z",
+    "lastStartedAtTr": "2026-11-04 17:54 (+03:00)",
+    "daysAgo": 0,
+    "last30d": 23
   },
   "medianRecovery": {
     "hours": 0,
-    "count": 58,
+    "count": 63,
     "estimatedCount": 15
   },
   "waves": [
+    {
+      "startedAt": "2026-11-04T14:54:50Z",
+      "endedAt": "2026-11-04T14:54:50Z",
+      "serverCount": 1,
+      "impactPct": 3.4,
+      "severity": "light",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "minutes": 0,
+      "daysAgo": 0,
+      "startedAtTr": "2026-11-04 17:54 (+03:00)",
+      "endedAtTr": "2026-11-04 17:54 (+03:00)",
+      "recovery": {
+        "state": "complete",
+        "minutes": 6,
+        "hours": 0,
+        "estimated": false
+      }
+    },
+    {
+      "startedAt": "2026-11-04T08:50:53Z",
+      "endedAt": "2026-11-04T08:54:20Z",
+      "serverCount": 2,
+      "impactPct": 3.2,
+      "severity": "light",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "minutes": 3,
+      "daysAgo": 0,
+      "startedAtTr": "2026-11-04 11:50 (+03:00)",
+      "endedAtTr": "2026-11-04 11:54 (+03:00)",
+      "recovery": {
+        "state": "complete",
+        "minutes": 9,
+        "hours": 0,
+        "estimated": false
+      }
+    },
+    {
+      "startedAt": "2026-11-04T08:03:02Z",
+      "endedAt": "2026-11-04T08:04:19Z",
+      "serverCount": 4,
+      "impactPct": 6.3,
+      "severity": "moderate",
+      "estimated": false,
+      "capped": false,
+      "hours": 0,
+      "minutes": 1,
+      "daysAgo": 0,
+      "startedAtTr": "2026-11-04 11:03 (+03:00)",
+      "endedAtTr": "2026-11-04 11:04 (+03:00)",
+      "recovery": {
+        "state": "ongoing",
+        "minutes": 596,
+        "hours": 10,
+        "estimated": false
+      }
+    },
     {
       "startedAt": "2026-11-03T10:08:03Z",
       "endedAt": "2026-11-03T10:08:03Z",
@@ -25,7 +85,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 0,
+      "daysAgo": 1,
       "startedAtTr": "2026-11-03 13:08 (+03:00)",
       "endedAtTr": "2026-11-03 13:08 (+03:00)",
       "recovery": {
@@ -170,8 +230,8 @@
       "endedAtTr": "2026-11-01 05:24 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 4738,
-        "hours": 79,
+        "minutes": 5258,
+        "hours": 88,
         "estimated": false
       }
     },
@@ -185,13 +245,13 @@
       "capped": true,
       "hours": 3,
       "minutes": 156,
-      "daysAgo": 3,
+      "daysAgo": 4,
       "startedAtTr": "2026-10-31 20:57 (+03:00)",
       "endedAtTr": "2026-10-31 23:33 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 5242,
-        "hours": 87,
+        "minutes": 5762,
+        "hours": 96,
         "estimated": false
       }
     },
@@ -225,13 +285,13 @@
       "capped": true,
       "hours": 2,
       "minutes": 149,
-      "daysAgo": 4,
+      "daysAgo": 5,
       "startedAtTr": "2026-10-30 20:01 (+03:00)",
       "endedAtTr": "2026-10-30 22:30 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 6737,
-        "hours": 112,
+        "minutes": 7257,
+        "hours": 121,
         "estimated": false
       }
     },
@@ -245,7 +305,7 @@
       "capped": false,
       "hours": 2,
       "minutes": 97,
-      "daysAgo": 4,
+      "daysAgo": 5,
       "startedAtTr": "2026-10-30 16:36 (+03:00)",
       "endedAtTr": "2026-10-30 18:13 (+03:00)",
       "recovery": {
@@ -285,7 +345,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 5,
+      "daysAgo": 6,
       "startedAtTr": "2026-10-29 15:09 (+03:00)",
       "endedAtTr": "2026-10-29 15:09 (+03:00)",
       "recovery": {
@@ -485,7 +545,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 43,
+      "daysAgo": 44,
       "startedAtTr": "2026-09-21 20:55 (+03:00)",
       "endedAtTr": "2026-09-21 20:55 (+03:00)",
       "recovery": {
@@ -545,7 +605,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 30,
-      "daysAgo": 48,
+      "daysAgo": 49,
       "startedAtTr": "2026-09-16 12:33 (+03:00)",
       "endedAtTr": "2026-09-16 13:03 (+03:00)",
       "recovery": {
@@ -565,7 +625,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 2,
-      "daysAgo": 54,
+      "daysAgo": 55,
       "startedAtTr": "2026-09-10 12:38 (+03:00)",
       "endedAtTr": "2026-09-10 12:40 (+03:00)",
       "recovery": {
@@ -645,7 +705,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 63,
+      "daysAgo": 64,
       "startedAtTr": "2026-09-01 13:14 (+03:00)",
       "endedAtTr": "2026-09-01 13:14 (+03:00)",
       "recovery": {
@@ -725,7 +785,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 1,
-      "daysAgo": 83,
+      "daysAgo": 84,
       "startedAtTr": "2026-08-12 20:15 (+03:00)",
       "endedAtTr": "2026-08-12 20:15 (+03:00)",
       "recovery": {
@@ -759,7 +819,7 @@
   "monthly": [
     {
       "month": "2026-11",
-      "count": 8,
+      "count": 11,
       "highestImpactPct": 100
     },
     {
@@ -780,6 +840,125 @@
   ],
   "years": [],
   "servers": [
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-11-04T14:54:50Z",
+      "endedAt": "2026-11-04T14:54:50Z",
+      "impactPct": 3.4,
+      "estimated": false,
+      "capped": false,
+      "minutes": 0,
+      "startedAtTr": "2026-11-04 17:54 (+03:00)",
+      "endedAtTr": "2026-11-04 17:54 (+03:00)",
+      "recovery": {
+        "state": "complete",
+        "minutes": 6,
+        "hours": 0,
+        "estimated": false
+      }
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-11-04T08:51:11Z",
+      "endedAt": "2026-11-04T08:51:11Z",
+      "impactPct": 1.1,
+      "estimated": false,
+      "capped": false,
+      "minutes": 0,
+      "startedAtTr": "2026-11-04 11:51 (+03:00)",
+      "endedAtTr": "2026-11-04 11:51 (+03:00)",
+      "recovery": {
+        "state": "complete",
+        "minutes": 6,
+        "hours": 0,
+        "estimated": false
+      }
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-11-04T08:50:53Z",
+      "endedAt": "2026-11-04T08:54:20Z",
+      "impactPct": 3.2,
+      "estimated": false,
+      "capped": false,
+      "minutes": 3,
+      "startedAtTr": "2026-11-04 11:50 (+03:00)",
+      "endedAtTr": "2026-11-04 11:54 (+03:00)",
+      "recovery": {
+        "state": "complete",
+        "minutes": 9,
+        "hours": 0,
+        "estimated": false
+      }
+    },
+    {
+      "server": "Multi Node Server 4",
+      "startedAt": "2026-11-04T08:04:19Z",
+      "endedAt": "2026-11-04T08:04:19Z",
+      "impactPct": 0.8,
+      "estimated": false,
+      "capped": false,
+      "minutes": 0,
+      "startedAtTr": "2026-11-04 11:04 (+03:00)",
+      "endedAtTr": "2026-11-04 11:04 (+03:00)",
+      "recovery": {
+        "state": "complete",
+        "minutes": 6,
+        "hours": 0,
+        "estimated": false
+      }
+    },
+    {
+      "server": "Multi Node Server 3",
+      "startedAt": "2026-11-04T08:03:07Z",
+      "endedAt": "2026-11-04T08:04:07Z",
+      "impactPct": 4.8,
+      "estimated": false,
+      "capped": false,
+      "minutes": 1,
+      "startedAtTr": "2026-11-04 11:03 (+03:00)",
+      "endedAtTr": "2026-11-04 11:04 (+03:00)",
+      "recovery": {
+        "state": "ongoing",
+        "minutes": 596,
+        "hours": 10,
+        "estimated": false
+      }
+    },
+    {
+      "server": "Multi Node Server 1",
+      "startedAt": "2026-11-04T08:03:07Z",
+      "endedAt": "2026-11-04T08:04:08Z",
+      "impactPct": 6.3,
+      "estimated": false,
+      "capped": false,
+      "minutes": 1,
+      "startedAtTr": "2026-11-04 11:03 (+03:00)",
+      "endedAtTr": "2026-11-04 11:04 (+03:00)",
+      "recovery": {
+        "state": "complete",
+        "minutes": 419,
+        "hours": 7,
+        "estimated": false
+      }
+    },
+    {
+      "server": "Multi Node Server 2",
+      "startedAt": "2026-11-04T08:03:02Z",
+      "endedAt": "2026-11-04T08:04:02Z",
+      "impactPct": 4.9,
+      "estimated": false,
+      "capped": false,
+      "minutes": 1,
+      "startedAtTr": "2026-11-04 11:03 (+03:00)",
+      "endedAtTr": "2026-11-04 11:04 (+03:00)",
+      "recovery": {
+        "state": "ongoing",
+        "minutes": 596,
+        "hours": 10,
+        "estimated": false
+      }
+    },
     {
       "server": "Multi Node Server 3",
       "startedAt": "2026-11-03T10:08:03Z",
@@ -996,8 +1175,8 @@
       "endedAtTr": "2026-11-01 05:24 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 4736,
-        "hours": 79,
+        "minutes": 5256,
+        "hours": 88,
         "estimated": false
       }
     },
@@ -1047,8 +1226,8 @@
       "endedAtTr": "2026-10-31 23:23 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 5113,
-        "hours": 85,
+        "minutes": 5633,
+        "hours": 94,
         "estimated": false
       }
     },
@@ -1064,8 +1243,8 @@
       "endedAtTr": "2026-10-31 23:29 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 5116,
-        "hours": 85,
+        "minutes": 5635,
+        "hours": 94,
         "estimated": false
       }
     },
@@ -1081,8 +1260,8 @@
       "endedAtTr": "2026-10-31 22:31 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 5179,
-        "hours": 86,
+        "minutes": 5699,
+        "hours": 95,
         "estimated": false
       }
     },
@@ -1098,8 +1277,8 @@
       "endedAtTr": "2026-10-31 22:08 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 5181,
-        "hours": 86,
+        "minutes": 5700,
+        "hours": 95,
         "estimated": false
       }
     },
@@ -1149,8 +1328,8 @@
       "endedAtTr": "2026-10-31 21:24 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 5242,
-        "hours": 87,
+        "minutes": 5762,
+        "hours": 96,
         "estimated": false
       }
     },
@@ -1234,8 +1413,8 @@
       "endedAtTr": "2026-10-30 20:25 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 6737,
-        "hours": 112,
+        "minutes": 7257,
+        "hours": 121,
         "estimated": false
       }
     },
@@ -1512,23 +1691,6 @@
       }
     },
     {
-      "server": "Multi Node Server 2",
-      "startedAt": "2026-10-09T07:25:13Z",
-      "endedAt": "2026-10-09T07:34:49Z",
-      "impactPct": 59,
-      "estimated": false,
-      "capped": false,
-      "minutes": 10,
-      "startedAtTr": "2026-10-09 10:25 (+03:00)",
-      "endedAtTr": "2026-10-09 10:34 (+03:00)",
-      "recovery": {
-        "state": "complete",
-        "minutes": 1655,
-        "hours": 28,
-        "estimated": false
-      }
-    },
-    {
       "server": "Multi Node Server 4",
       "startedAt": "2026-10-09T07:25:13Z",
       "endedAt": "2026-10-09T07:34:48Z",
@@ -1542,6 +1704,23 @@
         "state": "complete",
         "minutes": 369,
         "hours": 6,
+        "estimated": false
+      }
+    },
+    {
+      "server": "Multi Node Server 2",
+      "startedAt": "2026-10-09T07:25:13Z",
+      "endedAt": "2026-10-09T07:34:49Z",
+      "impactPct": 59,
+      "estimated": false,
+      "capped": false,
+      "minutes": 10,
+      "startedAtTr": "2026-10-09 10:25 (+03:00)",
+      "endedAtTr": "2026-10-09 10:34 (+03:00)",
+      "recovery": {
+        "state": "complete",
+        "minutes": 1655,
+        "hours": 28,
         "estimated": false
       }
     },
