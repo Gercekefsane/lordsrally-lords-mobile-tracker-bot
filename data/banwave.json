@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-06",
+  "updatedAt": "2026-11-07",
   "page": "/ban-waves",
   "summary": {
     "state": "quiet",
@@ -265,7 +265,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 4,
-      "daysAgo": 5,
+      "daysAgo": 6,
       "startedAtTr": "2026-11-01 05:20 (+03:00)",
       "endedAtTr": "2026-11-01 05:24 (+03:00)",
       "recovery": {
@@ -305,7 +305,7 @@
       "capped": false,
       "hours": 1,
       "minutes": 40,
-      "daysAgo": 6,
+      "daysAgo": 7,
       "startedAtTr": "2026-10-31 02:33 (+03:00)",
       "endedAtTr": "2026-10-31 03:12 (+03:00)",
       "recovery": {
@@ -425,7 +425,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 1,
-      "daysAgo": 8,
+      "daysAgo": 9,
       "startedAtTr": "2026-10-29 04:06 (+03:00)",
       "endedAtTr": "2026-10-29 04:07 (+03:00)",
       "recovery": {
@@ -445,7 +445,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 12,
-      "daysAgo": 8,
+      "daysAgo": 9,
       "startedAtTr": "2026-10-29 03:04 (+03:00)",
       "endedAtTr": "2026-10-29 03:17 (+03:00)",
       "recovery": {
@@ -705,7 +705,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 3,
-      "daysAgo": 59,
+      "daysAgo": 60,
       "startedAtTr": "2026-09-08 04:43 (+03:00)",
       "endedAtTr": "2026-09-08 04:46 (+03:00)",
       "recovery": {
