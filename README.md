@@ -155,8 +155,8 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 **Latest measurement (auto-updated):**
 
 <!-- BANWAVE:README:STATUS:START -->
-**No wave in progress.** Last wave: 2026-11-06 16:13 (+03:00) (1 day(s) ago). Waves in the last 30 days: **25**.
-**Median recovery:** under 1 h across 68 measured server waves (15 estimated from logs).
+**A wave is in progress.** Last wave started 2026-11-07 19:41 (+03:00) (0 day(s) ago). Waves in the last 30 days: **26**.
+**Median recovery:** under 1 h across 69 measured server waves (15 estimated from logs).
 <!-- BANWAVE:README:STATUS:END -->
 
 **Last wave at a glance:**
@@ -164,14 +164,14 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 <!-- BANWAVE:README:LATEST:START -->
 | Field | Value |
 |---|---|
-| Last wave | 2026-11-06 16:13 (+03:00) |
-| Wave ended | 2026-11-06 16:13 (+03:00) |
-| Days ago | 1 |
-| Servers hit | 1 |
-| Impact | 3.3% |
-| Severity | light |
-| Duration | 1 min |
-| Recovery | complete (6 min) |
+| Last wave | 2026-11-07 19:41 (+03:00) |
+| Wave ended | 2026-11-07 20:00 (+03:00) |
+| Days ago | 0 |
+| Servers hit | 4 |
+| Impact | 37% |
+| Severity | heavy |
+| Duration | 19 min |
+| Recovery | ongoing (4 h 9 min) |
 
 Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.
 <!-- BANWAVE:README:LATEST:END -->
@@ -181,6 +181,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
+| 2026-11-07 19:41 (+03:00) | 4 | 37% | heavy | 19 min | ongoing (4 h 9 min) |
 | 2026-11-06 16:13 (+03:00) | 1 | 3.3% | light | 1 min | complete (6 min) |
 | 2026-11-04 23:08 (+03:00) | 1 | 2.1% | light | 1 min | complete (6 min) |
 | 2026-11-04 17:54 (+03:00) | 1 | 3.4% | light | 1 min | complete (6 min) |
@@ -230,7 +231,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:MONTHS:START -->
 | Month | Waves | Highest impact |
 |---|---|---|
-| 2026-11 | 13 | 100% |
+| 2026-11 | 14 | 100% |
 | 2026-10 | 12 | 100% |
 | 2026-09 | 13 | 53% |
 | 2026-08 | 4 | 100% |
