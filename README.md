@@ -166,7 +166,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 |---|---|
 | Last wave | 2026-11-06 16:13 (+03:00) |
 | Wave ended | 2026-11-06 16:13 (+03:00) |
-| Days ago | 0 |
+| Days ago | 1 |
 | Servers hit | 1 |
 | Impact | 3.3% |
 | Severity | light |
