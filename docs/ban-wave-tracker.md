@@ -12,7 +12,7 @@ This page is generated from LordsRally's own measurements and **updated automati
 ## Current status
 
 <!-- BANWAVE:STATUS:START -->
-**A wave is in progress.** Last wave started 2026-11-07 19:41 (+03:00) (0 day(s) ago). Waves in the last 30 days: **26**.
+**A wave is in progress.** Last wave started 2026-11-07 19:41 (+03:00) (1 day(s) ago). Waves in the last 30 days: **25**.
 **Median recovery:** under 1 h across 69 measured server waves (15 estimated from logs).
 <!-- BANWAVE:STATUS:END -->
 
@@ -25,7 +25,7 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-11-07 19:41 (+03:00) | 4 | 37% | heavy | 19 min | ongoing (4 h 9 min) |
+| 2026-11-07 19:41 (+03:00) | 4 | 37% | heavy | 19 min | ongoing (7 h 51 min) |
 | 2026-11-06 16:13 (+03:00) | 1 | 3.3% | light | 1 min | complete (6 min) |
 | 2026-11-04 23:08 (+03:00) | 1 | 2.1% | light | 1 min | complete (6 min) |
 | 2026-11-04 17:54 (+03:00) | 1 | 3.4% | light | 1 min | complete (6 min) |
@@ -93,9 +93,9 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 | Server | Wave start (UTC+3) | Impact | Recovery |
 |---|---|---|---|
 | Multi Node Server 4 | 2026-11-07 19:42 (+03:00) | 4.7% | complete (6 min) |
-| Multi Node Server 3 | 2026-11-07 19:42 (+03:00) | 36% | ongoing (4 h 9 min) |
-| Multi Node Server 1 | 2026-11-07 19:42 (+03:00) | 30% | ongoing (4 h 9 min) |
-| Multi Node Server 2 | 2026-11-07 19:41 (+03:00) | 37% | ongoing (4 h 9 min) |
+| Multi Node Server 3 | 2026-11-07 19:42 (+03:00) | 36% | ongoing (7 h 50 min) |
+| Multi Node Server 1 | 2026-11-07 19:42 (+03:00) | 30% | ongoing (7 h 51 min) |
+| Multi Node Server 2 | 2026-11-07 19:41 (+03:00) | 37% | ongoing (7 h 51 min) |
 | Multi Node Server 3 | 2026-11-06 16:13 (+03:00) | 3.3% | complete (6 min) |
 | Multi Node Server 2 | 2026-11-04 23:08 (+03:00) | 2.1% | complete (6 min) |
 | Multi Node Server 1 | 2026-11-04 17:54 (+03:00) | 3.4% | complete (6 min) |
@@ -239,4 +239,4 @@ Automation consumers should use [`data/banwave.json`](../data/banwave.json) inst
 Times are shown in **Türkiye time (UTC+3)** — the same clock the site uses; the raw UTC values are the `startedAt`/`endedAt` fields. Durations are given at minute resolution (`minutes`); the rounded `hours` field is kept for compatibility and is not what the tables print. Field names mirror the platform's public tracker endpoint. `impactPct` is always a **percentage**, never an absolute account count; `null` means it could not be measured. `estimated: true` marks a derived estimate. `status: "unreadable"` means the source could not be read — **keep the previous data in that case** (the sync job does exactly this).
 
 <!-- BANWAVE:UPDATED -->
-_Last updated: 2026-11-07 — source: /ban-waves_
+_Last updated: 2026-11-08 — source: /ban-waves_
