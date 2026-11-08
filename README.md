@@ -155,7 +155,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 **Latest measurement (auto-updated):**
 
 <!-- BANWAVE:README:STATUS:START -->
-**No wave in progress.** Last wave: 2026-11-07 19:41 (+03:00) (1 day(s) ago). Waves in the last 30 days: **25**.
+**No wave in progress.** Last wave: 2026-11-07 19:41 (+03:00) (2 day(s) ago). Waves in the last 30 days: **25**.
 **Median recovery:** under 1 h across 72 measured server waves (15 estimated from logs).
 <!-- BANWAVE:README:STATUS:END -->
 
