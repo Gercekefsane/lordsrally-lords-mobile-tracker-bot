@@ -171,7 +171,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 | Impact | 37% |
 | Severity | heavy |
 | Duration | 19 min |
-| Recovery | ongoing (14 h 34 min) |
+| Recovery | ongoing (21 h 37 min) |
 
 Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.
 <!-- BANWAVE:README:LATEST:END -->
@@ -181,7 +181,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-11-07 19:41 (+03:00) | 4 | 37% | heavy | 19 min | ongoing (14 h 34 min) |
+| 2026-11-07 19:41 (+03:00) | 4 | 37% | heavy | 19 min | ongoing (21 h 37 min) |
 | 2026-11-06 16:13 (+03:00) | 1 | 3.3% | light | 1 min | complete (6 min) |
 | 2026-11-04 23:08 (+03:00) | 1 | 2.1% | light | 1 min | complete (6 min) |
 | 2026-11-04 17:54 (+03:00) | 1 | 3.4% | light | 1 min | complete (6 min) |
