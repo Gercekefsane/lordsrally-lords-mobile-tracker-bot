@@ -155,8 +155,8 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 **Latest measurement (auto-updated):**
 
 <!-- BANWAVE:README:STATUS:START -->
-**No wave in progress.** Last wave: 2026-11-07 19:41 (+03:00) (2 day(s) ago). Waves in the last 30 days: **25**.
-**Median recovery:** under 1 h across 72 measured server waves (15 estimated from logs).
+**A wave is in progress.** Last wave started 2026-11-09 04:40 (+03:00) (0 day(s) ago). Waves in the last 30 days: **26**.
+**Median recovery:** under 1 h across 73 measured server waves (15 estimated from logs).
 <!-- BANWAVE:README:STATUS:END -->
 
 **Last wave at a glance:**
@@ -164,14 +164,14 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 <!-- BANWAVE:README:LATEST:START -->
 | Field | Value |
 |---|---|
-| Last wave | 2026-11-07 19:41 (+03:00) |
-| Wave ended | 2026-11-07 20:00 (+03:00) |
-| Days ago | 1 |
+| Last wave | 2026-11-09 04:40 (+03:00) |
+| Wave ended | 2026-11-09 04:46 (+03:00) |
+| Days ago | 0 |
 | Servers hit | 4 |
-| Impact | 37% |
+| Impact | 61% |
 | Severity | heavy |
-| Duration | 19 min |
-| Recovery | complete (23 h 13 min) |
+| Duration | 5 min |
+| Recovery | ongoing (4 h 36 min) |
 
 Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.
 <!-- BANWAVE:README:LATEST:END -->
@@ -181,6 +181,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
+| 2026-11-09 04:40 (+03:00) | 4 | 61% | heavy | 5 min | ongoing (4 h 36 min) |
 | 2026-11-07 19:41 (+03:00) | 4 | 37% | heavy | 19 min | complete (23 h 13 min) |
 | 2026-11-06 16:13 (+03:00) | 1 | 3.3% | light | 1 min | complete (6 min) |
 | 2026-11-04 23:08 (+03:00) | 1 | 2.1% | light | 1 min | complete (6 min) |
@@ -231,7 +232,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:MONTHS:START -->
 | Month | Waves | Highest impact |
 |---|---|---|
-| 2026-11 | 14 | 100% |
+| 2026-11 | 15 | 100% |
 | 2026-10 | 12 | 100% |
 | 2026-09 | 13 | 53% |
 | 2026-08 | 4 | 100% |
@@ -276,7 +277,7 @@ Prices are **sell prices in USD**, mirrored automatically from the platform's pu
 👉 Full price list, terms and add-ons: [`docs/pricing.md`](docs/pricing.md) · RSS products: [`docs/rss-pricing.md`](docs/rss-pricing.md) · Live: [lordsrally.com/buynow](https://lordsrally.com/buynow)
 
 <!-- PRICING:README:UPDATED -->
-_Last updated: 2026-11-08 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
+_Last updated: 2026-11-09 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
 
 ---
 
@@ -300,7 +301,7 @@ New resellers start at the **Normal** level. The tier system is currently **on**
 👉 Detail: [`docs/reseller.md`](docs/reseller.md) · Live: [lordsrally.com/salesman](https://lordsrally.com/salesman)
 
 <!-- RESELLER:README:UPDATED -->
-_Last updated: 2026-11-08 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
+_Last updated: 2026-11-09 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
 
 ---
 
@@ -412,4 +413,4 @@ Documentation and data in this repository are published for reference and citati
 See [LICENSE](LICENSE).
 
 <!-- BANWAVE:README:UPDATED -->
-_Last updated: 2026-11-08 — source: /ban-waves_
+_Last updated: 2026-11-09 — source: /ban-waves_
