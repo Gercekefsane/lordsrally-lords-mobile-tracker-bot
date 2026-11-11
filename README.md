@@ -166,7 +166,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 |---|---|
 | Last wave | 2026-11-10 02:35 (+03:00) |
 | Wave ended | 2026-11-10 02:35 (+03:00) |
-| Days ago | 0 |
+| Days ago | 1 |
 | Servers hit | 2 |
 | Impact | 4.7% |
 | Severity | light |
@@ -183,8 +183,8 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 |---|---|---|---|---|---|
 | 2026-11-10 02:35 (+03:00) | 2 | 4.7% | light | 1 min | complete (7 min) |
 | 2026-11-09 13:15 (+03:00) | 1 | 1.2% | light | 1 min | complete (6 min) |
-| 2026-11-09 09:25 (+03:00) | 4 | 11% | moderate | 2 min | ongoing (1 d 15 h) |
-| 2026-11-09 04:40 (+03:00) | 4 | 61% | heavy | 5 min | ongoing (1 d 20 h) |
+| 2026-11-09 09:25 (+03:00) | 4 | 11% | moderate | 2 min | ongoing (1 d 20 h) |
+| 2026-11-09 04:40 (+03:00) | 4 | 61% | heavy | 5 min | ongoing (2 d 1 h) |
 | 2026-11-07 19:41 (+03:00) | 4 | 37% | heavy | 19 min | complete (23 h 13 min) |
 | 2026-11-06 16:13 (+03:00) | 1 | 3.3% | light | 1 min | complete (6 min) |
 | 2026-11-04 23:08 (+03:00) | 1 | 2.1% | light | 1 min | complete (6 min) |
@@ -269,18 +269,14 @@ Prices are **sell prices in USD**, mirrored automatically from the platform's pu
 <!-- PRICING:README:CREDITS:START -->
 | Credit package | Credits | Sell price | Validity | Price per 1,000 credits |
 |---|---|---|---|---|
-| Starter | 5000 | $45.00 | 30 days | $9.00 |
-| Standard | 20000 | $175.00 | 30 days | $8.75 |
-| Pro | 50000 | $430.00 | 30 days | $8.60 |
-| Business | 100000 | $850.00 | 30 days | $8.50 |
-| Enterprise | 200000 | $1,690.00 | 30 days | $8.45 |
+| _no credit packages_ | | | | |
 
 <!-- PRICING:README:CREDITS:END -->
 
 👉 Full price list, terms and add-ons: [`docs/pricing.md`](docs/pricing.md) · RSS products: [`docs/rss-pricing.md`](docs/rss-pricing.md) · Live: [lordsrally.com/buynow](https://lordsrally.com/buynow)
 
 <!-- PRICING:README:UPDATED -->
-_Last updated: 2026-11-10 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
+_Last updated: 2026-11-11 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
 
 ---
 
@@ -304,7 +300,7 @@ New resellers start at the **Normal** level. The tier system is currently **on**
 👉 Detail: [`docs/reseller.md`](docs/reseller.md) · Live: [lordsrally.com/salesman](https://lordsrally.com/salesman)
 
 <!-- RESELLER:README:UPDATED -->
-_Last updated: 2026-11-10 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
+_Last updated: 2026-11-11 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
 
 ---
 
@@ -416,4 +412,4 @@ Documentation and data in this repository are published for reference and citati
 See [LICENSE](LICENSE).
 
 <!-- BANWAVE:README:UPDATED -->
-_Last updated: 2026-11-10 — source: /ban-waves_
+_Last updated: 2026-11-11 — source: /ban-waves_
