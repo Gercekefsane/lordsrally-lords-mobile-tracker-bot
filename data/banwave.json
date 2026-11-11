@@ -70,8 +70,8 @@
       "endedAtTr": "2026-11-09 09:27 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 3143,
-        "hours": 52,
+        "minutes": 3613,
+        "hours": 60,
         "estimated": false
       }
     },
@@ -90,8 +90,8 @@
       "endedAtTr": "2026-11-09 04:46 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 3428,
-        "hours": 57,
+        "minutes": 3898,
+        "hours": 65,
         "estimated": false
       }
     },
@@ -105,7 +105,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 19,
-      "daysAgo": 3,
+      "daysAgo": 4,
       "startedAtTr": "2026-11-07 19:41 (+03:00)",
       "endedAtTr": "2026-11-07 20:00 (+03:00)",
       "recovery": {
@@ -125,7 +125,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 4,
+      "daysAgo": 5,
       "startedAtTr": "2026-11-06 16:13 (+03:00)",
       "endedAtTr": "2026-11-06 16:13 (+03:00)",
       "recovery": {
@@ -165,7 +165,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 6,
+      "daysAgo": 7,
       "startedAtTr": "2026-11-04 17:54 (+03:00)",
       "endedAtTr": "2026-11-04 17:54 (+03:00)",
       "recovery": {
@@ -385,7 +385,7 @@
       "capped": true,
       "hours": 3,
       "minutes": 156,
-      "daysAgo": 10,
+      "daysAgo": 11,
       "startedAtTr": "2026-10-31 20:57 (+03:00)",
       "endedAtTr": "2026-10-31 23:33 (+03:00)",
       "recovery": {
@@ -425,7 +425,7 @@
       "capped": true,
       "hours": 2,
       "minutes": 149,
-      "daysAgo": 11,
+      "daysAgo": 12,
       "startedAtTr": "2026-10-30 20:01 (+03:00)",
       "endedAtTr": "2026-10-30 22:30 (+03:00)",
       "recovery": {
@@ -445,7 +445,7 @@
       "capped": false,
       "hours": 2,
       "minutes": 97,
-      "daysAgo": 11,
+      "daysAgo": 12,
       "startedAtTr": "2026-10-30 16:36 (+03:00)",
       "endedAtTr": "2026-10-30 18:13 (+03:00)",
       "recovery": {
@@ -485,7 +485,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 12,
+      "daysAgo": 13,
       "startedAtTr": "2026-10-29 15:09 (+03:00)",
       "endedAtTr": "2026-10-29 15:09 (+03:00)",
       "recovery": {
@@ -685,7 +685,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 0,
-      "daysAgo": 50,
+      "daysAgo": 51,
       "startedAtTr": "2026-09-21 20:55 (+03:00)",
       "endedAtTr": "2026-09-21 20:55 (+03:00)",
       "recovery": {
@@ -925,7 +925,7 @@
       "capped": false,
       "hours": 0,
       "minutes": 1,
-      "daysAgo": 90,
+      "daysAgo": 91,
       "startedAtTr": "2026-08-12 20:15 (+03:00)",
       "endedAtTr": "2026-08-12 20:15 (+03:00)",
       "recovery": {
@@ -1077,8 +1077,8 @@
       "endedAtTr": "2026-11-09 09:27 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 3143,
-        "hours": 52,
+        "minutes": 3613,
+        "hours": 60,
         "estimated": false
       }
     },
@@ -1128,8 +1128,8 @@
       "endedAtTr": "2026-11-09 04:44 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 3428,
-        "hours": 57,
+        "minutes": 3898,
+        "hours": 65,
         "estimated": false
       }
     },
@@ -1145,8 +1145,8 @@
       "endedAtTr": "2026-11-09 04:45 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 3428,
-        "hours": 57,
+        "minutes": 3898,
+        "hours": 65,
         "estimated": false
       }
     },
@@ -1162,8 +1162,8 @@
       "endedAtTr": "2026-11-09 04:46 (+03:00)",
       "recovery": {
         "state": "ongoing",
-        "minutes": 3428,
-        "hours": 57,
+        "minutes": 3898,
+        "hours": 65,
         "estimated": false
       }
     },
