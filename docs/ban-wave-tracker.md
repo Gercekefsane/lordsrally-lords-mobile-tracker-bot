@@ -27,8 +27,8 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 |---|---|---|---|---|---|
 | 2026-11-10 02:35 (+03:00) | 2 | 4.7% | light | 1 min | complete (7 min) |
 | 2026-11-09 13:15 (+03:00) | 1 | 1.2% | light | 1 min | complete (6 min) |
-| 2026-11-09 09:25 (+03:00) | 4 | 11% | moderate | 2 min | ongoing (2 d 19 h) |
-| 2026-11-09 04:40 (+03:00) | 4 | 61% | heavy | 5 min | ongoing (2 d 23 h) |
+| 2026-11-09 09:25 (+03:00) | 4 | 11% | moderate | 2 min | ongoing (3 d 3 h) |
+| 2026-11-09 04:40 (+03:00) | 4 | 61% | heavy | 5 min | ongoing (3 d 8 h) |
 | 2026-11-07 19:41 (+03:00) | 4 | 37% | heavy | 19 min | complete (23 h 13 min) |
 | 2026-11-06 16:13 (+03:00) | 1 | 3.3% | light | 1 min | complete (6 min) |
 | 2026-11-04 23:08 (+03:00) | 1 | 2.1% | light | 1 min | complete (6 min) |
@@ -101,12 +101,12 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 | Multi Node Server 1 | 2026-11-09 13:15 (+03:00) | 1.2% | complete (6 min) |
 | Multi Node Server 1 | 2026-11-09 09:26 (+03:00) | 3.4% | complete (7 min) |
 | Multi Node Server 3 | 2026-11-09 09:26 (+03:00) | 11% | complete (17 h 12 min) |
-| Multi Node Server 4 | 2026-11-09 09:26 (+03:00) | 9.8% | ongoing (2 d 19 h) |
+| Multi Node Server 4 | 2026-11-09 09:26 (+03:00) | 9.8% | ongoing (3 d 3 h) |
 | Multi Node Server 2 | 2026-11-09 09:25 (+03:00) | 3.9% | complete (17 h 12 min) |
 | Multi Node Server 4 | 2026-11-09 04:41 (+03:00) | 9.4% | complete (9 min) |
-| Multi Node Server 3 | 2026-11-09 04:41 (+03:00) | 52% | ongoing (2 d 23 h) |
-| Multi Node Server 2 | 2026-11-09 04:41 (+03:00) | 33% | ongoing (2 d 23 h) |
-| Multi Node Server 1 | 2026-11-09 04:40 (+03:00) | 61% | ongoing (2 d 23 h) |
+| Multi Node Server 3 | 2026-11-09 04:41 (+03:00) | 52% | ongoing (3 d 8 h) |
+| Multi Node Server 2 | 2026-11-09 04:41 (+03:00) | 33% | ongoing (3 d 8 h) |
+| Multi Node Server 1 | 2026-11-09 04:40 (+03:00) | 61% | ongoing (3 d 8 h) |
 | Multi Node Server 4 | 2026-11-07 19:42 (+03:00) | 4.7% | complete (6 min) |
 | Multi Node Server 3 | 2026-11-07 19:42 (+03:00) | 36% | complete (23 h 12 min) |
 | Multi Node Server 1 | 2026-11-07 19:42 (+03:00) | 30% | complete (23 h 13 min) |
