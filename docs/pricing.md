@@ -47,7 +47,7 @@ Add-ons attach to a package. Each is priced per month on top of the package.
 <!-- PRICING:ADDONS:START -->
 | Add-on | Sell price per month |
 |---|---|
-| Scout Bot | $15.00 |
+| _no add-ons sold_ | |
 
 <!-- PRICING:ADDONS:END -->
 
