@@ -11,16 +11,7 @@ LordsRally runs a **reseller programme**: you sell bot packages to your own cust
 For each package tier you sell, you keep a percentage of the customer price. You set the price your customer pays; your commission is the share of that price you retain.
 
 <!-- RESELLER:TABLE:START -->
-| Package | Term | Customer price | Your commission |
-|---|---|---|---|
-| FAST x1 | 1 mo | $40.00 | 16.68% |
-| FAST x1 | 3 mo | $35.00 | 16.66% |
-| FAST x1 | 6 mo | $33.00 | 16.67% |
-| FAST x1 | 12 mo | $30.00 | 16.67% |
-| FAST ULTRA | 1 mo | $60.00 | 16.67% |
-| FAST ULTRA | 3 mo | $55.00 | 16.67% |
-| FAST ULTRA | 6 mo | $50.00 | 16.66% |
-| FAST ULTRA | 12 mo | $45.00 | 16.67% |
+| _no reseller packages available_ | | | |
 
 <!-- RESELLER:TABLE:END -->
 

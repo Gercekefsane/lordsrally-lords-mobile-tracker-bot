@@ -183,8 +183,8 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 |---|---|---|---|---|---|
 | 2026-11-10 02:35 (+03:00) | 2 | 4.7% | light | 1 min | complete (7 min) |
 | 2026-11-09 13:15 (+03:00) | 1 | 1.2% | light | 1 min | complete (6 min) |
-| 2026-11-09 09:25 (+03:00) | 4 | 11% | moderate | 2 min | ongoing (4 d 19 h) |
-| 2026-11-09 04:40 (+03:00) | 4 | 61% | heavy | 5 min | ongoing (5 d) |
+| 2026-11-09 09:25 (+03:00) | 4 | 11% | moderate | 2 min | ongoing (5 d 3 h) |
+| 2026-11-09 04:40 (+03:00) | 4 | 61% | heavy | 5 min | ongoing (5 d 8 h) |
 | 2026-11-07 19:41 (+03:00) | 4 | 37% | heavy | 19 min | complete (23 h 13 min) |
 | 2026-11-06 16:13 (+03:00) | 1 | 3.3% | light | 1 min | complete (6 min) |
 | 2026-11-04 23:08 (+03:00) | 1 | 2.1% | light | 1 min | complete (6 min) |
@@ -256,8 +256,7 @@ Prices are **sell prices in USD**, mirrored automatically from the platform's pu
 <!-- PRICING:README:SUMMARY:START -->
 | Package | Detection speed | Sell price (per month) |
 |---|---|---|
-| **FAST x1** | 30–40 s | $40.00 |
-| **FAST ULTRA** | 1–3 s | $60.00 |
+| _no packages_ | | |
 
 | Add-on | Sell price per month |
 |---|---|
@@ -291,7 +290,7 @@ Sell LordsRally to your own customers at a price **you** set, and keep the diffe
 <!-- RESELLER:README:TABLE:START -->
 | Package | Term | Customer price | Your commission |
 |---|---|---|---|
-| FAST x1 | 1 mo | $40.00 | 16.68% |
+| _no data_ | | | |
 
 See the full table in [`docs/reseller.md`](docs/reseller.md).
 <!-- RESELLER:README:TABLE:END -->

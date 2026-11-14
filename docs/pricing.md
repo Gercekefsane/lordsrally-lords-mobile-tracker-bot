@@ -11,8 +11,7 @@ Prices below are **sell prices in USD**, pulled automatically from the platform'
 <!-- PRICING:SUMMARY:START -->
 | Package | Detection speed | Sell price (per month) |
 |---|---|---|
-| **FAST x1** | 30–40 s | $40.00 |
-| **FAST ULTRA** | 1–3 s | $60.00 |
+| _no packages_ | | |
 
 _All amounts are sell prices in USD._
 <!-- PRICING:SUMMARY:END -->
@@ -26,14 +25,7 @@ Every package is sold in several terms (monthly, multi-month, yearly). Detection
 <!-- PRICING:TIERS:START -->
 | Package | Term | Sell price | Per month |
 |---|---|---|---|
-| FAST x1 | 1 mo | $40.00 | $40.00 |
-| FAST x1 | 3 mo | $105.00 | $35.00 |
-| FAST x1 | 6 mo | $198.00 | $33.00 |
-| FAST x1 | 12 mo | $360.00 | $30.00 |
-| FAST ULTRA | 1 mo | $60.00 | $60.00 |
-| FAST ULTRA | 3 mo | $165.00 | $55.00 |
-| FAST ULTRA | 6 mo | $300.00 | $50.00 |
-| FAST ULTRA | 12 mo | $540.00 | $45.00 |
+| _no packages_ | | | |
 
 <!-- PRICING:TIERS:END -->
 
