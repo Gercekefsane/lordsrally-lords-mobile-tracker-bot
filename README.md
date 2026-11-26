@@ -155,7 +155,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 **Latest measurement (auto-updated):**
 
 <!-- BANWAVE:README:STATUS:START -->
-**No wave in progress.** Last wave: 2026-11-10 02:35 (+03:00) (16 day(s) ago). Waves in the last 30 days: **28**.
+**A wave is in progress.** Last wave started 2026-11-26 12:55 (+03:00) (0 day(s) ago). Waves in the last 30 days: **29**.
 **Median recovery:** under 1 h across 79 measured server waves (15 estimated from logs).
 <!-- BANWAVE:README:STATUS:END -->
 
@@ -164,14 +164,14 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 <!-- BANWAVE:README:LATEST:START -->
 | Field | Value |
 |---|---|
-| Last wave | 2026-11-10 02:35 (+03:00) |
-| Wave ended | 2026-11-10 02:35 (+03:00) |
-| Days ago | 16 |
-| Servers hit | 2 |
-| Impact | 4.7% |
-| Severity | light |
+| Last wave | 2026-11-26 12:55 (+03:00) |
+| Wave ended | 2026-11-26 12:56 (+03:00) |
+| Days ago | 0 |
+| Servers hit | 1 |
+| Impact | 95% |
+| Severity | heavy |
 | Duration | 1 min |
-| Recovery | complete (7 min) |
+| Recovery | ongoing (2 h 24 min) |
 
 Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.
 <!-- BANWAVE:README:LATEST:END -->
@@ -181,6 +181,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
+| 2026-11-26 12:55 (+03:00) | 1 | 95% | heavy | 1 min | ongoing (2 h 24 min) |
 | 2026-11-10 02:35 (+03:00) | 2 | 4.7% | light | 1 min | complete (7 min) |
 | 2026-11-09 13:15 (+03:00) | 1 | 1.2% | light | 1 min | complete (6 min) |
 | 2026-11-09 09:25 (+03:00) | 4 | 11% | moderate | 2 min | recovered |
@@ -235,7 +236,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:MONTHS:START -->
 | Month | Waves | Highest impact |
 |---|---|---|
-| 2026-11 | 18 | 100% |
+| 2026-11 | 19 | 100% |
 | 2026-10 | 12 | 100% |
 | 2026-09 | 13 | 53% |
 | 2026-08 | 4 | 100% |
