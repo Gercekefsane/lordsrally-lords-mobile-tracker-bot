@@ -12,8 +12,8 @@ This page is generated from LordsRally's own measurements and **updated automati
 ## Current status
 
 <!-- BANWAVE:STATUS:START -->
-**A wave is in progress.** Last wave started 2026-11-26 12:55 (+03:00) (1 day(s) ago). Waves in the last 30 days: **28**.
-**Median recovery:** under 1 h across 79 measured server waves (15 estimated from logs).
+**No wave in progress.** Last wave: 2026-11-27 17:32 (+03:00) (1 day(s) ago). Waves in the last 30 days: **25**.
+**Median recovery:** under 1 h across 81 measured server waves (15 estimated from logs).
 <!-- BANWAVE:STATUS:END -->
 
 ---
@@ -25,7 +25,8 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-11-26 12:55 (+03:00) | 1 | 95% | heavy | 1 min | ongoing (1 d 3 h) |
+| 2026-11-27 17:32 (+03:00) | 1 | 5.1% | moderate | 1 min | complete (6 min) |
+| 2026-11-26 12:55 (+03:00) | 1 | 95% | heavy | 1 min | complete (1 d 4 h) |
 | 2026-11-10 02:35 (+03:00) | 2 | 4.7% | light | 1 min | complete (7 min) |
 | 2026-11-09 13:15 (+03:00) | 1 | 1.2% | light | 1 min | complete (6 min) |
 | 2026-11-09 09:25 (+03:00) | 4 | 11% | moderate | 2 min | recovered |
@@ -82,7 +83,7 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:MONTHS:START -->
 | Month | Waves | Highest impact |
 |---|---|---|
-| 2026-11 | 19 | 100% |
+| 2026-11 | 20 | 100% |
 | 2026-10 | 12 | 100% |
 | 2026-09 | 13 | 53% |
 | 2026-08 | 4 | 100% |
@@ -97,7 +98,8 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 <!-- BANWAVE:SERVERS:START -->
 | Server | Wave start (UTC+3) | Impact | Recovery |
 |---|---|---|---|
-| Multi Node Server 5 | 2026-11-26 12:55 (+03:00) | 95% | ongoing (1 d 3 h) |
+| Multi Node Server 5 | 2026-11-27 17:32 (+03:00) | 5.1% | complete (6 min) |
+| Multi Node Server 5 | 2026-11-26 12:55 (+03:00) | 95% | complete (1 d 4 h) |
 | Multi Node Server 2 | 2026-11-10 02:35 (+03:00) | 3.1% | complete (6 min) |
 | Multi Node Server 3 | 2026-11-10 02:35 (+03:00) | 4.7% | complete (7 min) |
 | Multi Node Server 1 | 2026-11-09 13:15 (+03:00) | 1.2% | complete (6 min) |
