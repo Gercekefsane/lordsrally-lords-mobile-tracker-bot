@@ -166,12 +166,12 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 |---|---|
 | Last wave | 2026-11-26 12:55 (+03:00) |
 | Wave ended | 2026-11-26 12:56 (+03:00) |
-| Days ago | 0 |
+| Days ago | 1 |
 | Servers hit | 1 |
 | Impact | 95% |
 | Severity | heavy |
 | Duration | 1 min |
-| Recovery | ongoing (18 h 21 min) |
+| Recovery | ongoing (1 d 3 h) |
 
 Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.
 <!-- BANWAVE:README:LATEST:END -->
@@ -181,7 +181,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-11-26 12:55 (+03:00) | 1 | 95% | heavy | 1 min | ongoing (18 h 21 min) |
+| 2026-11-26 12:55 (+03:00) | 1 | 95% | heavy | 1 min | ongoing (1 d 3 h) |
 | 2026-11-10 02:35 (+03:00) | 2 | 4.7% | light | 1 min | complete (7 min) |
 | 2026-11-09 13:15 (+03:00) | 1 | 1.2% | light | 1 min | complete (6 min) |
 | 2026-11-09 09:25 (+03:00) | 4 | 11% | moderate | 2 min | recovered |
