@@ -171,7 +171,7 @@ Automation carries risk in any game. LordsRally publishes the **real, measured**
 | Impact | 95% |
 | Severity | heavy |
 | Duration | 1 min |
-| Recovery | ongoing (12 h 21 min) |
+| Recovery | ongoing (18 h 21 min) |
 
 Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsrally.com/ban-waves)**.
 <!-- BANWAVE:README:LATEST:END -->
@@ -181,7 +181,7 @@ Full history and the live heatmap: **[lordsrally.com/ban-waves](https://lordsral
 <!-- BANWAVE:README:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-11-26 12:55 (+03:00) | 1 | 95% | heavy | 1 min | ongoing (12 h 21 min) |
+| 2026-11-26 12:55 (+03:00) | 1 | 95% | heavy | 1 min | ongoing (18 h 21 min) |
 | 2026-11-10 02:35 (+03:00) | 2 | 4.7% | light | 1 min | complete (7 min) |
 | 2026-11-09 13:15 (+03:00) | 1 | 1.2% | light | 1 min | complete (6 min) |
 | 2026-11-09 09:25 (+03:00) | 4 | 11% | moderate | 2 min | recovered |
@@ -280,7 +280,7 @@ Prices are **sell prices in USD**, mirrored automatically from the platform's pu
 👉 Full price list, terms and add-ons: [`docs/pricing.md`](docs/pricing.md) · RSS products: [`docs/rss-pricing.md`](docs/rss-pricing.md) · Live: [lordsrally.com/buynow](https://lordsrally.com/buynow)
 
 <!-- PRICING:README:UPDATED -->
-_Last updated: 2026-11-26 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
+_Last updated: 2026-11-27 — prices are always live on **https://lordsrally.com/buynow** with **USD** amounts below._
 
 ---
 
@@ -304,7 +304,7 @@ New resellers start at the **Normal** level. The tier system is currently **on**
 👉 Detail: [`docs/reseller.md`](docs/reseller.md) · Live: [lordsrally.com/salesman](https://lordsrally.com/salesman)
 
 <!-- RESELLER:README:UPDATED -->
-_Last updated: 2026-11-26 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
+_Last updated: 2026-11-27 — customer prices are USD. Your current commission is always live at **https://lordsrally.com/salesman**._
 
 ---
 
@@ -416,4 +416,4 @@ Documentation and data in this repository are published for reference and citati
 See [LICENSE](LICENSE).
 
 <!-- BANWAVE:README:UPDATED -->
-_Last updated: 2026-11-26 — source: /ban-waves_
+_Last updated: 2026-11-27 — source: /ban-waves_

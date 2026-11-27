@@ -25,7 +25,7 @@ Fleet waves group servers hit at the same time. `Impact` is the share of that se
 <!-- BANWAVE:WAVES:START -->
 | Wave start (UTC+3) | Servers | Impact | Severity | Duration | Recovery |
 |---|---|---|---|---|---|
-| 2026-11-26 12:55 (+03:00) | 1 | 95% | heavy | 1 min | ongoing (12 h 21 min) |
+| 2026-11-26 12:55 (+03:00) | 1 | 95% | heavy | 1 min | ongoing (18 h 21 min) |
 | 2026-11-10 02:35 (+03:00) | 2 | 4.7% | light | 1 min | complete (7 min) |
 | 2026-11-09 13:15 (+03:00) | 1 | 1.2% | light | 1 min | complete (6 min) |
 | 2026-11-09 09:25 (+03:00) | 4 | 11% | moderate | 2 min | recovered |
@@ -97,7 +97,7 @@ Each row is one server's wave. Servers are anonymised as `Multi Node Server N`; 
 <!-- BANWAVE:SERVERS:START -->
 | Server | Wave start (UTC+3) | Impact | Recovery |
 |---|---|---|---|
-| Multi Node Server 5 | 2026-11-26 12:55 (+03:00) | 95% | ongoing (12 h 21 min) |
+| Multi Node Server 5 | 2026-11-26 12:55 (+03:00) | 95% | ongoing (18 h 21 min) |
 | Multi Node Server 2 | 2026-11-10 02:35 (+03:00) | 3.1% | complete (6 min) |
 | Multi Node Server 3 | 2026-11-10 02:35 (+03:00) | 4.7% | complete (7 min) |
 | Multi Node Server 1 | 2026-11-09 13:15 (+03:00) | 1.2% | complete (6 min) |
@@ -256,4 +256,4 @@ Automation consumers should use [`data/banwave.json`](../data/banwave.json) inst
 Times are shown in **Türkiye time (UTC+3)** — the same clock the site uses; the raw UTC values are the `startedAt`/`endedAt` fields. Durations are given at minute resolution (`minutes`); the rounded `hours` field is kept for compatibility and is not what the tables print. Field names mirror the platform's public tracker endpoint. `impactPct` is always a **percentage**, never an absolute account count; `null` means it could not be measured. `estimated: true` marks a derived estimate. `status: "unreadable"` means the source could not be read — **keep the previous data in that case** (the sync job does exactly this).
 
 <!-- BANWAVE:UPDATED -->
-_Last updated: 2026-11-26 — source: /ban-waves_
+_Last updated: 2026-11-27 — source: /ban-waves_
